@@ -1,5 +1,13 @@
 import { useRef, useState } from "react";
-import { Volume, Play, Pause, Rotate, Download, AlertCircle, ChevronDown } from "../Icons.jsx";
+import {
+  Volume,
+  Play,
+  Pause,
+  Rotate,
+  Download,
+  AlertCircle,
+  ChevronDown,
+} from "../Icons.jsx";
 import { synthesizeSpeech } from "../../services/tts.js";
 import { getLangName } from "../../services/translate.js";
 
@@ -15,9 +23,9 @@ const EXAMPLES = {
     "Cä jɛ nhɔk ɛn ɣöö ŋotdɛ thiɛlɛ dup ti̱ gɔw rɛy juba",
   ],
   din: [
-    "Ŋa cökä ka Nairobi, Kenya",
-    "Ŋa tää kɛ määt mi cɔal Kidit.",
-    "Ca jɛ nhɔk ɛn ɣöö ŋɔtɛ thiɛlɛ dup ti gɔw rɛy juba",
+    "Ɣɛn anɔŋ mäth cɔl Yar.",
+    "Alaak aciɛ̈ɛ̈r në Nairobi, Kenya.",
+    "Ɣɛn lɔ Juba, miäkduur.",
   ],
 };
 
@@ -44,7 +52,10 @@ export default function StudioTTS() {
       });
     } catch (err) {
       console.error("TTS error:", err);
-      setError(err.message || "Meta MMS voice model is warming up — try again in a few seconds.");
+      setError(
+        err.message ||
+          "Meta MMS voice model is warming up — try again in a few seconds.",
+      );
     } finally {
       setIsLoading(false);
     }
@@ -57,68 +68,91 @@ export default function StudioTTS() {
   };
 
   return (
-    <div className="relative hero-glow">
-      <div className="max-w-3xl mx-auto px-6 pt-12 pb-20">
-        <div className="text-center mb-8">
-          <p className="eyebrow mb-3">Text to Speech</p>
-          <h1 className="section-title">Hear Nuer &amp; Dinka spoken naturally</h1>
-          <p className="mt-4 text-[15px] text-ink-500 max-w-lg mx-auto leading-relaxed">
-            Speech synthesis powered by Meta's MMS (Massively Multilingual Speech) models
-            via the Hugging Face Inference API — no Google, no browser fallback.
+    <div className='relative hero-glow'>
+      <div className='max-w-3xl mx-auto px-6 pt-12 pb-20'>
+        <div className='text-center mb-8'>
+          <p className='eyebrow mb-3'>Text to Speech</p>
+          <h1 className='section-title'>
+            Hear Nuer &amp; Dinka spoken naturally
+          </h1>
+          <p className='mt-4 text-[15px] text-ink-500 max-w-lg mx-auto leading-relaxed'>
+            Speech synthesis powered by Meta's MMS (Massively Multilingual
+            Speech) models via the Hugging Face Inference API — no Google, no
+            browser fallback.
           </p>
         </div>
 
-        <div className="flex justify-center mb-6">
-          <div className="relative">
+        <div className='flex justify-center mb-6'>
+          <div className='relative'>
             <select
               value={lang}
-              onChange={(e) => { setLang(e.target.value); setText(""); setAudioUrl(null); }}
-              className="appearance-none chip font-medium pr-9"
+              onChange={(e) => {
+                setLang(e.target.value);
+                setText("");
+                setAudioUrl(null);
+              }}
+              className='appearance-none chip font-medium pr-9'
               style={{ padding: "0.6rem 2.25rem 0.6rem 1rem" }}
             >
-              {LANGUAGES.map((l) => <option key={l.code} value={l.code}>{l.name}</option>)}
+              {LANGUAGES.map((l) => (
+                <option key={l.code} value={l.code}>
+                  {l.name}
+                </option>
+              ))}
             </select>
-            <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-ink-500" />
+            <ChevronDown className='absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-ink-500' />
           </div>
         </div>
 
-        <div className="card p-5 sm:p-7 shadow-[0_2px_30px_rgba(11,18,32,0.05)]">
-          <div className="flex items-center justify-between px-1 mb-2">
-            <span className="eyebrow">{getLangName(lang)} Text</span>
+        <div className='card p-5 sm:p-7 shadow-[0_2px_30px_rgba(11,18,32,0.05)]'>
+          <div className='flex items-center justify-between px-1 mb-2'>
+            <span className='eyebrow'>{getLangName(lang)} Text</span>
           </div>
           <textarea
             value={text}
             onChange={(e) => setText(e.target.value)}
             placeholder={`Enter text in ${getLangName(lang)} to synthesize speech…`}
             rows={3}
-            className="w-full bg-cream-50 rounded-2xl p-4 text-[15px] text-ink-900 placeholder:text-ink-400 resize-none border border-ink-200 outline-none focus:border-ink-400 transition"
+            className='w-full bg-cream-50 rounded-2xl p-4 text-[15px] text-ink-900 placeholder:text-ink-400 resize-none border border-ink-200 outline-none focus:border-ink-400 transition'
           />
 
-          <div className="mt-3 flex flex-wrap items-center gap-2">
-            <span className="text-xs text-ink-400 mr-1">Try:</span>
+          <div className='mt-3 flex flex-wrap items-center gap-2'>
+            <span className='text-xs text-ink-400 mr-1'>Try:</span>
             {EXAMPLES[lang].map((ex) => (
               <button
                 key={ex}
                 onClick={() => setText(ex)}
-                className="text-xs px-3 py-1.5 rounded-full border border-ink-200 text-ink-500 hover:text-ink-900 hover:border-ink-300 transition"
+                className='text-xs px-3 py-1.5 rounded-full border border-ink-200 text-ink-500 hover:text-ink-900 hover:border-ink-300 transition'
               >
                 {ex.length > 32 ? ex.slice(0, 32) + "…" : ex}
               </button>
             ))}
           </div>
 
-          <div className="flex justify-center my-5">
-            <button onClick={handleSynthesize} disabled={isLoading || !text.trim()} className="btn-primary">
-              {isLoading ? (<><Rotate className="animate-spin" /> Synthesizing…</>) : (<><Volume /> Generate Speech</>)}
+          <div className='flex justify-center my-5'>
+            <button
+              onClick={handleSynthesize}
+              disabled={isLoading || !text.trim()}
+              className='btn-primary'
+            >
+              {isLoading ? (
+                <>
+                  <Rotate className='animate-spin' /> Synthesizing…
+                </>
+              ) : (
+                <>
+                  <Volume /> Generate Speech
+                </>
+              )}
             </button>
           </div>
 
-          <div className="w-full bg-cream-50 rounded-2xl p-5 border border-ink-200 flex flex-col items-center justify-center gap-3 text-center">
+          <div className='w-full bg-cream-50 rounded-2xl p-5 border border-ink-200 flex flex-col items-center justify-center gap-3 text-center'>
             {audioUrl ? (
               <>
                 <button
                   onClick={handlePlayPause}
-                  className="w-12 h-12 rounded-full bg-ink-900 hover:bg-ink-700 text-white flex items-center justify-center transition"
+                  className='w-12 h-12 rounded-full bg-ink-900 hover:bg-ink-700 text-white flex items-center justify-center transition'
                 >
                   {isPlaying ? <Pause /> : <Play />}
                 </button>
@@ -128,33 +162,37 @@ export default function StudioTTS() {
                   onPlay={() => setIsPlaying(true)}
                   onPause={() => setIsPlaying(false)}
                   onEnded={() => setIsPlaying(false)}
-                  className="w-full max-w-xs"
+                  className='w-full max-w-xs'
                   controls
                 />
                 <a
                   href={audioUrl}
                   download={`${lang}-speech-mms`}
-                  className="text-xs font-semibold text-ink-700 hover:text-ink-900 flex items-center gap-1"
+                  className='text-xs font-semibold text-ink-700 hover:text-ink-900 flex items-center gap-1'
                 >
                   <Download /> Download audio
                 </a>
               </>
             ) : (
-              <p className="text-ink-400 text-sm italic">Audio will play here after generation…</p>
+              <p className='text-ink-400 text-sm italic'>
+                Audio will play here after generation…
+              </p>
             )}
           </div>
 
           {error && (
-            <div className="mt-4 flex items-start gap-2 bg-cream-100 border border-ink-200 rounded-2xl px-4 py-3 text-sm text-ink-700">
-              <AlertCircle className="shrink-0 mt-0.5 text-amber-500" />
+            <div className='mt-4 flex items-start gap-2 bg-cream-100 border border-ink-200 rounded-2xl px-4 py-3 text-sm text-ink-700'>
+              <AlertCircle className='shrink-0 mt-0.5 text-amber-500' />
               <span>{error}</span>
             </div>
           )}
         </div>
 
-        <p className="mt-5 text-center text-xs text-ink-400">
-          Voice: Meta MMS ({lang === "nus" ? "facebook/mms-tts-nus" : "facebook/mms-tts-din"}) via Hugging Face Inference API.
-          Cold models may take 10–20s on first use.
+        <p className='mt-5 text-center text-xs text-ink-400'>
+          Voice: Meta MMS (
+          {lang === "nus" ? "facebook/mms-tts-nus" : "facebook/mms-tts-din"})
+          via Hugging Face Inference API. Cold models may take 10–20s on first
+          use.
         </p>
       </div>
     </div>
