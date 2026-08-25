@@ -16,8 +16,6 @@ function renderInline(text, keyPrefix) {
   });
 }
 
-// Parses a markdown string into sections split on "## " headers. Each block
-// inside a section is one of: h3, p, table, ul, quote, hr.
 function parseMarkdown(markdown) {
   const lines = markdown.split("\n");
   const sections = [];
@@ -65,7 +63,7 @@ function parseMarkdown(markdown) {
     }
     if (line.startsWith("# ")) {
       flushParagraph(); flushList(); flushTable();
-      continue; // document title, shown separately in the section header
+      continue;
     }
     if (/^\|.*\|$/.test(line)) {
       flushParagraph(); flushList();
@@ -125,8 +123,8 @@ function Block({ block, keyPrefix }) {
       return <hr className="border-ink-200 my-4" />;
     case "table":
       return (
-        <div className="overflow-x-auto mb-3 rounded-xl border border-ink-200">
-          <table className="w-full text-sm">
+        <div className="overflow-x-auto -mx-4 sm:mx-0 mb-3 rounded-xl border border-ink-200">
+          <table className="w-full text-sm min-w-[500px]">
             <thead>
               <tr className="bg-cream-100">
                 {block.header.map((h, i) => (

@@ -12,7 +12,7 @@ function Message({ message }) {
   return (
     <div className={`flex ${message.role === "user" ? "justify-end" : "justify-start"}`}>
       <div
-        className={`max-w-[85%] rounded-2xl px-4 py-3 text-sm leading-relaxed whitespace-pre-line ${
+        className={`max-w-[85%] sm:max-w-[75%] rounded-2xl px-4 py-3 text-sm leading-relaxed whitespace-pre-line ${
           message.role === "user"
             ? "bg-ink-900 text-white rounded-br-md"
             : "bg-cream-100 text-ink-800 rounded-bl-md"
@@ -61,8 +61,8 @@ export default function StudioChat() {
 
   return (
     <div className="relative hero-glow">
-      <div className="max-w-2xl mx-auto px-6 pt-12 pb-20">
-        <div className="text-center mb-8">
+      <div className="max-w-2xl mx-auto px-4 sm:px-6 pt-8 sm:pt-12 pb-12 sm:pb-20">
+        <div className="text-center mb-6 sm:mb-8">
           <p className="eyebrow mb-3">Chat Assistant</p>
           <h1 className="section-title">Chat with Dayom AI</h1>
           <p className="mt-4 text-[15px] text-ink-500 max-w-lg mx-auto leading-relaxed">
@@ -71,7 +71,7 @@ export default function StudioChat() {
         </div>
 
         <div className="card overflow-hidden shadow-[0_10px_35px_rgba(11,18,32,0.08)]">
-          <div className="flex items-center justify-between px-5 py-4 border-b border-ink-200 bg-cream-50">
+          <div className="flex items-center justify-between px-4 sm:px-5 py-3 sm:py-4 border-b border-ink-200 bg-cream-50">
             <div className="flex items-center gap-2">
               <span className="h-8 w-8 rounded-full bg-amber-300 flex items-center justify-center text-ink-900">
                 <Sparkle />
@@ -84,7 +84,7 @@ export default function StudioChat() {
             <span className="h-2 w-2 rounded-full bg-emerald-500" title="Ready" />
           </div>
 
-          <div ref={scrollRef} className="h-[420px] overflow-y-auto space-y-4 p-5 bg-white">
+          <div ref={scrollRef} className="h-[320px] sm:h-[420px] overflow-y-auto space-y-4 p-4 sm:p-5 bg-white">
             {messages.map((message, index) => (
               <Message key={index} message={message} />
             ))}
@@ -96,7 +96,7 @@ export default function StudioChat() {
             )}
           </div>
 
-          <div className="px-5 py-3 border-t border-ink-200 bg-cream-50">
+          <div className="px-4 sm:px-5 py-3 border-t border-ink-200 bg-cream-50">
             <div className="flex gap-2 overflow-x-auto scrollbar-hide pb-2">
               {CHAT_STARTERS.map((starter) => (
                 <button

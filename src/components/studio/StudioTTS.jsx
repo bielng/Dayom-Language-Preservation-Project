@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import { Volume, Play, Pause, Rotate, Download, AlertCircle, ChevronDown } from "../Icons.jsx";
-import { synthesizeSpeech, speakWithBrowser } from "../../services/tts.js";
+import { synthesizeSpeech } from "../../services/tts.js";
 import { getLangName } from "../../services/translate.js";
 
 const LANGUAGES = [
@@ -44,11 +44,7 @@ export default function StudioTTS() {
       });
     } catch (err) {
       console.error("TTS error:", err);
-      try {
-        await speakWithBrowser(text.trim(), lang);
-      } catch {
-        setError("Couldn't reach the voice model — it may be waking up, or unavailable right now. Try again shortly.");
-      }
+      setError(err.message || "Meta MMS voice model is warming up — try again in a few seconds.");
     } finally {
       setIsLoading(false);
     }
@@ -67,8 +63,8 @@ export default function StudioTTS() {
           <p className="eyebrow mb-3">Text to Speech</p>
           <h1 className="section-title">Hear Nuer &amp; Dinka spoken naturally</h1>
           <p className="mt-4 text-[15px] text-ink-500 max-w-lg mx-auto leading-relaxed">
-            Speech synthesis for Nuer and Dinka, both powered by the same
-            provider — Meta's MMS (Massively Multilingual Speech) models.
+            Speech synthesis powered by Meta's MMS (Massively Multilingual Speech) models
+            via the Hugging Face Inference API — no Google, no browser fallback.
           </p>
         </div>
 
@@ -157,9 +153,8 @@ export default function StudioTTS() {
         </div>
 
         <p className="mt-5 text-center text-xs text-ink-400">
-          Voice synthesis calls Meta's MMS models on the Hugging Face
-          Inference API and requires an internet connection. A cold model can
-          take a few seconds to wake up on its first request.
+          Voice: Meta MMS ({lang === "nus" ? "facebook/mms-tts-nus" : "facebook/mms-tts-din"}) via Hugging Face Inference API.
+          Cold models may take 10–20s on first use.
         </p>
       </div>
     </div>
