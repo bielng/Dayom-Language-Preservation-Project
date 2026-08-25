@@ -1,99 +1,112 @@
+import { Client } from "@gradio/client";
 import { TTS } from "../config/site.js";
 
-/**
- * Nuer + Dinka text-to-speech, both on Meta's MMS (Massively Multilingual
- * Speech) checkpoints — facebook/mms-tts-nus and facebook/mms-tts-din —
- * called directly on the Hugging Face Inference API. One provider, one
- * code path, no Google/browser SpeechSynthesis fallback for either
- * language.
- */
-
+/* ────────────────  CONFIG  ──────────────── */
 const HF_INFERENCE_URL = "https://api-inference.huggingface.co/models";
 
-// A hung request should fail loudly rather than spin forever.
-const REQUEST_TIMEOUT_MS = 20_000;
+const NUER_SPACE =
+  TTS.spaces?.nus || "dayomtechnologies/Text_To_Speech_Thok_Naath";
+const DINKA_SPACE =
+  TTS.spaces?.din || "dayomtechnologies/Text_To_Speech_Thok_Naath";
 
-// Cold checkpoints return a 503 with an estimated load time instead of
-// audio. Auto-retry a couple of times (short, capped waits) before making
-// the user click again.
-const MAX_COLD_START_RETRIES = 2;
-const MAX_COLD_START_WAIT_MS = 8_000;
+const REQUEST_TIMEOUT_MS = 25_000; // Gradio Spaces can be slow to wake
+const INFERENCE_TIMEOUT_MS = 20_000;
 
-function sleep(ms) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
+let nuerClientPromise = null;
+let dinkaClientPromise = null;
+
+/* ────────────────  HELPERS  ──────────────── */
+function getNuerClient() {
+  if (!nuerClientPromise) nuerClientPromise = Client.connect(NUER_SPACE);
+  return nuerClientPromise;
+}
+function getDinkaClient() {
+  if (!dinkaClientPromise) dinkaClientPromise = Client.connect(DINKA_SPACE);
+  return dinkaClientPromise;
 }
 
-async function requestMMS(model, text) {
-  const controller = new AbortController();
-  const timeoutId = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
+function sleep(ms) {
+  return new Promise((r) => setTimeout(r, ms));
+}
 
+async function fetchWithTimeout(url, opts, ms) {
+  const ctrl = new AbortController();
+  const id = setTimeout(() => ctrl.abort(), ms);
   try {
-    return await fetch(`${HF_INFERENCE_URL}/${model}`, {
+    return await fetch(url, { ...opts, signal: ctrl.signal });
+  } finally {
+    clearTimeout(id);
+  }
+}
+
+/* ────────────────  INFERENCE API FALLBACK  ──────────────── */
+// Used only when the Gradio Space fails completely.
+async function inferenceTTS(text, modelId) {
+  console.log("[TTS] Fallback to Inference API:", modelId);
+  const res = await fetchWithTimeout(
+    `${HF_INFERENCE_URL}/${modelId}`,
+    {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ inputs: text }),
-      signal: controller.signal,
-    });
-  } catch (err) {
-    if (err.name === "AbortError") {
-      throw new Error(
-        `MMS voice model timed out after ${REQUEST_TIMEOUT_MS / 1000}s — try again.`,
-        { cause: err },
-      );
-    }
-    throw err;
-  } finally {
-    clearTimeout(timeoutId);
-  }
-}
-
-async function callMMS(model, text, attempt = 0) {
-  const res = await requestMMS(model, text);
+    },
+    INFERENCE_TIMEOUT_MS,
+  );
 
   if (!res.ok) {
-    if (res.status === 503) {
-      let waitMs = 3000;
-      try {
-        const body = await res.json();
-        if (body?.estimated_time) {
-          waitMs = Math.min(
-            Math.ceil(body.estimated_time * 1000),
-            MAX_COLD_START_WAIT_MS,
-          );
-        }
-      } catch {
-        // no JSON body to read — keep the default wait
-      }
-
-      if (attempt < MAX_COLD_START_RETRIES) {
-        await sleep(waitMs);
-        return callMMS(model, text, attempt + 1);
-      }
-
-      throw new Error(
-        `Meta MMS voice model is still warming up after ${attempt + 1} tries — try again in a moment.`,
-      );
-    }
-
-    let detail = "";
-    try {
-      const body = await res.json();
-      detail = body?.error ? ` (${body.error})` : "";
-    } catch {
-      // response wasn't JSON — nothing extra to add
-    }
-    throw new Error(`MMS TTS request failed: ${res.status}${detail}`);
+    const body = await res.text().catch(() => "");
+    throw new Error(`Inference API ${res.status}: ${body.slice(0, 200)}`);
   }
-
-  const audioBlob = await res.blob();
-  if (!audioBlob.size) throw new Error("No audio returned from the MMS model.");
-  return URL.createObjectURL(audioBlob);
+  const blob = await res.blob();
+  if (!blob.size) throw new Error("Inference API returned empty audio.");
+  return URL.createObjectURL(blob);
 }
 
+/* ────────────────  GRADIO SPACE TTS  ──────────────── */
+async function spaceTTS(text, lang) {
+  const client =
+    lang === "nus" ? await getNuerClient() : await getDinkaClient();
+  console.log("[TTS] Calling Gradio Space /synthesize for", lang);
+
+  const result = await client.predict("/synthesize", {
+    text: text.trim(),
+    seed: 42,
+  });
+
+  console.log("[TTS] Gradio raw result:", result);
+
+  // Gradio client v2 returns data in result.data as an array.
+  // Each output can be: string URL, {url, path, name}, or a FileBlob.
+  const outputs = result?.data ?? [];
+  console.log("[TTS] Gradio outputs array:", outputs);
+
+  // Try every known shape until we find a playable URL
+  for (const item of outputs) {
+    if (!item) continue;
+
+    // Shape 1: plain string URL
+    if (typeof item === "string" && item.startsWith("http")) {
+      console.log("[TTS] Found string URL:", item);
+      return item;
+    }
+
+    // Shape 2: object with url / path / name
+    if (typeof item === "object") {
+      const url = item.url || item.path || item.name;
+      if (url) {
+        console.log("[TTS] Found object URL:", url);
+        return url;
+      }
+    }
+  }
+
+  throw new Error("Gradio Space returned audio in an unrecognized format.");
+}
+
+/* ────────────────  PUBLIC API  ──────────────── */
+
 /**
- * Browser SpeechSynthesis, used ONLY for English playback (StudioTranslate's
- * "listen" button when the target language is English). Nuer and Dinka
- * never touch this path — they always go through callMMS above.
+ * Browser-native speech synthesis — English ONLY.
  */
 export function speakEnglish(text) {
   return new Promise((resolve, reject) => {
@@ -102,32 +115,64 @@ export function speakEnglish(text) {
       return;
     }
     window.speechSynthesis.cancel();
-    const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = "en-US";
-    utterance.rate = 0.9;
-    utterance.onend = resolve;
-    utterance.onerror = (e) => reject(new Error(`Speech error: ${e.error}`));
-    window.speechSynthesis.speak(utterance);
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = "en-US";
+    u.rate = 0.9;
+    u.onend = resolve;
+    u.onerror = (e) => reject(new Error(`Speech error: ${e.error}`));
+    window.speechSynthesis.speak(u);
   });
 }
 
 /**
- * Synthesize speech from text using Meta's MMS models (Nuer/Dinka only).
- * Retries automatically on a cold-model 503 and times out a hung request —
- * callers only ever see a resolved audio URL or a final, user-facing Error.
- * @param {string} text
- * @param {string} lang - 'nus' (Nuer) | 'din' (Dinka)
- * @returns {Promise<string>} an object URL for the synthesized audio
+ * Synthesize Nuer or Dinka speech.
+ *  1. Try the fine-tuned HF Space (best quality)
+ *  2. If that fails, fall back to the raw HF Inference API (robotic but works)
+ *  3. If BOTH fail, throw a clear error.
  */
 export async function synthesizeSpeech(text, lang = "nus") {
   if (!text || !text.trim()) throw new Error("No text provided.");
+  const clean = text.trim();
 
-  const model = TTS.models[lang];
-  if (!model) throw new Error(`Unsupported TTS language: ${lang}`);
+  // ── Nuer ──
+  if (lang === "nus") {
+    try {
+      return await spaceTTS(clean, "nus");
+    } catch (spaceErr) {
+      console.warn("[TTS] Nuer Space failed:", spaceErr.message);
+      try {
+        return await inferenceTTS(clean, TTS.models.nus);
+      } catch (infErr) {
+        console.warn("[TTS] Nuer Inference fallback failed:", infErr.message);
+        throw new Error(
+          "Nuer voice is unavailable right now. The model may be waking up — try again in 20 seconds.",
+        );
+      }
+    }
+  }
 
-  return callMMS(model, text.trim());
+  // ── Dinka ──
+  if (lang === "din") {
+    try {
+      return await spaceTTS(clean, "din");
+    } catch (spaceErr) {
+      console.warn("[TTS] Dinka Space failed:", spaceErr.message);
+      // Dinka Space is a placeholder pointing to Nuer — if it fails,
+      // try the base MMS model via Inference API as fallback.
+      try {
+        return await inferenceTTS(clean, TTS.models.din);
+      } catch (infErr) {
+        console.warn("[TTS] Dinka Inference fallback failed:", infErr.message);
+        throw new Error(
+          "Dinka voice is not available yet. A dedicated model is coming soon.",
+        );
+      }
+    }
+  }
+
+  throw new Error(`Unsupported TTS language: ${lang}`);
 }
 
 export function isTTSSupported(lang) {
-  return Object.prototype.hasOwnProperty.call(TTS.models, lang);
+  return lang === "nus" || lang === "din" || lang === "en";
 }

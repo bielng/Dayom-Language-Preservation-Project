@@ -94,6 +94,28 @@ function LiveBlob({ active, size = 120 }) {
           ))}
         </div>
       </div>
+
+      {/* KEY FIX: these animations were referenced but never defined */}
+      <style>{`
+        @keyframes blobMorph {
+          0%, 100% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+          25%  { border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; }
+          50%  { border-radius: 50% 60% 30% 60% / 30% 40% 70% 50%; }
+          75%  { border-radius: 40% 60% 60% 40% / 60% 40% 30% 70%; }
+        }
+        @keyframes blobSpin {
+          0%   { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+        @keyframes waveBar {
+          0%   { height: 10px; transform: scaleY(0.35); opacity: 0.7; }
+          100% { height: 52px; transform: scaleY(1); opacity: 1; }
+        }
+        @keyframes waveBarIdle {
+          0%   { height: 14px; transform: scaleY(0.5); opacity: 0.6; }
+          100% { height: 36px; transform: scaleY(1); opacity: 0.9; }
+        }
+      `}</style>
     </div>
   );
 }
@@ -184,9 +206,7 @@ export default function StudioVoice() {
     setSpeakError(null);
     setIsSpeaking(true);
     try {
-      // Nuer/Dinka always go through Meta's MMS models — never the
-      // browser's speechSynthesis, which has no Nuer/Dinka voice and
-      // would silently read the text with an English voice instead.
+      // Nuer/Dinka ONLY — never browser TTS for these
       const url = await synthesizeSpeech(translation, lang);
       if (!audioRef.current) audioRef.current = new Audio();
       audioRef.current.src = url;

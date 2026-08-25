@@ -53,8 +53,7 @@ export default function StudioTTS() {
     } catch (err) {
       console.error("TTS error:", err);
       setError(
-        err.message ||
-          "Meta MMS voice model is warming up — try again in a few seconds.",
+        err.message || "Voice model is waking up — try again in a few seconds.",
       );
     } finally {
       setIsLoading(false);
@@ -76,9 +75,8 @@ export default function StudioTTS() {
             Hear Nuer &amp; Dinka spoken naturally
           </h1>
           <p className='mt-4 text-[15px] text-ink-500 max-w-lg mx-auto leading-relaxed'>
-            Speech synthesis powered by Meta's MMS (Massively Multilingual
-            Speech) models via the Hugging Face Inference API — no Google, no
-            browser fallback.
+            Speech synthesis powered by fine-tuned Meta MMS models via Hugging
+            Face Spaces — no generic browser fallback.
           </p>
         </div>
 
@@ -189,10 +187,11 @@ export default function StudioTTS() {
         </div>
 
         <p className='mt-5 text-center text-xs text-ink-400'>
-          Voice: Meta MMS (
-          {lang === "nus" ? "facebook/mms-tts-nus" : "facebook/mms-tts-din"})
-          via Hugging Face Inference API. Cold models may take 10–20s on first
-          use.
+          Voice:{" "}
+          {lang === "nus"
+            ? "Fine-tuned Meta MMS (Nuer) via Hugging Face Space"
+            : "Dinka placeholder — dedicated model coming soon"}
+          . Spaces may take 10–20s to wake up on first use.
         </p>
       </div>
     </div>

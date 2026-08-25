@@ -36,8 +36,16 @@ export const GITHUB = {
 // rather pull from the Hub than fetch static JSON off this site.
 export const HUGGINGFACE = {
   datasets: [
-    { id: "naathnlp", label: "NaathNLP", url: "https://huggingface.co/NaathNLP/datasets" },
-    { id: "dayomtechnologies", label: "Dayom Technologies", url: "https://huggingface.co/dayomtechnologies/datasets" },
+    {
+      id: "naathnlp",
+      label: "NaathNLP",
+      url: "https://huggingface.co/NaathNLP/datasets",
+    },
+    {
+      id: "dayomtechnologies",
+      label: "Dayom Technologies",
+      url: "https://huggingface.co/dayomtechnologies/datasets",
+    },
   ],
   models: "https://huggingface.co/dayomtechnologies/models",
   spaces: "https://huggingface.co/dayomtechnologies/spaces",
@@ -64,7 +72,14 @@ export const CORPUS = {
       href: "#/library/dictionary",
       blurb:
         "English ↔ Nuer headwords with part of speech, alternative spellings, and usage examples.",
-      fields: ["english", "nuer", "partOfSpeech", "alternatives", "examples", "source"],
+      fields: [
+        "english",
+        "nuer",
+        "partOfSpeech",
+        "alternatives",
+        "examples",
+        "source",
+      ],
       license: "Open Source",
       source: "Merged from nuer_dictionary + english_nuer_indexed",
     },
@@ -88,7 +103,14 @@ export const CORPUS = {
       href: "#/library/structures",
       blurb:
         "Sentence-level parallel pairs grouped by grammatical topic, for pattern drilling and few-shot prompting.",
-      fields: ["topic_title", "category", "nuer", "english", "source", "license"],
+      fields: [
+        "topic_title",
+        "category",
+        "nuer",
+        "english",
+        "source",
+        "license",
+      ],
       license: "Open Source",
       source: "Ethio Language Box",
     },
@@ -100,7 +122,14 @@ export const CORPUS = {
       href: "#/library/vocabulary",
       blurb:
         "Topic-organised word lists spanning everyday domains — family, numbers, body, food, place.",
-      fields: ["topic_title", "category", "nuer", "english", "source", "license"],
+      fields: [
+        "topic_title",
+        "category",
+        "nuer",
+        "english",
+        "source",
+        "license",
+      ],
       license: "Open Source",
       source: "Ethio Language Box",
     },
@@ -112,7 +141,14 @@ export const CORPUS = {
       href: "#/library/conversation",
       blurb:
         "Dialogue turns and conversational exchanges covering greetings, requests, and daily interaction.",
-      fields: ["topic_title", "category", "nuer", "english", "source", "license"],
+      fields: [
+        "topic_title",
+        "category",
+        "nuer",
+        "english",
+        "source",
+        "license",
+      ],
       license: "Open Source",
       source: "Ethio Language Box",
     },
@@ -125,7 +161,16 @@ export const CORPUS = {
       href: "#/library/phrasebook",
       blurb:
         "Community phrasebook with IPA transcription, plural forms, sense glosses, dialect notes, and recorded pronunciation.",
-      fields: ["nuer", "ipa", "part_of_speech", "plural_info", "senses", "examples", "audio_files", "dialect"],
+      fields: [
+        "nuer",
+        "ipa",
+        "part_of_speech",
+        "plural_info",
+        "senses",
+        "examples",
+        "audio_files",
+        "dialect",
+      ],
       license: "Open Source",
       source: "Community contributors",
     },
@@ -137,7 +182,14 @@ export const CORPUS = {
       href: "#/library/grammar",
       blurb:
         "Grammar exercises keyed to specific rules — negation, tense marking, copula, and possession.",
-      fields: ["topic_title", "category", "nuer", "english", "source", "license"],
+      fields: [
+        "topic_title",
+        "category",
+        "nuer",
+        "english",
+        "source",
+        "license",
+      ],
       license: "Open Source",
       source: "Ethio Language Box",
     },
@@ -160,19 +212,38 @@ export const CORPUS = {
     name: "Grammar Guide",
     file: "/data/library/grammar-guide.md",
     href: "#/library/guide",
-    blurb: "A long-form Thok Nath grammar reference in Markdown, covering the rule set the datasets encode.",
+    blurb:
+      "A long-form Thok Nath grammar reference in Markdown, covering the rule set the datasets encode.",
   },
 
   sources: [
-    { name: "Ethio Language Box", license: "Open Source", url: "https://ethiolanguagebox.com" },
-    { name: "African Storybook", license: "CC BY 4.0", url: "https://africanstorybook.org" },
-    { name: "Nuer Bible (RUAC KUƆTH IN RƐL RƆ)", license: "Bible Society in South Sudan", url: null },
+    {
+      name: "Ethio Language Box",
+      license: "Open Source",
+      url: "https://ethiolanguagebox.com",
+    },
+    {
+      name: "African Storybook",
+      license: "CC BY 4.0",
+      url: "https://africanstorybook.org",
+    },
+    {
+      name: "Nuer Bible (RUAC KUƆTH IN RƐL RƆ)",
+      license: "Bible Society in South Sudan",
+      url: null,
+    },
     { name: "Community contributors", license: "Open Source", url: null },
   ],
 };
 
-export const CORPUS_TOTAL = CORPUS.datasets.reduce((sum, d) => sum + d.entries, 0);
-export const AUDIO_TOTAL = CORPUS.datasets.reduce((sum, d) => sum + (d.audioClips || 0), 0);
+export const CORPUS_TOTAL = CORPUS.datasets.reduce(
+  (sum, d) => sum + d.entries,
+  0,
+);
+export const AUDIO_TOTAL = CORPUS.datasets.reduce(
+  (sum, d) => sum + (d.audioClips || 0),
+  0,
+);
 
 // Dinka now ships live (dictionary + the Dinka Digital Library), so it moved
 // out of "next" — keep this list in sync with what's actually browsable.
@@ -181,12 +252,18 @@ export const LANGUAGES = {
   next: ["Shilluk (Dhøg Cøllø)", "Bari", "Zande", "Murle"],
 };
 
-// Both Nuer and Dinka speech synthesis run on the same underlying provider —
-// Meta's MMS (Massively Multilingual Speech) VITS checkpoints — so the site
-// only ever needs to describe "one" TTS backend instead of two.
+// Nuer and Dinka speech synthesis run on fine-tuned Meta MMS models
+// hosted as dedicated Hugging Face Spaces (Gradio). The public Inference
+// API is no longer used — Spaces give better quality, reliability, and
+// a natural-sounding voice instead of the generic base checkpoint.
 export const TTS = {
-  provider: "Meta MMS (Massively Multilingual Speech)",
+  provider: "Meta MMS (fine-tuned) via Hugging Face Spaces",
   providerUrl: "https://huggingface.co/facebook/mms-tts",
+  spaces: {
+    nus: "dayomtechnologies/Text_To_Speech_Thok_Naath",
+    din: "dayomtechnologies/Text_To_Speech_Thok_Naath", // placeholder — swap when Dinka Space is ready
+  },
+  // Base model IDs kept for reference (Models page, docs, etc.)
   models: {
     nus: "facebook/mms-tts-nus",
     din: "facebook/mms-tts-din",

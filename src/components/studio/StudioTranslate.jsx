@@ -128,21 +128,20 @@ export default function StudioTranslate() {
 
     try {
       if (targetLang === "en") {
+        // English → browser TTS (never MMS)
         await speakEnglish(result);
         setIsSpeaking(false);
       } else {
+        // Nuer or Dinka → MMS (Space first, then Inference fallback)
         const url = await synthesizeSpeech(result, targetLang);
-        if (url) {
-          const audio = new Audio(url);
-          audio.onended = () => setIsSpeaking(false);
-          audio.onerror = () => {
-            setIsSpeaking(false);
-            setSpeakError("Audio playback failed.");
-          };
-          await audio.play();
-        } else {
+        const audio = new Audio(url);
+        audio.onended = () => setIsSpeaking(false);
+        audio.onerror = (e) => {
+          console.error("Audio playback error:", e);
+          setSpeakError("Audio playback failed in the browser.");
           setIsSpeaking(false);
-        }
+        };
+        await audio.play();
       }
     } catch (err) {
       console.error("TTS error:", err);
