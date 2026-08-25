@@ -1,0 +1,185 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  /* Dayom brand palette — carried over from NAATH-ARCHIVE/Ai_lab */
+  --color-cream-50: #FFFDF7;
+  --color-cream-100: #FCF8EC;
+  --color-cream-200: #FAEFD1;
+  --color-amber-300: #F8D980;
+  --color-amber-400: #F5C95B;
+  --color-amber-500: #E8B53A;
+
+  --color-ink-900: #0B1220;
+  --color-ink-800: #111827;
+  --color-ink-700: #1F2937;
+  --color-ink-500: #6B7280;
+  --color-ink-400: #9CA3AF;
+  --color-ink-300: #D1D5DB;
+  --color-ink-200: #E5E7EB;
+  --color-ink-100: #F3F4F6;
+}
+
+html, body, #root {
+  height: 100%;
+  background: #f9f6ee;
+  color: var(--color-ink-900);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+/* Hero ambient glow */
+.hero-glow {
+  background:
+    radial-gradient(900px 400px at 80% 0%, rgba(248,217,128,0.18), transparent 60%),
+    radial-gradient(700px 300px at 10% 30%, rgba(248,217,128,0.12), transparent 60%);
+}
+
+.dot-bg {
+  background-image: radial-gradient(rgba(11,18,32,0.06) 1px, transparent 1px);
+  background-size: 18px 18px;
+}
+
+.code-block {
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  line-height: 1.85;
+  color: #1F2937;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.25rem;
+  border-radius: 9999px;
+  background: var(--color-amber-300);
+  color: #1F2937;
+  font-weight: 500;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 2px rgba(11,18,32,0.04);
+  cursor: pointer;
+  border: none;
+}
+.btn-primary:hover { background: var(--color-amber-400); transform: translateY(-1px); }
+.btn-primary:disabled { opacity: 0.45; cursor: not-allowed; transform: none; }
+
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.25rem;
+  border-radius: 9999px;
+  background: #ffffff;
+  color: #1F2937;
+  font-weight: 500;
+  font-size: 0.875rem;
+  border: 1px solid var(--color-ink-200);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.btn-ghost:hover { background: #fff; border-color: var(--color-ink-300); }
+
+.btn-dark {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.25rem;
+  border-radius: 9999px;
+  background: #0B1220;
+  color: #fff;
+  font-weight: 500;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: none;
+}
+.btn-dark:hover { background: #111827; }
+.btn-dark:disabled { opacity: 0.45; cursor: not-allowed; }
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.9rem;
+  border-radius: 9999px;
+  background: #fff;
+  border: 1px solid var(--color-ink-200);
+  font-size: 0.8rem;
+  color: #1F2937;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.chip:hover { border-color: #1F2937; }
+.chip.active { background: var(--color-amber-300); border-color: var(--color-amber-300); }
+
+.card {
+  background: #fff;
+  border-radius: 18px;
+  border: 1px solid var(--color-ink-200);
+}
+
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-ink-500);
+  font-weight: 500;
+}
+
+.section-title {
+  font-size: clamp(1.75rem, 2.5vw, 2.25rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--color-ink-900);
+  line-height: 1.15;
+}
+
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { scrollbar-width: none; }
+
+::selection {
+  background: var(--color-amber-300);
+  color: #1F2937;
+}
+
+/* ---------- Studio-only utilities ---------- */
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fadeIn 0.25s ease-out forwards;
+}
+
+@keyframes blobMorph {
+  0%, 100% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+  25%  { border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; }
+  50%  { border-radius: 50% 60% 30% 60% / 30% 40% 70% 50%; }
+  75%  { border-radius: 40% 60% 60% 40% / 60% 40% 30% 70%; }
+}
+@keyframes blobSpin {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@keyframes waveBar {
+  0%   { height: 10px; transform: scaleY(0.35); opacity: 0.7; }
+  100% { height: 52px; transform: scaleY(1); opacity: 1; }
+}
+@keyframes waveBarIdle {
+  0%   { height: 14px; transform: scaleY(0.5); opacity: 0.6; }
+  100% { height: 36px; transform: scaleY(1); opacity: 0.9; }
+}

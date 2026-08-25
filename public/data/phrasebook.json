@@ -1,0 +1,7464 @@
+[
+  {
+    "id": 1,
+    "nuer": "lɛk",
+    "ipa": "/lɛ̀ɛk/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:leek",
+    "senses": ["tilapia"],
+    "sense_info": "noun;plural:tilapias",
+    "examples": [
+      {
+        "nuer": "Cä lɛk guɔ̱ɔ̱r.",
+        "english": "I followed a tilapia."
+      },
+      {
+        "nuer": "Cä leek guɔ̱ɔ̱r.",
+        "english": "I followed tilapias."
+      }
+    ],
+    "audio_files": ["audio/ID1_nom_sg_02.mp3", "audio/ID1_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 2,
+    "nuer": "lɛk",
+    "ipa": "/(a)lɛ̂k/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:lëëk",
+    "senses": ["pestle"],
+    "sense_info": "noun;plural:pestles",
+    "examples": [
+      {
+        "nuer": "Cä lɛk kɔk pan.",
+        "english": "I bought a pestle yesterday."
+      },
+      {
+        "nuer": "Cä lëëk kɔk pan.",
+        "english": "I bought pestles yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID2_nom_sg_02.mp3", "audio/ID2_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 3,
+    "nuer": "tik",
+    "ipa": "/tɪ̂ɪk/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:tiɛk",
+    "senses": ["bead"],
+    "sense_info": "noun;plural:beads",
+    "examples": [
+      {
+        "nuer": "Cä tik kɔk pan.",
+        "english": "I bought a bead yesterday."
+      },
+      {
+        "nuer": "Cä tiɛk kɔk pan.",
+        "english": "I bought beads yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID3_nom_sg_02.mp3", "audio/ID3_nom_sg_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 4,
+    "nuer": "cɔ̱a̱a̱",
+    "ipa": "/(a)cɔ̤̀a̤a̤a̤/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:cɔ̱w",
+    "senses": ["bone"],
+    "sense_info": "noun;plural:bones",
+    "examples": [
+      {
+        "nuer": "Cä cɔ̱a̱a̱ kɔk pan.",
+        "english": "I bought a bone yesterday."
+      },
+      {
+        "nuer": "Cä cɔ̱w kɔk pan.",
+        "english": "I bought bones yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID4_nom_sg_03.mp3", "audio/ID4_nom_pl_03.mp3"],
+    "dialect": "Bentiu dialect"
+  },
+  {
+    "id": 5,
+    "nuer": "beel",
+    "ipa": "/bé̤e̤e̤l/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:bɛl",
+    "senses": ["dura"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Cä beel  kɔk pan.",
+        "english": "I bought a dura yesterday."
+      },
+      {
+        "nuer": "Cä bɛl  kɔk pan.",
+        "english": "I bought dura yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID5_nom_sg_03.mp3", "audio/ID5_nom_pl_03.mp3"],
+    "dialect": "Bentiu dialect"
+  },
+  {
+    "id": 6,
+    "nuer": "rec",
+    "ipa": "/ré̤c/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:rɛc",
+    "senses": ["fish"],
+    "sense_info": "noun;plural:fish, fishes",
+    "examples": [
+      {
+        "nuer": "Cä rec guɔ̱ɔ̱r.",
+        "english": "I followed a fish."
+      },
+      {
+        "nuer": "Cä rɛc guɔ̱ɔ̱r.",
+        "english": "I followed fish."
+      }
+    ],
+    "audio_files": ["audio/ID6_nom_sg_02.mp3", "audio/ID6_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 7,
+    "nuer": "yier",
+    "ipa": "/jé̤r/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:yiëër",
+    "senses": ["river"],
+    "sense_info": "noun;plural:rivers",
+    "examples": [
+      {
+        "nuer": "Cä yier guɔ̱ɔ̱r pan.",
+        "english": "I followed a river yesterday."
+      },
+      {
+        "nuer": "Cä yiëër guɔ̱ɔ̱r pan.",
+        "english": "I followed rivers yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID7_nom_sg_03.mp3", "audio/ID7_nom_pl_03.mp3"],
+    "dialect": "Bentiu dialect"
+  },
+  {
+    "id": 8,
+    "nuer": "pɔ̱a̱a̱r",
+    "ipa": "/pɔ̤̀a̤a̤a̤r/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:pɔ̱ɔ̱r",
+    "senses": ["waterbuck"],
+    "sense_info": "noun;plural:waterbucks",
+    "examples": [
+      {
+        "nuer": "Cä pɔ̱a̱a̱r guɔ̱ɔ̱r pan.",
+        "english": "I followed a waterbuck yesterday."
+      },
+      {
+        "nuer": "Cä pɔ̱ɔ̱r guɔ̱ɔ̱r pan.",
+        "english": "I followed waterbucks yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID8_nom_sg_02.mp3", "audio/ID8_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 9,
+    "nuer": "thäk",
+    "ipa": "/t̪ʌ̤́ʌ̤k/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:thääk",
+    "senses": ["ox"],
+    "sense_info": "noun;plural:oxen",
+    "examples": [
+      {
+        "nuer": "Cä thäk kɔk pan.",
+        "english": "I bought an ox yesterday."
+      },
+      {
+        "nuer": "Cä thääk kɔk pan.",
+        "english": "I bought oxen yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID9_nom_sg_03.mp3", "audio/ID9_nom_pl_03.mp3"],
+    "dialect": "Bentiu dialect"
+  },
+  {
+    "id": 10,
+    "nuer": "thak",
+    "ipa": "/t̪âak/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:thääk",
+    "senses": ["mudbowl"],
+    "sense_info": "noun;plural:mudbowls",
+    "examples": [
+      {
+        "nuer": "Cä thak kɔk pan.",
+        "english": "I bought a mudbowl yesterday."
+      },
+      {
+        "nuer": "Cä thääk kɔk pan.",
+        "english": "I bought mudbowls yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID10_nom_sg_02.mp3", "audio/ID10_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 11,
+    "nuer": "thɔ̱l",
+    "ipa": "/t̪ɔ̤̌ɔ̤l/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:thɔ̱ɔ̱l",
+    "senses": ["snake", "serpent"],
+    "sense_info": "noun;plural:snakes",
+    "examples": [
+      {
+        "nuer": "Cä thɔ̱l kɔk pan.",
+        "english": "I bought a snake yesterday."
+      },
+      {
+        "nuer": "Cä thɔ̱ɔ̱l kɔk pan.",
+        "english": "I bought snakes yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID11_nom_sg_02.mp3", "audio/ID11_nom_sg_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 12,
+    "nuer": "tuɔɔŋ",
+    "ipa": "/tʊ̀ɔɔɔŋ/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:toŋ",
+    "senses": ["egg"],
+    "sense_info": "noun;plural:eggs",
+    "examples": [
+      {
+        "nuer": "Cä tuɔɔŋ  kɔk pan.",
+        "english": "I bought an egg yesterday."
+      },
+      {
+        "nuer": "Cä toŋ kɔk pan.",
+        "english": "I bought eggs yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID12_nom_sg_02.mp3", "audio/ID12_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 13,
+    "nuer": "duɔɔŋ",
+    "ipa": "/dʊ̀ɔɔɔŋ/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:doŋ",
+    "senses": ["bead (made from ostrich eggshell)"],
+    "sense_info": "noun;plural:beads",
+    "examples": [
+      {
+        "nuer": "Cä duɔɔŋ  kɔk pan.",
+        "english": "I bought an eggshell bead yesterday."
+      },
+      {
+        "nuer": "Cä doŋ kɔk pan.",
+        "english": "I bought eggshell beads yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID13_nom_sg_02.mp3", "audio/ID13_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 14,
+    "nuer": "liɛɛr",
+    "ipa": "/(a)lɪ̂ɛɛɛr/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:li̱eeri",
+    "senses": ["pitcher"],
+    "sense_info": "noun;plural:pitchers",
+    "examples": [
+      {
+        "nuer": "Cä liɛɛr kɔk pan.",
+        "english": "I bought a pitcher yesterday."
+      },
+      {
+        "nuer": "Cä li̱eeri kɔk pan.",
+        "english": "I bought pitchers yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID14_nom_sg_03.mp3", "audio/ID14_nom_pl_03.mp3"],
+    "dialect": "Bentiu dialect"
+  },
+  {
+    "id": 15,
+    "nuer": "yaŋ",
+    "ipa": "/jǎaŋ/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:ɣɔ̱k",
+    "senses": ["cow"],
+    "sense_info": "noun;plural:cows, cattle",
+    "examples": [
+      {
+        "nuer": "Cä yaŋ col pan.",
+        "english": "I compensated for the cow yesterday."
+      },
+      {
+        "nuer": "Cä ɣɔ̱k col pan.",
+        "english": "I compensated for the cows yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID15_nom_sg_03.mp3", "audio/ID15_nom_pl_03.mp3"],
+    "dialect": "Bentiu dialect"
+  },
+  {
+    "id": 16,
+    "nuer": "bith",
+    "ipa": "/bìt̪/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:bi̱eeth",
+    "senses": ["spear, round"],
+    "sense_info": "noun;plural:spears",
+    "examples": [
+      {
+        "nuer": "Cä bith kɔk pan.",
+        "english": "I bought a round spear yesterday."
+      },
+      {
+        "nuer": "Cä bi̱eeth kɔk pan.",
+        "english": "I bought round spears yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID16_nom_sg_02.mp3", "audio/ID16_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 17,
+    "nuer": "puɔ̱ny",
+    "ipa": "/pwɔ̤́ɔ̤ɲ/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:pua̱ny",
+    "senses": ["body"],
+    "sense_info": "noun;plural:bodies",
+    "examples": [
+      {
+        "nuer": "Cä puɔ̱ny nɛn pan.",
+        "english": "I saw a body yesterday."
+      },
+      {
+        "nuer": "Cä pua̱ny nɛn pan.",
+        "english": "I saw bodies yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID17_nom_sg_02.mp3", "audio/ID17_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 18,
+    "nuer": "rɔaam",
+    "ipa": "/rɔ̀aaam/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:rɔɔm",
+    "senses": ["sheep"],
+    "sense_info": "noun;plural:sheep",
+    "examples": [
+      {
+        "nuer": "Cä rɔaam kɔk pan.",
+        "english": "I bought a sheep yesterday."
+      },
+      {
+        "nuer": "Cä rɔɔm kɔk pan.",
+        "english": "I bought sheep yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID18_nom_sg_02.mp3", "audio/ID18_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 19,
+    "nuer": "rup",
+    "ipa": "/rṳ́ṳp/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:ruɔ̱p",
+    "senses": ["forest"],
+    "sense_info": "noun;plural:forests",
+    "examples": [
+      {
+        "nuer": "Cä rup nɛn pan.",
+        "english": "I saw a forest yesterday."
+      },
+      {
+        "nuer": "Cä ruɔ̱p nɛn pan.",
+        "english": "I saw forests yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID19_nom_sg_02.mp3", "audio/ID19_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 20,
+    "nuer": "thɔ̱a̱a̱n",
+    "ipa": "/t̪ɔ̤̀a̤a̤a̤n/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:thɔ̱ɔ̱n",
+    "senses": ["serval", "cheetah"],
+    "sense_info": "noun;plural:servals",
+    "examples": [
+      {
+        "nuer": "Cä thɔ̱a̱a̱n kɔk pan.",
+        "english": "I bought a serval cat yesterday."
+      },
+      {
+        "nuer": "Cä thɔ̱ɔ̱n kɔk pan.",
+        "english": "I bought serval cats yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID20_nom_sg_02.mp3", "audio/ID20_nom_sg_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 21,
+    "nuer": "thaak",
+    "ipa": "/t̪âaak/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:thaakni",
+    "senses": ["watch", "clock"],
+    "sense_info": "noun;plural:watches",
+    "examples": [
+      {
+        "nuer": "Cä thaak kɔk pan.",
+        "english": "I bought a watch yesterday."
+      },
+      {
+        "nuer": "Cä thaakni kɔk pan.",
+        "english": "I bought watches yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID21_nom_sg_02.mp3", "audio/ID21_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 42,
+    "nuer": "cak",
+    "ipa": "/(a)càk/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:cakni",
+    "senses": ["tick"],
+    "sense_info": "noun;plural:ticks",
+    "examples": [
+      {
+        "nuer": "Cä cak nɛn pan.",
+        "english": "I saw a tick."
+      },
+      {
+        "nuer": "Cä caak nɛn pan.",
+        "english": "I saw ticks."
+      }
+    ],
+    "audio_files": ["audio/ID42_nom_sg_04.mp3", "audio/ID42_nom_pl_04.mp3"],
+    "dialect": "Jikany Gatjiak dialect"
+  },
+  {
+    "id": 43,
+    "nuer": "cak",
+    "ipa": "/câak/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:cak",
+    "senses": ["milk"],
+    "sense_info": "noun;plural:milk",
+    "examples": [
+      {
+        "nuer": "Cä cak kɔk pan.",
+        "english": "I bought milk yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID43_nom_pl_03.mp3"],
+    "dialect": "Bentiu dialect"
+  },
+  {
+    "id": 44,
+    "nuer": "cuur",
+    "ipa": "/cṳ̀ṳṳr/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:cuɔ̱r",
+    "senses": ["catfish (large)"],
+    "sense_info": "noun;plural:catfish (large)",
+    "examples": [
+      {
+        "nuer": "Cä cuur kɔk pan.",
+        "english": "I bought a big catfish yesterday."
+      },
+      {
+        "nuer": "Cä cuɔ̱r kɔk pan.",
+        "english": "I bought big catfishes yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID44_nom_sg_02.mp3", "audio/ID44_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 45,
+    "nuer": "luak",
+    "ipa": "/lwâak/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:lueek",
+    "senses": ["cow byre", "barn"],
+    "sense_info": "noun;plural:cow byres",
+    "examples": [
+      {
+        "nuer": "Cä luak kɔk pan.",
+        "english": "I bought a cow byre yesterday."
+      },
+      {
+        "nuer": "Cä lueek kɔk pan.",
+        "english": "I bought cow byres yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID45_nom_sg_02.mp3", "audio/ID45_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 46,
+    "nuer": "thi̱l",
+    "ipa": "/t̪í̤i̤l/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:thi̱i̱l",
+    "senses": ["kob antelope"],
+    "sense_info": "noun;plural:kob antelopes",
+    "examples": [
+      {
+        "nuer": "Cä thi̱l kɔk pan.",
+        "english": "I bought a kob antelope yesterday."
+      },
+      {
+        "nuer": "Cä thi̱i̱l kɔk pan.",
+        "english": "I bought kob antelopes yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID46_nom_sg_02.mp3", "audio/ID46_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 47,
+    "nuer": "pet",
+    "ipa": "/pé̤e̤t/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:pet",
+    "senses": ["clavicle"],
+    "sense_info": "noun;plural:clavicles",
+    "examples": [
+      {
+        "nuer": "Cä pet kɔk pan.",
+        "english": "I bought a clavicle yesterday."
+      },
+      {
+        "nuer": "Cä pet kɔk pan.",
+        "english": "I bought clavicles yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID47_nom_sg_02.mp3", "audio/ID47_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 48,
+    "nuer": "yew",
+    "ipa": "/jè̤w/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:yëw",
+    "senses": ["catfish"],
+    "sense_info": "noun;plural:catfish",
+    "examples": [
+      {
+        "nuer": "Cä yew kɔk pan.",
+        "english": "I bought a catfish yesterday."
+      },
+      {
+        "nuer": "Cä yëw kɔk pan.",
+        "english": "I bought catfishes yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID48_nom_sg_02.mp3", "audio/ID48_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 49,
+    "nuer": "cuɔɔr",
+    "ipa": "/cʊ̂ɔɔɔr/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:cor",
+    "senses": ["vulture"],
+    "sense_info": "noun;plural:vultures",
+    "examples": [
+      {
+        "nuer": "Cä cuɔɔr kɔk pan.",
+        "english": "I bought a vulture yesterday."
+      },
+      {
+        "nuer": "Cä cor kɔk pan.",
+        "english": "I bought vultures yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID49_nom_sg_02.mp3", "audio/ID49_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 50,
+    "nuer": "kɔm",
+    "ipa": "/kɔ̂ɔm/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:kɔamni",
+    "senses": ["chair"],
+    "sense_info": "noun;plural:chairs",
+    "examples": [
+      {
+        "nuer": "Cä kɔm kɔk pan.",
+        "english": "I bought a chair yesterday."
+      },
+      {
+        "nuer": "Cä kɔamni kɔk pan.",
+        "english": "I bought chairs yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID50_nom_sg_02.mp3", "audio/ID50_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 51,
+    "nuer": "kɔ̱m",
+    "ipa": "/kɔ̤́m/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:kɔ̱a̱a̱m",
+    "senses": ["insect"],
+    "sense_info": "noun;plural:insects",
+    "examples": [
+      {
+        "nuer": "Cä kɔ̱m kɔk pan.",
+        "english": "I saw an insect yesterday."
+      },
+      {
+        "nuer": "Cä kɔ̱a̱a̱m kɔk pan.",
+        "english": "I saw insects yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID51_nom_sg_02.mp3", "audio/ID51_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 52,
+    "nuer": "thiɛl",
+    "ipa": "/(a)t̪ìɛl/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:thiɛli",
+    "senses": ["thistle"],
+    "sense_info": "noun;plural:thistles",
+    "examples": [
+      {
+        "nuer": "Cä thiɛl kɔk pan.",
+        "english": "I bought a thistle yesterday."
+      },
+      {
+        "nuer": "Cä thil kɔk pan.",
+        "english": "I bought thistle plants yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID52_nom_sg_02.mp3", "audio/ID52_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 53,
+    "nuer": "ri̱ŋ",
+    "ipa": "/rí̤i̤ŋ/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:ri̱ŋ",
+    "senses": ["meat"],
+    "sense_info": "noun;plural:meats",
+    "examples": [
+      {
+        "nuer": "Cä ri̱ŋ kɔk pan.",
+        "english": "I bought a piece of meat yesterday."
+      },
+      {
+        "nuer": "Cä ri̱ŋ kɔk pan.",
+        "english": "I bought (many pieces of) meat yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID53_nom_sg_02.mp3", "audio/ID53_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 54,
+    "nuer": "lɔ̱a̱t",
+    "ipa": "/lɔ̤̀a̤t/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:lɔ̱a̱a̱t",
+    "senses": ["maggot"],
+    "sense_info": "noun;plural:maggots",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 55,
+    "nuer": "guuk",
+    "ipa": "/(a)gṳ̌ṳṳk/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:guɔ̱kni",
+    "senses": ["dove"],
+    "sense_info": "noun;plural:doves",
+    "examples": [
+      {
+        "nuer": "Cä guuk kɔk pan.",
+        "english": "I bought a dove yesterday."
+      },
+      {
+        "nuer": "Cä guɔ̱kni kɔk pan.",
+        "english": "I bought doves yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID55_nom_sg_02.mp3", "audio/ID55_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 56,
+    "nuer": "rak",
+    "ipa": "/râk/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:raakni",
+    "senses": ["grasshopper"],
+    "sense_info": "noun;plural:grasshoppers",
+    "examples": [
+      {
+        "nuer": "Cä rak kɔk pan.",
+        "english": "I bought a grasshopper yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID56_nom_sg_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 57,
+    "nuer": "guɔŋ",
+    "ipa": "/(a)gʊ̌ɔŋ/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:goŋ",
+    "senses": ["helmeted guineafowl"],
+    "sense_info": "noun;plural:helmeted guineafowls",
+    "examples": [
+      {
+        "nuer": "Cä guɔŋ nɛn pan.",
+        "english": "I saw a guineafowl yesterday."
+      },
+      {
+        "nuer": "Cä goŋ nɛn pan.",
+        "english": "I saw guineafowls yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID57_nom_sg_02.mp3", "audio/ID57_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 58,
+    "nuer": "kuɔl",
+    "ipa": "/kʊ̂ɔl/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:kuɔli",
+    "senses": ["kuɔl cucumber"],
+    "sense_info": "noun;plural:kuɔl cucumbers",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 59,
+    "nuer": "ka̱p",
+    "ipa": "/(a)kà̤p/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:ka̱a̱p",
+    "senses": ["canine tooth"],
+    "sense_info": "noun;plural:canine teeth",
+    "examples": [
+      {
+        "nuer": "Cä ka̱p nɛn pan.",
+        "english": "I saw a canine tooth yesterday."
+      },
+      {
+        "nuer": "Cä ka̱a̱p nɛn pan.",
+        "english": "I saw canine teeth yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID59_nom_sg_02.mp3", "audio/ID59_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 60,
+    "nuer": "wuut",
+    "ipa": "/wṳ̀ṳṳt/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:wuɔ̱t",
+    "senses": ["ostrich"],
+    "sense_info": "noun;plural:ostriches",
+    "examples": [
+      {
+        "nuer": "Cä wuut kɔk pan.",
+        "english": "I bought an ostrich yesterday."
+      },
+      {
+        "nuer": "Cä wuɔ̱t kɔk pan.",
+        "english": "I bought ostriches yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID60_nom_sg_02.mp3", "audio/ID60_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 61,
+    "nuer": "cieŋ",
+    "ipa": "/cɪ̂ɪŋ/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:ciëëŋ",
+    "senses": ["home", "dwelling"],
+    "sense_info": "noun;plural:homes",
+    "examples": [
+      {
+        "nuer": "Cä ciëŋ  kɔk pan.",
+        "english": "I bought a home yesterday."
+      },
+      {
+        "nuer": "Cä ciëëŋ  kɔk pan.",
+        "english": "I bought homes yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID61_nom_sg_02.mp3", "audio/ID61_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 62,
+    "nuer": "duel",
+    "ipa": "/dwě̤e̤l/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:duël",
+    "senses": ["room", "house (esp. for women)"],
+    "sense_info": "noun;plural:rooms",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 63,
+    "nuer": "mo̱k",
+    "ipa": "/mó̤k/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:mök",
+    "senses": ["buffalo"],
+    "sense_info": "noun;plural:buffalo; buffalos",
+    "examples": [
+      {
+        "nuer": "Cä mo̱k  guɔ̱ɔ̱r pan.",
+        "english": "I followed a buffalo yesterday."
+      },
+      {
+        "nuer": "Cä mök guɔ̱ɔ̱r pan.",
+        "english": "I followed buffalos yesterday."
+      }
+    ],
+    "audio_files": [],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 99,
+    "nuer": "ŋɔ̱a̱r",
+    "ipa": "/ŋɔ̤̀a̤r/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:ŋɔ̱a̱a̱r",
+    "senses": ["bean"],
+    "sense_info": "noun;plural:beans",
+    "examples": [
+      {
+        "nuer": "Cä ŋɔ̱a̱r kɔk pan.",
+        "english": "I bought a bean yesterday."
+      },
+      {
+        "nuer": "Cä ŋɔ̱a̱a̱r kɔk pan.",
+        "english": "I bought beans yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID99_nom_sg_02.mp3", "audio/ID99_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 100,
+    "nuer": "tuut",
+    "ipa": "/tṳ́ṳṳt/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:tut",
+    "senses": ["bull"],
+    "sense_info": "noun;plural:bulls",
+    "examples": [
+      {
+        "nuer": "Cä tuut kɔk pan.",
+        "english": "I bought a bull yesterday."
+      },
+      {
+        "nuer": "Cä tut kɔk pan.",
+        "english": "I bought bulls yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID100_nom_sg_02.mp3", "audio/ID100_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 101,
+    "nuer": "lo̱k",
+    "ipa": "/ló̤o̤k/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:lök",
+    "senses": ["navel", "belly button", "umbilical cord"],
+    "sense_info": "noun;plural:navels",
+    "examples": [
+      {
+        "nuer": "Cä lo̱k nɛn pan.",
+        "english": "I saw a belly button yesterday."
+      },
+      {
+        "nuer": "Cä lök nɛn pan.",
+        "english": "I saw belly buttons yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID101_nom_sg_02.mp3", "audio/ID101_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 102,
+    "nuer": "lo̱c",
+    "ipa": "/ló̤o̤c/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:löc",
+    "senses": ["peg"],
+    "sense_info": "noun;plural:pegs",
+    "examples": [
+      {
+        "nuer": "Cä lo̱c kɔk pan.",
+        "english": "I bought a peg yesterday."
+      },
+      {
+        "nuer": "Cä löc kɔk pan.",
+        "english": "I bought pegs yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID102_nom_sg_02.mp3", "audio/ID102_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 103,
+    "nuer": "liɛt",
+    "ipa": "/lìɛt/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:lit",
+    "senses": ["sand"],
+    "sense_info": "noun;plural:sands",
+    "examples": [
+      {
+        "nuer": "Cä liɛt kɔk pan.",
+        "english": "I bought (one grain of) sand yesterday."
+      },
+      {
+        "nuer": "Cä lit kɔk pan.",
+        "english": "I bought sand yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID103_nom_sg_02.mp3", "audio/ID103_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 104,
+    "nuer": "dɔr",
+    "ipa": "/dɔ̀ɔr/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:dɔar",
+    "senses": ["wilderness"],
+    "sense_info": "noun;plural:wildernesses",
+    "examples": [
+      {
+        "nuer": "Cä dɔr nɛn pan.",
+        "english": "I saw wilderness yesterday."
+      },
+      {
+        "nuer": "Cä dɔar nɛn pan.",
+        "english": "I saw wildernesses yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID104_nom_sg_03.mp3", "audio/ID104_nom_pl_03.mp3"],
+    "dialect": "Bentiu dialect"
+  },
+  {
+    "id": 105,
+    "nuer": "mut",
+    "ipa": "/mṳ́t/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:mutni",
+    "senses": ["spear"],
+    "sense_info": "noun;plural:spears",
+    "examples": [
+      {
+        "nuer": "Cä mut kɔk pan.",
+        "english": "I bought a spear yesterday."
+      },
+      {
+        "nuer": "Cä mutni kɔk pan.",
+        "english": "I bought spears yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID105_nom_sg_02.mp3", "audio/ID105_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 106,
+    "nuer": "wum",
+    "ipa": "/wṳ̌m/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:wum",
+    "senses": ["nose"],
+    "sense_info": "noun;plural:noses",
+    "examples": [
+      {
+        "nuer": "Cä wum nɛn pan.",
+        "english": "I saw a nose yesterday."
+      },
+      {
+        "nuer": "Cä wum nɛn pan.",
+        "english": "I saw noses yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID106_nom_sg_02.mp3", "audio/ID106_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 107,
+    "nuer": "lɛt",
+    "ipa": "/lɛ̂t/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:lëët",
+    "senses": ["beast"],
+    "sense_info": "noun;plural:beasts",
+    "examples": [
+      {
+        "nuer": "Cä lɛt guɔ̱ɔ̱r pan.",
+        "english": "I followed a beast yesterday."
+      },
+      {
+        "nuer": "Cä lëët guɔ̱ɔ̱r pan.",
+        "english": "I followed beasts yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID107_nom_sg_02.mp3", "audio/ID107_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 108,
+    "nuer": "lɛ̈t",
+    "ipa": "/lɛ̀at/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:lëët",
+    "senses": ["hip"],
+    "sense_info": "noun;plural:hips",
+    "examples": [
+      {
+        "nuer": "Cä lɛ̈t nɛn pan.",
+        "english": "I saw a hip yesterday."
+      },
+      {
+        "nuer": "Cä lëët nɛn pan.",
+        "english": "I saw hips yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID108_nom_sg_02.mp3", "audio/ID108_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 109,
+    "nuer": "dɛl",
+    "ipa": "/dɛ̂ɛl/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:det",
+    "senses": ["goat", "sheep", "cattle"],
+    "sense_info": "noun;plural:goats",
+    "examples": [
+      {
+        "nuer": "Cä dɛl kɔk pan.",
+        "english": "I bought a goat/sheep yesterday."
+      },
+      {
+        "nuer": "Cä det kɔk pan.",
+        "english": "I bought goats/sheep yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID109_nom_sg_02.mp3", "audio/ID109_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 110,
+    "nuer": "bäär",
+    "ipa": "/(a)bʌ̤̀ʌ̤ʌ̤r/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:bääri",
+    "senses": ["arrow"],
+    "sense_info": "noun;plural:arrows",
+    "examples": [
+      {
+        "nuer": "Cä bäär kɔk pan.",
+        "english": "I bought an arrow yesterday."
+      },
+      {
+        "nuer": "Cä bääri kɔk pan.",
+        "english": "I bought arrows yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID110_nom_sg_02.mp3", "audio/ID110_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 111,
+    "nuer": "ciek",
+    "ipa": "/cjé̤k/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:män",
+    "senses": ["woman"],
+    "sense_info": "noun;plural:women",
+    "examples": [
+      {
+        "nuer": "Cä ciek guɔ̱ɔ̱r pan.",
+        "english": "I followed a woman yesterday."
+      },
+      {
+        "nuer": "Cä män guɔ̱ɔ̱r pan.",
+        "english": "I followed women yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID111_nom_sg_02.mp3", "audio/ID111_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 112,
+    "nuer": "biɛl",
+    "ipa": "/bîɛɛl/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:biɛɛl",
+    "senses": ["colour"],
+    "sense_info": "noun;plural:colours",
+    "examples": [
+      {
+        "nuer": "Cä biɛl  kɔk pan.",
+        "english": "I bought a color yesterday."
+      },
+      {
+        "nuer": "Cä biɛɛl  kɔk pan.",
+        "english": "I bought colors yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID112_nom_sg_03.mp3", "audio/ID112_nom_pl_03.mp3"],
+    "dialect": "Bentiu dialect"
+  },
+  {
+    "id": 113,
+    "nuer": "nyet",
+    "ipa": "/ɲé̤t/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:nyët",
+    "senses": ["rib"],
+    "sense_info": "noun;plural:ribs",
+    "examples": [
+      {
+        "nuer": "Cä nyet kɔk pan.",
+        "english": "I bought a rib yesterday."
+      },
+      {
+        "nuer": "Cä nyët kɔk pan.",
+        "english": "I bought ribs yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID113_nom_sg_02.mp3", "audio/ID113_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 114,
+    "nuer": "lipɛ",
+    "ipa": "/lɪ̂bɛ̀/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:li̱epɛni",
+    "senses": ["needle"],
+    "sense_info": "noun;plural:needles",
+    "examples": [
+      {
+        "nuer": "Cä lipɛ kɔk pan.",
+        "english": "I bought a needle yesterday."
+      },
+      {
+        "nuer": "Cä li̱eepɛni kɔk.",
+        "english": "I bought needles yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID114_nom_sg_02.mp3", "audio/ID114_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 115,
+    "nuer": "ŋɔ̱m",
+    "ipa": "/ŋɔ̤́ɔ̤m/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:ŋɔ̱a̱m",
+    "senses": ["knife"],
+    "sense_info": "noun;plural:knives",
+    "examples": [
+      {
+        "nuer": "Cä ŋɔ̱m kɔk pan.",
+        "english": "I bought a knife yesterday."
+      },
+      {
+        "nuer": "Cä ŋɔ̱a̱m kɔk pan.",
+        "english": "I bought knives yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID115_nom_sg_02.mp3", "audio/ID115_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 116,
+    "nuer": "dit",
+    "ipa": "/dîit/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:diit",
+    "senses": ["bird", "song"],
+    "sense_info": "noun;plural:birds",
+    "examples": [
+      {
+        "nuer": "Cä dit kɔk pan.",
+        "english": "I bought a bird yesterday."
+      },
+      {
+        "nuer": "Cä diit kɔk pan.",
+        "english": "I bought birds yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID116_nom_sg_02.mp3", "audio/ID116_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 117,
+    "nuer": "cio̱o̱k",
+    "ipa": "/cjó̤o̤o̤k/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:ciök",
+    "senses": ["leg", "foot"],
+    "sense_info": "noun;plural:legs",
+    "examples": [
+      {
+        "nuer": "Cä cio̱o̱k kɔk pan.",
+        "english": "I bought a leg yesterday."
+      },
+      {
+        "nuer": "Cä ciök kɔk pan.",
+        "english": "I bought legs yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID117_nom_sg_03.mp3", "audio/ID117_nom_pl_03.mp3"],
+    "dialect": "Bentiu dialect"
+  },
+  {
+    "id": 118,
+    "nuer": "cuɛ̈k",
+    "ipa": "/(a)cwɛ̀ak/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:cuɛ̈ɛ̈k",
+    "senses": ["twin"],
+    "sense_info": "noun;plural:twins",
+    "examples": [
+      {
+        "nuer": "Cä cuɛ̈k guɔ̱ɔ̱r pan.",
+        "english": "I followed a twin yesterday."
+      },
+      {
+        "nuer": "Cä cuɛ̈ɛ̈k guɔ̱ɔ̱r pan.",
+        "english": "I followed twins yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID118_nom_sg_03.mp3", "audio/ID118_nom_pl_03.mp3"],
+    "dialect": "Bentiu dialect"
+  },
+  {
+    "id": 145,
+    "nuer": "cɔw",
+    "ipa": "/cɔ̀w/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:cɔw",
+    "senses": ["husband"],
+    "sense_info": "noun;plural:husbands",
+    "examples": [
+      {
+        "nuer": "Cä cɔw guɔ̱ɔ̱r pan.",
+        "english": "I followed the husband yesterday."
+      },
+      {
+        "nuer": "Cä cɔw guɔ̱ɔ̱r pan.",
+        "english": "I followed the husbands yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID145_nom_sg_03.mp3", "audio/ID145_nom_pl_03.mp3"],
+    "dialect": "Bentiu dialect"
+  },
+  {
+    "id": 146,
+    "nuer": "dhɔl",
+    "ipa": "/d̪ɔ̌ɔl/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:dhɔɔl",
+    "senses": ["boy"],
+    "sense_info": "noun;plural:boys",
+    "examples": [
+      {
+        "nuer": "Cä dhɔl guɔ̱ɔ̱r pan.",
+        "english": "I followed a boy yesterday."
+      },
+      {
+        "nuer": "Cä dhɔɔl guɔ̱ɔ̱r pan.",
+        "english": "I followed boys yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID146_nom_sg_03.mp3", "audio/ID146_nom_pl_03.mp3"],
+    "dialect": "Bentiu dialect"
+  },
+  {
+    "id": 147,
+    "nuer": "dho̱l",
+    "ipa": "/d̪ǒ̤o̤o̤l/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:dho̱li",
+    "senses": ["boy"],
+    "sense_info": "noun;plural:boys; children",
+    "examples": [
+      {
+        "nuer": "Cä dho̱l guɔ̱ɔ̱r pan.",
+        "english": "I followed a boy yesterday."
+      },
+      {
+        "nuer": "Cä dho̱li guɔ̱ɔ̱r pan.",
+        "english": "I followed boys yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID147_nom_sg_03.mp3", "audio/ID147_nom_pl_03.mp3"],
+    "dialect": "Bentiu dialect"
+  },
+  {
+    "id": 148,
+    "nuer": "go̱u",
+    "ipa": "/(a)gǒ̤w/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:göwni",
+    "senses": ["water bag (made of leather)"],
+    "sense_info": "noun;plural:water bags (made of leather)",
+    "examples": [
+      {
+        "nuer": "Cä go̱w kɔk pan.",
+        "english": "I bought a water bag yesterday."
+      },
+      {
+        "nuer": "Cä göwni kɔk pan.",
+        "english": "I bought water bags yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID148_nom_sg_02.mp3", "audio/ID148_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 149,
+    "nuer": "guɔ̱r",
+    "ipa": "/gwɔ̤́ɔ̤r/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:guɔ̱r",
+    "senses": ["elephant"],
+    "sense_info": "noun;plural:elephants",
+    "examples": [
+      {
+        "nuer": "Cä guɔ̱ɔ̱r guɔ̱ɔ̱r pan.",
+        "english": "I followed an elephant yesterday."
+      },
+      {
+        "nuer": "Cä guɔ̱r guɔ̱ɔ̱r pan.",
+        "english": "I followed elephants yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID149_nom_sg_02.mp3", "audio/ID149_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 150,
+    "nuer": "kuac",
+    "ipa": "/kwǎc/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:kuaac",
+    "senses": ["leopard"],
+    "sense_info": "noun;plural:leopards",
+    "examples": [
+      {
+        "nuer": "Cä kuac guɔ̱ɔ̱r pan.",
+        "english": "I followed a leopard yesterday."
+      },
+      {
+        "nuer": "Cä kuaac guɔ̱ɔ̱r pan.",
+        "english": "I followed leopards yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID150_nom_sg_03.mp3", "audio/ID150_nom_pl_03.mp3"],
+    "dialect": "Bentiu dialect"
+  },
+  {
+    "id": 151,
+    "nuer": "ley",
+    "ipa": "/lé̤c/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:lɛc",
+    "senses": ["front tooth"],
+    "sense_info": "noun;plural:front teeth",
+    "examples": [
+      {
+        "nuer": "Cä ley  kɔk pan.",
+        "english": "I bought a front tooth yesterday."
+      },
+      {
+        "nuer": "Cä lɛc kɔk pan.",
+        "english": "I bought front teeth yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID151_nom_sg_03.mp3", "audio/ID151_nom_pl_03.mp3"],
+    "dialect": "Bentiu dialect"
+  },
+  {
+    "id": 152,
+    "nuer": "rɛɛt",
+    "ipa": "/(a)rɛ̌ɛɛt/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:rɛ̈tni",
+    "senses": ["orphan"],
+    "sense_info": "noun;plural:eels",
+    "examples": [
+      {
+        "nuer": "Cä rɛɛt guɔ̱ɔ̱r pan.",
+        "english": "I followed the orphan yesterday."
+      },
+      {
+        "nuer": "Cä rɛ̈tni guɔ̱ɔ̱r pan.",
+        "english": "I followed orphans yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID152_nom_sg_02.mp3", "audio/ID152_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 153,
+    "nuer": "juäl",
+    "ipa": "/ɉwʌ̤́l/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:jua̱l",
+    "senses": ["tail"],
+    "sense_info": "noun;plural:tails",
+    "examples": [
+      {
+        "nuer": "Cä juäl nɛn pan.",
+        "english": "I saw a tail yesterday."
+      },
+      {
+        "nuer": "Cä jua̱l nɛn pan.",
+        "english": "I saw tails yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID153_nom_sg_02.mp3", "audio/ID153_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 154,
+    "nuer": "bɛɛr",
+    "ipa": "/(a)bɛ̂ɛɛr/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:bɛ̈ri",
+    "senses": ["flag"],
+    "sense_info": "noun;plural:flags",
+    "examples": [
+      {
+        "nuer": "Cä bɛɛr kɔk pan.",
+        "english": "I bought a flag yesterday."
+      },
+      {
+        "nuer": "Cä bɛ̈ri kɔk pan.",
+        "english": "I bought flags yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID154_nom_sg_02.mp3", "audio/ID154_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 155,
+    "nuer": "riɛm",
+    "ipa": "/riɛ̂ɛm/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:rim",
+    "senses": ["blood"],
+    "sense_info": "noun;plural:bloods",
+    "examples": [
+      {
+        "nuer": "Cä riɛm nɛn pan.",
+        "english": "I saw (one) blood yesterday."
+      },
+      {
+        "nuer": "Cä rim nɛn pan.",
+        "english": "I saw blood yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID155_nom_sg_02.mp3", "audio/ID155_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 156,
+    "nuer": "lony",
+    "ipa": "/lʊ̌ɲ/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:loony",
+    "senses": ["lion"],
+    "sense_info": "noun;plural:lions",
+    "examples": [
+      {
+        "nuer": "Cä lony guɔ̱ɔ̱r pan.",
+        "english": "I followed a lion yesterday."
+      },
+      {
+        "nuer": "Cä loony guɔ̱ɔ̱r pan.",
+        "english": "I followed lions yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID156_nom_sg_02.mp3", "audio/ID156_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 157,
+    "nuer": "mër",
+    "ipa": "/mèr/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:meer",
+    "senses": ["tear"],
+    "sense_info": "noun;plural:tears",
+    "examples": [
+      {
+        "nuer": "Cä mër nɛn pan.",
+        "english": "I saw a tear yesterday."
+      },
+      {
+        "nuer": "Cä meer nɛn pan.",
+        "english": "I saw tear syesterday."
+      }
+    ],
+    "audio_files": ["audio/ID157_nom_sg_02.mp3", "audio/ID157_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 158,
+    "nuer": "mi̱i̱t",
+    "ipa": "/mì̤i̤i̤t/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:mi̱i̱tni",
+    "senses": ["rainbow"],
+    "sense_info": "noun;plural:rainbows",
+    "examples": [
+      {
+        "nuer": "Cä mi̱i̱t nɛn pan.",
+        "english": "I saw a rainbow yesterday."
+      },
+      {
+        "nuer": "Cä mi̱i̱tni nɛn pan.",
+        "english": "I saw rainbows yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID158_nom_sg_02.mp3", "audio/ID158_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 159,
+    "nuer": "nyuɛ̈r",
+    "ipa": "/ɲwɛ̀ar/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:nyuɛ̈ɛ̈r",
+    "senses": ["drop (of liquid)"],
+    "sense_info": "noun;plural:drops (of liquid)",
+    "examples": [
+      {
+        "nuer": "Cä nyuɛ̈r nɛn pan.",
+        "english": "I saw a drop yesterday."
+      },
+      {
+        "nuer": "Cä nyuɛ̈ɛ̈r nɛn pan.",
+        "english": "I saw drops yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID159_nom_sg_02.mp3", "audio/ID159_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 160,
+    "nuer": "tuŋ",
+    "ipa": "/tṳ́ṳŋ/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:tuɔ̱ŋ",
+    "senses": ["spoon, traditional"],
+    "sense_info": "noun;plural:spoons (traditional)",
+    "examples": [
+      {
+        "nuer": "Cä tuŋ kɔk pan.",
+        "english": "I bought a spoon yesterday."
+      },
+      {
+        "nuer": "Cä tuɔ̱ŋ kɔk pan.",
+        "english": "I bought spoons yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID160_nom_sg_02.mp3", "audio/ID160_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 161,
+    "nuer": "pac",
+    "ipa": "/pâac/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:pa̱a̱cni",
+    "senses": ["skirt, traditional"],
+    "sense_info": "noun;plural:skirts (traditional)",
+    "examples": [
+      {
+        "nuer": "Cä pac kɔk pan.",
+        "english": "I bought a skirt yesterday."
+      },
+      {
+        "nuer": "Cä pa̱a̱cni kɔk pan.",
+        "english": "I bought skirts yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID161_nom_sg_02.mp3", "audio/ID161_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 162,
+    "nuer": "kum",
+    "ipa": "/(a)kṳ́m/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:kuɔ̱mni",
+    "senses": ["hat", "cover"],
+    "sense_info": "noun;plural:hats",
+    "examples": [
+      {
+        "nuer": "Cä kum kɔk pan.",
+        "english": "I bought a hat yesterday."
+      },
+      {
+        "nuer": "Cä kuɔ̱mni kɔk pan.",
+        "english": "I bought hats yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID162_nom_sg_02.mp3", "audio/ID162_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 163,
+    "nuer": "rip",
+    "ipa": "/rɪ̂p/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:ri̱eepni",
+    "senses": ["fishing blade"],
+    "sense_info": "noun;plural:fishing blades",
+    "examples": [
+      {
+        "nuer": "Cä rip kɔk pan.",
+        "english": "I bought a fishing blade yesterday."
+      },
+      {
+        "nuer": "Cä ri̱eeni kɔk pan.",
+        "english": "I bought fishing blades yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID163_nom_sg_02.mp3", "audio/ID163_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 164,
+    "nuer": "kuɔc",
+    "ipa": "/kʊ̀ɔc/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:koc",
+    "senses": ["ankle"],
+    "sense_info": "noun;plural:ankles",
+    "examples": [
+      {
+        "nuer": "Cä kuɔc nɛn pan.",
+        "english": "I saw an ankle yesterday."
+      },
+      {
+        "nuer": "Cä koc nɛn pan.",
+        "english": "I saw ankles yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID164_nom_sg_02.mp3", "audio/ID164_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 190,
+    "nuer": "nyaŋ",
+    "ipa": "/ɲâaŋ/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:nyäŋ",
+    "senses": ["crocodile"],
+    "sense_info": "noun;plural:crocodiles",
+    "examples": [
+      {
+        "nuer": "Cä nyaŋ kɔk pan.",
+        "english": "I bought a crocodile yesterday."
+      },
+      {
+        "nuer": "Cä nyäŋ kɔk pan.",
+        "english": "I bought crocodiles yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID190_nom_sg_02.mp3", "audio/ID190_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 191,
+    "nuer": "ti̱k",
+    "ipa": "/tǐ̤k/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:ti̱ek",
+    "senses": ["chin"],
+    "sense_info": "noun;plural:chins",
+    "examples": [
+      {
+        "nuer": "Cä ti̱k nɛn pan.",
+        "english": "I saw a chin yesterday."
+      },
+      {
+        "nuer": "Cä ti̱ek nɛn pan.",
+        "english": "I saw chins yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID191_nom_sg_02.mp3", "audio/ID191_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 192,
+    "nuer": "thi̱i̱k",
+    "ipa": "/(a)t̪í̤i̤i̤k/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:thi̱ekni",
+    "senses": ["door"],
+    "sense_info": "noun;plural:doors",
+    "examples": [
+      {
+        "nuer": "Cä thi̱i̱k kɔk pan.",
+        "english": "I bought a door yesterday."
+      },
+      {
+        "nuer": "Cä thi̱ekni kɔk pan.",
+        "english": "I bought doors yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID192_nom_sg_02.mp3", "audio/ID192_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 193,
+    "nuer": "ko̱r",
+    "ipa": "/kó̤o̤r/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:ko̱o̱ri",
+    "senses": ["war", "battle"],
+    "sense_info": "noun;plural:wars",
+    "examples": [
+      {
+        "nuer": "Cä ko̱r nɛn pan.",
+        "english": "I saw the war yesterday."
+      },
+      {
+        "nuer": "Cä ko̱o̱ri nɛn pan.",
+        "english": "I saw wars yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID193_nom_sg_02.mp3", "audio/ID193_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 194,
+    "nuer": "bäŋ",
+    "ipa": "/bʌ̤́ʌ̤ŋ/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:ba̱ŋ",
+    "senses": ["lobby", "area before the door of a house"],
+    "sense_info": "noun;plural:lobbies",
+    "examples": [
+      {
+        "nuer": "Cä bäŋ nɛn pan.",
+        "english": "I saw the lobby yesterday."
+      },
+      {
+        "nuer": "Cä ba̱ŋ nɛn pan.",
+        "english": "I saw lobbies yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID194_nom_sg_02.mp3", "audio/ID194_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 195,
+    "nuer": "kät",
+    "ipa": "/kʌ̤́ʌ̤t/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:ka̱tni",
+    "senses": ["living area (for men)"],
+    "sense_info": "noun;plural:living areas (for men)",
+    "examples": [
+      {
+        "nuer": "Cä kät nɛn pan.",
+        "english": "I saw the men's living area yesterday."
+      },
+      {
+        "nuer": "Cä ka̱tni nɛn pan.",
+        "english": "I saw men's living areas yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID195_nom_sg_02.mp3", "audio/ID195_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 196,
+    "nuer": "gɛ̈w",
+    "ipa": "/gɛ̂aw/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:gɛ̈wni",
+    "senses": ["open living space with a fireplace"],
+    "sense_info": "noun;plural:open living spaces with a fireplace",
+    "examples": [
+      {
+        "nuer": "Cä gɛ̈w nɛn pan.",
+        "english": "I saw the living area yesterday."
+      },
+      {
+        "nuer": "Cä gɛ̈wni nɛn pan.",
+        "english": "I saw living areas yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID196_nom_sg_02.mp3", "audio/ID196_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 197,
+    "nuer": "buɔ̱t",
+    "ipa": "/bṳ̀ɔ̤t/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:buɔ̱ɔ̱t",
+    "senses": ["wound"],
+    "sense_info": "noun;plural:wounds",
+    "examples": [
+      {
+        "nuer": "Cä buɔ̱t nɛn pan.",
+        "english": "I saw the wound yesterday."
+      },
+      {
+        "nuer": "Cä búɔ̱ɔ̱t nɛn pan.",
+        "english": "I saw wounds yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID197_nom_sg_02.mp3", "audio/ID197_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 198,
+    "nuer": "lum",
+    "ipa": "/lṳ̌ṳm/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:luɔ̱m",
+    "senses": ["grass (sp.)"],
+    "sense_info": "noun;plural:grasses (sp.)",
+    "examples": [
+      {
+        "nuer": "Cä lum kɔk pan.",
+        "english": "I bought (a leaf of) grass (sp.) yesterday."
+      },
+      {
+        "nuer": "Cä luɔ̱ɔ̱m kɔk pan.",
+        "english": "I bought grass (sp.) yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID198_nom_sg_03.mp3", "audio/ID198_nom_pl_03.mp3"],
+    "dialect": "Bentiu dialect"
+  },
+  {
+    "id": 199,
+    "nuer": "kaw",
+    "ipa": "/kǎw/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:kaath",
+    "senses": ["bride"],
+    "sense_info": "noun;plural:brides",
+    "examples": [
+      {
+        "nuer": "Cä kaw nɛn pan.",
+        "english": "I saw the bride yesterday."
+      },
+      {
+        "nuer": "Cä kaath nɛn pan.",
+        "english": "I saw brides yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID199_nom_sg_02.mp3", "audio/ID199_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 200,
+    "nuer": "kaw",
+    "ipa": "/kàw/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:kaaw",
+    "senses": ["chest"],
+    "sense_info": "noun;plural:chests",
+    "examples": [
+      {
+        "nuer": "Cä kaw nɛn pan.",
+        "english": "I saw a chest yesterday."
+      },
+      {
+        "nuer": "Cä kaaw nɛn pan.",
+        "english": "I saw chests yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID200_nom_sg_02.mp3", "audio/ID200_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 201,
+    "nuer": "cuk",
+    "ipa": "/(a)cṳ̀k/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:cuɔ̱ɔ̱k",
+    "senses": ["pot (traditional)", "jar (traditional)"],
+    "sense_info": "noun;plural:pots",
+    "examples": [
+      {
+        "nuer": "Cä cuk kɔk pan.",
+        "english": "I bought a jar yesterday."
+      },
+      {
+        "nuer": "Cä cuɔ̱ɔ̱k kɔk pan.",
+        "english": "I bought jars yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID201_nom_sg_02.mp3", "audio/ID201_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 202,
+    "nuer": "bo̱l",
+    "ipa": "/bó̤l/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:böl",
+    "senses": ["flame"],
+    "sense_info": "noun;plural:flames",
+    "examples": [
+      {
+        "nuer": "Cä bo̱l nɛn pan.",
+        "english": "I saw the flame yesterday."
+      },
+      {
+        "nuer": "Cä böl nɛn pan.",
+        "english": "I saw flames yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID202_nom_sg_03.mp3", "audio/ID202_nom_pl_03.mp3"],
+    "dialect": "Bentiu dialect"
+  },
+  {
+    "id": 203,
+    "nuer": "cɔ̱k",
+    "ipa": "/(a)cɔ̤́k/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:cɔ̱a̱a̱k",
+    "senses": ["black ant"],
+    "sense_info": "noun;plural:black ants",
+    "examples": [
+      {
+        "nuer": "Cä cɔ̱k nɛn pan.",
+        "english": "I saw a black ant (sp.) yesterday."
+      },
+      {
+        "nuer": "Cä cɔ̱a̱a̱k nɛn pan.",
+        "english": "I saw black ants (sp.) yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID203_nom_sg_02.mp3", "audio/ID203_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 204,
+    "nuer": "cam",
+    "ipa": "/càam/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:cääm",
+    "senses": ["left hand"],
+    "sense_info": "noun;plural:left hands",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 205,
+    "nuer": "cuec",
+    "ipa": "/cwéc/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:cuëc",
+    "senses": ["right hand"],
+    "sense_info": "noun;plural:right hands",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 206,
+    "nuer": "dhaar",
+    "ipa": "/(a)d̪âaar/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:dhaari",
+    "senses": ["cooking pot (large)"],
+    "sense_info": "noun;plural:cooking pots (large)",
+    "examples": [
+      {
+        "nuer": "Cä dhaar kɔk pan.",
+        "english": "I bought a cooking pot yesterday."
+      },
+      {
+        "nuer": "Cä dhaari kɔk pan.",
+        "english": "I bought cooking pots yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID206_nom_sg_02.mp3", "audio/ID206_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 207,
+    "nuer": "do̱l",
+    "ipa": "/(a)dò̤l/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:dööl",
+    "senses": ["mud, hard clump of"],
+    "sense_info": "noun;plural:mud, hard clumps of",
+    "examples": [
+      {
+        "nuer": "Cä do̱l yuɔr pan.",
+        "english": "I threw a clump of mud yesterday."
+      },
+      {
+        "nuer": "Cä dööl dol pan.",
+        "english": "I collected clumps of mud yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID207_nom_sg_02.mp3", "audio/ID207_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 208,
+    "nuer": "päm",
+    "ipa": "/pʌ̤̌ʌ̤m/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:pääm",
+    "senses": ["mountain", "rock", "stone"],
+    "sense_info": "noun;plural:mountains",
+    "examples": [
+      {
+        "nuer": "Cä päm nɛn pan.",
+        "english": "I saw a mountain yesterday."
+      },
+      {
+        "nuer": "Cä pääm nɛn pan.",
+        "english": "I saw mountains yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID208_nom_sg_02.mp3", "audio/ID208_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 209,
+    "nuer": "jic",
+    "ipa": "/ɟì̤c/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:jiɛ̈ɛ̈c",
+    "senses": ["stomach"],
+    "sense_info": "noun;plural:stomachs",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 210,
+    "nuer": "kɛɛt",
+    "ipa": "/kɛ̀ɛɛt/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:kɛtni",
+    "senses": ["stick"],
+    "sense_info": "noun;plural:sticks",
+    "examples": [
+      {
+        "nuer": "Cä kɛɛt kɔk pan.",
+        "english": "I bought a stick yesterday."
+      },
+      {
+        "nuer": "Cä kɛtni kɔk pan.",
+        "english": "I bought sticks yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID210_nom_sg_02.mp3", "audio/ID210_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 211,
+    "nuer": "raan",
+    "ipa": "/rǎaan/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:naath",
+    "senses": ["person"],
+    "sense_info": "noun;plural:people; persons",
+    "examples": [
+      {
+        "nuer": "Cä raan guɔ̱ɔ̱r pan.",
+        "english": "I followed a person yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID211_nom_sg_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 237,
+    "nuer": "tuar",
+    "ipa": "/twǎr/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:tuaari",
+    "senses": ["song (k.o.)"],
+    "sense_info": "noun;plural:songs (k.o.)",
+    "examples": [
+      {
+        "nuer": "Cä tuar liŋ pan.",
+        "english": "I heard a song yesterday."
+      },
+      {
+        "nuer": "Cä tuaari liŋ pan.",
+        "english": "I heard songs yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID237_nom_sg_02.mp3", "audio/ID237_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 238,
+    "nuer": "diaar",
+    "ipa": "/(a)djâaar/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:diari",
+    "senses": ["gourd (sp.)"],
+    "sense_info": "noun;plural:gourds (sp.)",
+    "examples": [
+      {
+        "nuer": "Cä diaar nɛn pan.",
+        "english": "I saw a gourd yesterday."
+      },
+      {
+        "nuer": "Cä diari nɛn pan.",
+        "english": "I saw gourds yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID238_nom_sg_02.mp3", "audio/ID238_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 239,
+    "nuer": "lo̱o̱l",
+    "ipa": "/(a)lò̤o̤o̤l/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:löli",
+    "senses": ["valley"],
+    "sense_info": "noun;plural:valleys",
+    "examples": [
+      {
+        "nuer": "Cä lo̱o̱l nɛn pan.",
+        "english": "I saw a valley yesterday."
+      },
+      {
+        "nuer": "Cä löli nɛn pan.",
+        "english": "I saw valleys yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID239_nom_sg_02.mp3", "audio/ID239_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 240,
+    "nuer": "dep",
+    "ipa": "/dé̤e̤p/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:dëp",
+    "senses": ["rope (for tying cattle)", "leash"],
+    "sense_info": "noun;plural:ropes (for tying cattle)",
+    "examples": [
+      {
+        "nuer": "Cä dep kɔk pan.",
+        "english": "I bought a leash yesterday."
+      },
+      {
+        "nuer": "Cä dëp kɔk pan.",
+        "english": "I bought leashes yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID240_nom_sg_02.mp3", "audio/ID240_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 241,
+    "nuer": "juac",
+    "ipa": "/(a)ɟwàc/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:juaac",
+    "senses": ["grass (sp.)"],
+    "sense_info": "noun;plural:grasses (sp.) (only used for different types or units of grass)",
+    "examples": [
+      {
+        "nuer": "Cä juac kɔk pan.",
+        "english": "I bought (a leaf of) grass (sp.) yesterday."
+      },
+      {
+        "nuer": "Cä juaac kɔk pan.",
+        "english": "I bought grass (sp.) yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID241_nom_sg_03.mp3", "audio/ID241_nom_pl_03.mp3"],
+    "dialect": "Bentiu dialect"
+  },
+  {
+    "id": 242,
+    "nuer": "jal",
+    "ipa": "/(a)ɟàl/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:jaali",
+    "senses": ["bird (sp.)"],
+    "sense_info": "noun;plural:birds (sp.)",
+    "examples": [
+      {
+        "nuer": "Cä jal guɔ̱ɔ̱r pan.",
+        "english": "I followed a bird (sp.) yesterday."
+      },
+      {
+        "nuer": "Cä jaali guɔ̱ɔ̱r pan.",
+        "english": "I followed birds (sp.) yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID242_nom_sg_02.mp3", "audio/ID242_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 243,
+    "nuer": "thom",
+    "ipa": "/t̪ʊ̂ʊm/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:thuɔmni",
+    "senses": ["bowl lyre", "tambura"],
+    "sense_info": "noun;plural:bowl lyres",
+    "examples": [
+      {
+        "nuer": "Cä thom kɔk pan.",
+        "english": "I bought a string instrument yesterday."
+      },
+      {
+        "nuer": "Cä thuɔmni kɔk pan.",
+        "english": "I bought string instruments yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID243_nom_sg_02.mp3", "audio/ID243_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 244,
+    "nuer": "toc",
+    "ipa": "/tʊ̂ʊc/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:tuɔc",
+    "senses": ["swamp"],
+    "sense_info": "noun;plural:swamps",
+    "examples": [
+      {
+        "nuer": "Cä toc nɛn pan.",
+        "english": "I saw a swamp yesterday."
+      },
+      {
+        "nuer": "Cä tuɔc nɛn pan.",
+        "english": "I saw swamps yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID244_nom_sg_02.mp3", "audio/ID244_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 245,
+    "nuer": "puɔ̱th",
+    "ipa": "/pṳ̌ɔ̤θ/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:puɔ̱th",
+    "senses": ["lung"],
+    "sense_info": "noun;plural:lungs",
+    "examples": [
+      {
+        "nuer": "Cä puɔ̱th nɛn pan.",
+        "english": "I saw a lung yesterday."
+      },
+      {
+        "nuer": "Cä puɔ̱th nɛn pan.",
+        "english": "I saw lungs yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID245_nom_sg_02.mp3", "audio/ID245_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 246,
+    "nuer": "ti̱k",
+    "ipa": "/tí̤i̤k/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:ti̱ek",
+    "senses": ["cloud (over the sun)"],
+    "sense_info": "noun;plural:clouds (over the sun)",
+    "examples": [
+      {
+        "nuer": "Cä ti̱k guɔ̱ɔ̱r pan.",
+        "english": "I followed a cloud yesterday."
+      },
+      {
+        "nuer": "Cä ti̱ek guɔ̱ɔ̱r pan.",
+        "english": "I followed clouds yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID246_nom_sg_02.mp3", "audio/ID246_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 247,
+    "nuer": "mun",
+    "ipa": "/mṳ̌ṳn/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:muɔ̱n",
+    "senses": ["earth", "soil"],
+    "sense_info": "noun;plural:soils",
+    "examples": [
+      {
+        "nuer": "Cä mun pur pan.",
+        "english": "I dug the soil yesterday."
+      },
+      {
+        "nuer": "Cä muɔ̱n pur pan.",
+        "english": "I cultivated the soils yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID247_nom_sg_03.mp3", "audio/ID247_nom_pl_03.mp3"],
+    "dialect": "Bentiu dialect"
+  },
+  {
+    "id": 248,
+    "nuer": "kue̱y",
+    "ipa": "/kwè̤j/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:kuëth",
+    "senses": ["African fish eagle"],
+    "sense_info": "noun;plural:African fish eagles",
+    "examples": [
+      {
+        "nuer": "Cä kue̱y guɔ̱ɔ̱r pan.",
+        "english": "I followed a fish eagle yesterday."
+      },
+      {
+        "nuer": "Cä kuëth guɔ̱ɔ̱r pan.",
+        "english": "I followed fish eagles yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID248_nom_sg_02.mp3", "audio/ID248_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 249,
+    "nuer": "jur",
+    "ipa": "/ɉṳ́r/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:juur",
+    "senses": ["foreigner"],
+    "sense_info": "noun;plural:foreigners",
+    "examples": [
+      {
+        "nuer": "Cä jur guɔ̱ɔ̱r pan.",
+        "english": "I followed a foreigner yesterday."
+      },
+      {
+        "nuer": "Cä juur guɔ̱ɔ̱r pan.",
+        "english": "I followed foreigners yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID249_nom_sg_02.mp3", "audio/ID249_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 250,
+    "nuer": "gat",
+    "ipa": "/gàt/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:gaat",
+    "senses": ["child"],
+    "sense_info": "noun;plural:children",
+    "examples": [
+      {
+        "nuer": "Cä gat dwäc pan.",
+        "english": "I caned a child yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID250_nom_sg_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 251,
+    "nuer": "neen",
+    "ipa": "/nè̤e̤e̤n/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:ne̱e̱ni",
+    "senses": ["mirror"],
+    "sense_info": "noun;plural:mirrors",
+    "examples": [
+      {
+        "nuer": "Cä neen nɛn pan.",
+        "english": "I saw a mirror yesterday."
+      },
+      {
+        "nuer": "Cä ne̱e̱ni nɛn pan.",
+        "english": "I bought mirrors yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID251_nom_sg_02.mp3", "audio/ID251_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 252,
+    "nuer": "do̱r",
+    "ipa": "/dó̤o̤r/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:dör",
+    "senses": ["floor"],
+    "sense_info": "noun;plural:floors",
+    "examples": [
+      {
+        "nuer": "Cä do̱r nɛn pan.",
+        "english": "I saw floor yesterday."
+      },
+      {
+        "nuer": "Cä dör nɛn pan.",
+        "english": "I saw floors yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID252_nom_sg_02.mp3", "audio/ID252_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 253,
+    "nuer": "thurbil",
+    "ipa": "/t̪ṳ̀rbɪ̂l/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:thurbiɛli",
+    "senses": ["car", "automobile"],
+    "sense_info": "noun;plural:cars",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 254,
+    "nuer": "kaar",
+    "ipa": "/kàaar/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:kar",
+    "senses": ["branch"],
+    "sense_info": "noun;plural:branches",
+    "examples": [
+      {
+        "nuer": "Cä kaar kɔk pan.",
+        "english": "I bought a branch yesterday."
+      },
+      {
+        "nuer": "Cä kar kɔk pan.",
+        "english": "I bought branches yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID254_nom_sg_03.mp3", "audio/ID254_nom_pl_03.mp3"],
+    "dialect": "Bentiu dialect"
+  },
+  {
+    "id": 255,
+    "nuer": "gua̱a̱th",
+    "ipa": "/gwá̤a̤a̤ð/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:gua̱th",
+    "senses": ["place", "location", "point in time"],
+    "sense_info": "noun;plural:places",
+    "examples": [
+      {
+        "nuer": "Cä gua̱a̱th kɔk pan.",
+        "english": "I bought a place yesterday."
+      },
+      {
+        "nuer": "Cä gua̱th kɔk pan.",
+        "english": "I bought places yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID255_nom_sg_03.mp3", "audio/ID255_nom_pl_03.mp3"],
+    "dialect": "Bentiu dialect"
+  },
+  {
+    "id": 256,
+    "nuer": "liɛɛth",
+    "ipa": "/lɪ̂ɛɛɛð/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:lith",
+    "senses": ["butter"],
+    "sense_info": "noun;plural:butters",
+    "examples": [
+      {
+        "nuer": "Cä liɛɛth kɔk pan.",
+        "english": "I bought (a piece of) butter yesterday."
+      },
+      {
+        "nuer": "Cä lith kɔk pan.",
+        "english": "I bought butter yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID256_nom_sg_03.mp3", "audio/ID256_nom_pl_03.mp3"],
+    "dialect": "Bentiu dialect"
+  },
+  {
+    "id": 257,
+    "nuer": "kuɔth",
+    "ipa": "/kʊ̂t̪/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:kuth",
+    "senses": ["god"],
+    "sense_info": "noun;plural:gods",
+    "examples": [
+      {
+        "nuer": "Cä kuɔth nɛn pan.",
+        "english": "I saw a god yesterday."
+      },
+      {
+        "nuer": "Cä kuth nɛn pan.",
+        "english": "I saw gods yesterday."
+      }
+    ],
+    "audio_files": [],
+    "dialect": "Bentiu dialect"
+  },
+  {
+    "id": 283,
+    "nuer": "kɔaŋ",
+    "ipa": "/kɔ̂aŋ/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:kɔaaŋ",
+    "senses": ["alcohol", "alcoholic beverage"],
+    "sense_info": "noun;plural:alcoholic beverages",
+    "examples": [
+      {
+        "nuer": "Cä kɔaŋ kɔk pan.",
+        "english": "I bought (one bottle of) alcohol yesterday."
+      },
+      {
+        "nuer": "Cä kɔaaŋ kɔk pan.",
+        "english": "I bought alcohol yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID283_nom_sg_02.mp3", "audio/ID283_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 284,
+    "nuer": "thɔ̱w",
+    "ipa": "/t̪ɔ̤́w/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:thɔ̱a̱a̱r",
+    "senses": ["desert date", "date"],
+    "sense_info": "noun;plural:desert dates",
+    "examples": [
+      {
+        "nuer": "Cä thɔ̱w kɔk pan.",
+        "english": "I bought a date tree yesterday."
+      },
+      {
+        "nuer": "Cä thɔ̱a̱a̱r kɔk pan.",
+        "english": "I bought date trees yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID284_nom_sg_02.mp3", "audio/ID284_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 285,
+    "nuer": "wi̱c",
+    "ipa": "/wì̤c/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:wuɔ̱th",
+    "senses": ["head"],
+    "sense_info": "noun;plural:heads",
+    "examples": [
+      {
+        "nuer": "Cä wi̱c kɔk pan.",
+        "english": "I bought a head yesterday."
+      },
+      {
+        "nuer": "Cä wuɔ̱th kɔk pan.",
+        "english": "I bought heads yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID285_nom_sg_03.mp3", "audio/ID285_nom_pl_03.mp3"],
+    "dialect": "Bentiu dialect"
+  },
+  {
+    "id": 286,
+    "nuer": "riey",
+    "ipa": "/rjé̤j/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:ria̱th",
+    "senses": ["boat"],
+    "sense_info": "noun;plural:boats",
+    "examples": [
+      {
+        "nuer": "Cä riey kɔk pan.",
+        "english": "I bought a boat yesterday."
+      },
+      {
+        "nuer": "Cä ria̱th kɔk pan.",
+        "english": "I bought boats yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID286_nom_sg_02.mp3", "audio/ID286_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 287,
+    "nuer": "miit",
+    "ipa": "/(a)mìiit/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:miɛt",
+    "senses": ["firefly"],
+    "sense_info": "noun;plural:fireflies",
+    "examples": [
+      {
+        "nuer": "Cä miit kɔk pan.",
+        "english": "I bought a firefly yesterday."
+      },
+      {
+        "nuer": "Cä miɛt kɔk pan.",
+        "english": "I bought fireflies yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID287_nom_sg_02.mp3", "audio/ID287_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 288,
+    "nuer": "ruɔk",
+    "ipa": "/rʊ̀ɔk/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:rok",
+    "senses": ["kidney"],
+    "sense_info": "noun;plural:kidneys",
+    "examples": [
+      {
+        "nuer": "Cä ruɔk kɔk pan.",
+        "english": "I bought a kidney yesterday."
+      },
+      {
+        "nuer": "Cä rok kɔk pan.",
+        "english": "I bought kidneys yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID288_nom_sg_02.mp3", "audio/ID288_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 289,
+    "nuer": "pi̱c",
+    "ipa": "/(a)pǐ̤c/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:pi̱ecni",
+    "senses": ["stirring stick"],
+    "sense_info": "noun;plural:stirring sticks",
+    "examples": [
+      {
+        "nuer": "Cä pi̱c kɔk pan.",
+        "english": "I bought a stirring stick yesterday."
+      },
+      {
+        "nuer": "Cä pi̱ecni kɔk pan.",
+        "english": "I bought stirring sticks yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID289_nom_sg_02.mp3", "audio/ID289_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 290,
+    "nuer": "niäär",
+    "ipa": "/njʌ̤́ʌ̤ʌ̤r/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:nya̱r",
+    "senses": ["gum"],
+    "sense_info": "noun;plural:gums",
+    "examples": [
+      {
+        "nuer": "Cä nyäär nɛn pan.",
+        "english": "I saw a gum yesterday."
+      },
+      {
+        "nuer": "Cä nya̱r nɛn pan.",
+        "english": "I saw gums yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID290_nom_sg_02.mp3", "audio/ID290_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 291,
+    "nuer": "dhur",
+    "ipa": "/d̪ṳ̀r/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:dhuɔ̱ɔ̱r",
+    "senses": ["tassel (to decorate bull horns)"],
+    "sense_info": "noun;plural:tassels (to decorate bull horns)",
+    "examples": [
+      {
+        "nuer": "Cä dhur kɔk pan.",
+        "english": "I bought a tassel yesterday."
+      },
+      {
+        "nuer": "Cä dhuɔ̱ɔ̱r kɔk pan.",
+        "english": "I bought a tassel yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID291_nom_sg_02.mp3", "audio/ID291_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 292,
+    "nuer": "ŋɔ̱p",
+    "ipa": "/ŋɔ̤́ɔ̤p/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:ŋɔ̱a̱p",
+    "senses": ["sycamore fig; fig-mulberry"],
+    "sense_info": "noun;plural:sycamore figs; fig-mulberries",
+    "examples": [
+      {
+        "nuer": "Cä ŋɔ̱p kɔk pan.",
+        "english": "I bought a sycamore tree yesterday."
+      },
+      {
+        "nuer": "Cä ŋɔ̱a̱p kɔk pan.",
+        "english": "I bought sycamore trees yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID292_nom_sg_02.mp3", "audio/ID292_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 293,
+    "nuer": "thep",
+    "ipa": "/thé̤e̤p/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:thep",
+    "senses": ["umbrella thorn acacia"],
+    "sense_info": "noun;plural:umbrella thorn acacias",
+    "examples": [
+      {
+        "nuer": "Cä thep kɔk pan.",
+        "english": "I bought a tree (k.o.) yesterday."
+      },
+      {
+        "nuer": "Cä thep kɔk pan.",
+        "english": "I bought trees (k.o.) yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID293_nom_sg_02.mp3", "audio/ID293_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 294,
+    "nuer": "rɔ̱k",
+    "ipa": "/rɔ̤́ɔ̤k/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:rɔ̱a̱k",
+    "senses": ["sycamore (sp.)"],
+    "sense_info": "noun;plural:sycamores (sp.)",
+    "examples": [
+      {
+        "nuer": "Cä rɔ̱k kɔk pan.",
+        "english": "I bought a tree (k.o.) yesterday."
+      },
+      {
+        "nuer": "Cä rɔ̱a̱k kɔk pan.",
+        "english": "I bought trees (k.o.) yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID294_nom_sg_02.mp3", "audio/ID294_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 295,
+    "nuer": "nyuɔ̱m",
+    "ipa": "/njṳ̌ɔ̤m/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:nyuɔ̱mni",
+    "senses": ["sesame"],
+    "sense_info": "noun;plural:sesames",
+    "examples": [
+      {
+        "nuer": "Cä nyuɔ̱m kɔk pan.",
+        "english": "I bought a tree (k.o.) yesterday."
+      },
+      {
+        "nuer": "Cä nyuɔ̱mni kɔk pan.",
+        "english": "I bought a tree (k.o.) yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID295_nom_sg_02.mp3", "audio/ID295_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 296,
+    "nuer": "luel",
+    "ipa": "/lwé̤l/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:lua̱l",
+    "senses": ["tree (sp.)"],
+    "sense_info": "noun;plural:trees (sp.)",
+    "examples": [
+      {
+        "nuer": "Cä luel kɔk pan.",
+        "english": "I bought a tree (k.o.) yesterday."
+      },
+      {
+        "nuer": "Cä lua̱l kɔk pan.",
+        "english": "I bought a tree (k.o.) yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID296_nom_sg_02.mp3", "audio/ID296_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 297,
+    "nuer": "thar",
+    "ipa": "/t̪ǎar/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:thär",
+    "senses": [
+      "bottom",
+      "buttock",
+      "lower part of an object (e.g. cup, bottle, tree)"
+    ],
+    "sense_info": "noun;plural:bottoms",
+    "examples": [
+      {
+        "nuer": "Cä thar nɛn pan.",
+        "english": "I saw the bottom yesterday."
+      },
+      {
+        "nuer": "Cä thär nɛn pan.",
+        "english": "I saw bottoms yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID297_nom_sg_02.mp3", "audio/ID297_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 298,
+    "nuer": "bap",
+    "ipa": "/bâap/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:bapni",
+    "senses": ["belly"],
+    "sense_info": "noun;plural:bellies",
+    "examples": [
+      {
+        "nuer": "Cä bap nɛn pan.",
+        "english": "I saw the belly yesterday."
+      },
+      {
+        "nuer": "Cä bapni nɛn pan.",
+        "english": "I saw bellies yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID298_nom_sg_02.mp3", "audio/ID298_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 299,
+    "nuer": "pan",
+    "ipa": "/pâan/",
+    "part_of_speech": "noun",
+    "plural_info": "kɛl:pan",
+    "senses": ["emtpy land"],
+    "sense_info": "noun;plural:emtpy lands",
+    "examples": [
+      {
+        "nuer": "Cä pan nɛn pan.",
+        "english": "I saw empty land yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID299_nom_sg_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 300,
+    "nuer": "ban",
+    "ipa": "/bâan/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:bani",
+    "senses": ["skirt"],
+    "sense_info": "noun;plural:skirts",
+    "examples": [
+      {
+        "nuer": "Cä ban nɛn pan.",
+        "english": "I saw a skirt yesterday."
+      },
+      {
+        "nuer": "Cä bani nɛn pan.",
+        "english": "I saw skirts yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID300_nom_sg_02.mp3", "audio/ID300_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 301,
+    "nuer": "yio̱m",
+    "ipa": "/jiò̤m/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:yiöm",
+    "senses": ["cup"],
+    "sense_info": "noun;plural:cups",
+    "examples": [
+      {
+        "nuer": "Cä yio̱m kɔk pan.",
+        "english": "I bought a cup yesterday."
+      },
+      {
+        "nuer": "Cä yiööm kɔk pan.",
+        "english": "I bought cups yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID301_nom_sg_02.mp3", "audio/ID301_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 302,
+    "nuer": "jiar",
+    "ipa": "/ɉjâar/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:jier",
+    "senses": ["shoulder blade"],
+    "sense_info": "noun;plural:shoulder blades",
+    "examples": [
+      {
+        "nuer": "Cä jiar nɛn pan.",
+        "english": "I saw a shoulder blade yesterday."
+      },
+      {
+        "nuer": "Cä jier nɛn pan.",
+        "english": "I saw shoulder blades yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID302_nom_sg_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 327,
+    "nuer": "tuŋ",
+    "ipa": "/tṳ̌ṳŋ/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:tuɔ̱ŋ",
+    "senses": ["horn"],
+    "sense_info": "noun;plural:horns",
+    "examples": [
+      {
+        "nuer": "Cä tuŋ kɔk pan.",
+        "english": "I bought a horn yesterday."
+      },
+      {
+        "nuer": "Cä tuɔ̱ŋ kɔk pan.",
+        "english": "I bought horns yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID327_nom_sg_02.mp3", "audio/ID327_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 328,
+    "nuer": "kiɛl",
+    "ipa": "/kɪ̌ɛl/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:kil",
+    "senses": ["rhinoceros"],
+    "sense_info": "noun;plural:rhinoceroses",
+    "examples": [
+      {
+        "nuer": "Cä kiɛl nɛn pan.",
+        "english": "I saw a rhinoceros yesterday."
+      },
+      {
+        "nuer": "Cä kɪl nɛn pan.",
+        "english": "I saw rhinoceroses yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID328_nom_sg_02.mp3", "audio/ID328_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 329,
+    "nuer": "muc",
+    "ipa": "/mṳ́c/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:muc",
+    "senses": ["gift"],
+    "sense_info": "noun;plural:gifts",
+    "examples": [
+      {
+        "nuer": "Cä muc kɔk pan.",
+        "english": "I bought a gift yesterday."
+      },
+      {
+        "nuer": "Cä muc kɔk pan.",
+        "english": "I bought gifts yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID329_nom_sg_02.mp3", "audio/ID329_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 330,
+    "nuer": "le̱y",
+    "ipa": "/lě̤j/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:ley",
+    "senses": ["beast", "wild animal"],
+    "sense_info": "noun;plural:beasts",
+    "examples": [
+      {
+        "nuer": "Cä le̱y kɔk pan.",
+        "english": "I bought a beast yesterday."
+      },
+      {
+        "nuer": "Cä ley kɔk pan.",
+        "english": "I bought beasts yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID330_nom_sg_03.mp3", "audio/ID330_nom_pl_03.mp3"],
+    "dialect": "Bentiu dialect"
+  },
+  {
+    "id": 331,
+    "nuer": "thiaŋ",
+    "ipa": "/t̪jǎaŋ/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:thiaŋni",
+    "senses": ["evening"],
+    "sense_info": "noun;plural:evenings",
+    "examples": [
+      {
+        "nuer": "Cä thiaŋ guɔ̱ɔ̱r pan.",
+        "english": "I followed an evening yesterday."
+      },
+      {
+        "nuer": "Cä thiaŋni guɔ̱ɔ̱r pan.",
+        "english": "I followed evenings yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID331_nom_sg_03.mp3", "audio/ID331_nom_pl_03.mp3"],
+    "dialect": "Bentiu dialect"
+  },
+  {
+    "id": 332,
+    "nuer": "ti̱i̱y",
+    "ipa": "/tǐ̤i̤i̤j/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:ti̱eth",
+    "senses": ["insect (WN)"],
+    "sense_info": "noun;plural:insects (WN)",
+    "examples": [
+      {
+        "nuer": "Cä ti̱i̱y guɔ̱ɔ̱r pan.",
+        "english": "I followed an insect yesterday."
+      },
+      {
+        "nuer": "Cä ti̱eth guɔ̱ɔ̱r pan.",
+        "english": "I followed insects yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID332_nom_sg_03.mp3", "audio/ID332_nom_pl_03.mp3"],
+    "dialect": "Bentiu dialect"
+  },
+  {
+    "id": 333,
+    "nuer": "waar",
+    "ipa": "/wàaar/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:wari",
+    "senses": ["grass (sp.)"],
+    "sense_info": "noun;plural:grasses (sp.)",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 334,
+    "nuer": "ruɔ̱n",
+    "ipa": "/rṳ́ɔ̤n/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:run",
+    "senses": ["year"],
+    "sense_info": "noun;plural:years",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 335,
+    "nuer": "runwaŋ",
+    "ipa": "/rṳ́nwàaŋ/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:runwaaŋni",
+    "senses": ["morning"],
+    "sense_info": "noun;plural:mornings",
+    "examples": [
+      {
+        "nuer": "Cä runwaŋ nɛn pan.",
+        "english": "I saw a morning yesterday."
+      },
+      {
+        "nuer": "Cä runwaaŋni nɛn pan.",
+        "english": "I saw mornings yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID335_nom_sg_02.mp3", "audio/ID335_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 336,
+    "nuer": "wuɔ̱ɔ̱k",
+    "ipa": "/wṳ́ɔ̤ɔ̤ɔ̤k/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:wuɔ̱ɔ̱k",
+    "senses": ["arm", "shoulder"],
+    "sense_info": "noun;plural:arms",
+    "examples": [
+      {
+        "nuer": "Cä wuɔ̱ɔ̱k nɛn pan.",
+        "english": "I saw a shoulder yesterday."
+      },
+      {
+        "nuer": "Cä wuɔ̱ɔ̱k nɛn.",
+        "english": "I saw shoulders."
+      }
+    ],
+    "audio_files": ["audio/ID336_nom_sg_02.mp3", "audio/ID336_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 337,
+    "nuer": "guɔ̱t",
+    "ipa": "/gṳ́ɔ̤t/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:guɔ̱tni",
+    "senses": ["aquatic grass (used to make mats)"],
+    "sense_info": "noun;plural:aquatic grasses (only used for different types or units of aquatic grass)",
+    "examples": [
+      {
+        "nuer": "Cä guɔ̱t kɔk pan.",
+        "english": "I bought grass yesterday."
+      },
+      {
+        "nuer": "Cä guɔ̱tni kɔk pan.",
+        "english": "I bought grasses yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID337_nom_sg_02.mp3", "audio/ID337_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 338,
+    "nuer": "luɔ̱t",
+    "ipa": "/lṳ́ɔ̤t/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:luɔ̱ɔ̱t",
+    "senses": ["shirt"],
+    "sense_info": "noun;plural:shirts",
+    "examples": [
+      {
+        "nuer": "Cä luɔ̱t kɔk pan.",
+        "english": "I bought a shirt yesterday."
+      },
+      {
+        "nuer": "Cä luɔ̱ɔ̱t kɔk pan.",
+        "english": "I bought shirts yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID338_nom_sg_02.mp3", "audio/ID338_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 339,
+    "nuer": "pa̱t",
+    "ipa": "/pà̤t/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:pa̱a̱t",
+    "senses": ["tray"],
+    "sense_info": "noun;plural:trays",
+    "examples": [
+      {
+        "nuer": "Cä pa̱t kɔk pan.",
+        "english": "I bought a tray yesterday."
+      },
+      {
+        "nuer": "Cä pa̱a̱t kɔk pan.",
+        "english": "I bought trays yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID339_nom_sg_02.mp3", "audio/ID339_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 340,
+    "nuer": "kuak",
+    "ipa": "/(a)kwǎk/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:kuak",
+    "senses": ["crockery", "dishes"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Cä kuak lak pan.",
+        "english": "I washed dishes yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID340_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 341,
+    "nuer": "ciöt",
+    "ipa": "/ciǒt/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:ciööt",
+    "senses": ["name"],
+    "sense_info": "noun;plural:names",
+    "examples": [
+      {
+        "nuer": "Cä ciöt nɛn pan.",
+        "english": "I saw a name yesterday."
+      },
+      {
+        "nuer": "Cä ciööt nɛn pan.",
+        "english": "I saw names yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID341_nom_sg_02.mp3", "audio/ID341_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 342,
+    "nuer": "cio̱o̱t",
+    "ipa": "/ció̤o̤o̤t/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:ciööt",
+    "senses": ["caller"],
+    "sense_info": "noun;plural:callers",
+    "examples": [
+      {
+        "nuer": "Cä cio̱o̱t nɛn pan.",
+        "english": "I saw a caller yesterday."
+      },
+      {
+        "nuer": "Cä ciööt nɛn pan.",
+        "english": "I saw callers yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID342_nom_sg_02.mp3", "audio/ID342_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 343,
+    "nuer": "duul",
+    "ipa": "/dṳ́ṳṳl/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:duɔ̱ɔ̱l",
+    "senses": ["collector"],
+    "sense_info": "noun;plural:collectors",
+    "examples": [
+      {
+        "nuer": "Cä duul nɛn pan.",
+        "english": "I saw a collector yesterday."
+      },
+      {
+        "nuer": "Cä duɔ̱ɔ̱l nɛn pan.",
+        "english": "I saw collectors yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID343_nom_sg_02.mp3", "audio/ID343_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 344,
+    "nuer": "ki̱i̱t",
+    "ipa": "/kí̤i̤i̤t/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:ki̱eet",
+    "senses": ["singer"],
+    "sense_info": "noun;plural:singers",
+    "examples": [
+      {
+        "nuer": "Cä ki̱i̱t nɛn pan.",
+        "english": "I saw a singer yesterday."
+      },
+      {
+        "nuer": "Cä ki̱eet nɛn pan.",
+        "english": "I saw singers yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID344_nom_sg_02.mp3", "audio/ID344_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 345,
+    "nuer": "deep",
+    "ipa": "/dé̤e̤e̤p/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:dëëp",
+    "senses": ["fisherman"],
+    "sense_info": "noun;plural:fishermen",
+    "examples": [
+      {
+        "nuer": "Cä deep nɛn pan.",
+        "english": "I saw a fisherman yesterday."
+      },
+      {
+        "nuer": "Cä dëëp nɛn pan.",
+        "english": "I saw fishermen yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID345_nom_sg_02.mp3", "audio/ID345_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 346,
+    "nuer": "bäär",
+    "ipa": "/bʌ̤́ʌ̤ʌ̤r/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:ba̱a̱r",
+    "senses": ["shooter"],
+    "sense_info": "noun;plural:shooters",
+    "examples": [
+      {
+        "nuer": "Cä bäär nɛn pan.",
+        "english": "I saw a shooter yesterday."
+      },
+      {
+        "nuer": "Cä ba̱a̱r nɛn pan.",
+        "english": "I saw shooters yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID346_nom_sg_02.mp3", "audio/ID346_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 347,
+    "nuer": "kääk",
+    "ipa": "/kʌ̤́ʌ̤ʌ̤k/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:ka̱a̱k",
+    "senses": ["hunter"],
+    "sense_info": "noun;plural:hunters",
+    "examples": [
+      {
+        "nuer": "Cä kääk nɛn pan.",
+        "english": "I saw a hunter yesterday."
+      },
+      {
+        "nuer": "Cä ka̱a̱k nɛn pan.",
+        "english": "I saw hunters yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID347_nom_sg_02.mp3", "audio/ID347_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 378,
+    "nuer": "mio̱t",
+    "ipa": "/mjò̤t/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:mio̱tni",
+    "senses": ["hoof, part of"],
+    "sense_info": "noun;plural:hoof, parts of",
+    "examples": [
+      {
+        "nuer": "Cä mio̱t kɔk pan.",
+        "english": "I bought a part of the hoof yesterday."
+      },
+      {
+        "nuer": "Cä mio̱tni kɔk pan.",
+        "english": "I bought parts of the hoof yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID378_nom_sg_02.mp3", "audio/ID378_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 379,
+    "nuer": "puɔ̱ɔ̱t",
+    "ipa": "/pwɔ̤̀ɔ̤ɔ̤t/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:puɔ̱ɔ̱tni",
+    "senses": ["hammer"],
+    "sense_info": "noun;plural:hammers",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 380,
+    "nuer": "lap",
+    "ipa": "/lâap/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:läp",
+    "senses": ["placenta"],
+    "sense_info": "noun;plural:placentas",
+    "examples": [
+      {
+        "nuer": "Cä lap nɛn pan.",
+        "english": "I saw a placenta yesterday."
+      },
+      {
+        "nuer": "Cä läp nɛn pan.",
+        "english": "I saw placentas yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID380_nom_sg_02.mp3", "audio/ID380_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 381,
+    "nuer": "lääp",
+    "ipa": "/lʌ̤̀ʌ̤ʌ̤p/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:lääpni",
+    "senses": ["wheat (wild)"],
+    "sense_info": "noun;plural:wheats (wild)",
+    "examples": [
+      {
+        "nuer": "Cä lääp nɛn pan.",
+        "english": "I saw (one) wild wheat yesterday."
+      },
+      {
+        "nuer": "Cä lääpni nɛn pan.",
+        "english": "I saw wild wheat yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID381_nom_sg_02.mp3", "audio/ID380_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 382,
+    "nuer": "lath",
+    "ipa": "/lât̪/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:lathni",
+    "senses": ["cotton"],
+    "sense_info": "noun;plural:cottons",
+    "examples": [
+      {
+        "nuer": "Cä lath kɔk pan.",
+        "english": "I bought (one batch of) cotton yesterday."
+      },
+      {
+        "nuer": "Nuër transcription nëëdëd",
+        "english": "Example needed"
+      }
+    ],
+    "audio_files": ["audio/ID382_nom_sg_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 383,
+    "nuer": "kuäär",
+    "ipa": "/kwʌ̤́ʌ̤ʌ̤r/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:kua̱r",
+    "senses": ["lord", "chief", "king"],
+    "sense_info": "noun;plural:lords",
+    "examples": [
+      {
+        "nuer": "Cä kuäär guɔ̱ɔ̱r pan.",
+        "english": "I followed the chief yesterday."
+      },
+      {
+        "nuer": "Cä kua̱r guɔ̱ɔ̱r pan.",
+        "english": "I followed chiefs yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID383_nom_sg_02.mp3", "audio/ID383_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 384,
+    "nuer": "laath",
+    "ipa": "/laaat̪/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:laathni",
+    "senses": ["September"],
+    "sense_info": "noun;plural:Septembers",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 385,
+    "nuer": "ca̱a̱r",
+    "ipa": "/(a)cà̤a̤a̤r/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:ca̱a̱ri",
+    "senses": ["umbilical cord"],
+    "sense_info": "noun;plural:umbilical cords",
+    "examples": [
+      {
+        "nuer": "Cä ca̱a̱r nɛn pan.",
+        "english": "I saw an umbilical cord yesterday."
+      },
+      {
+        "nuer": "Cä ca̱a̱ri nɛn pan.",
+        "english": "I saw umbilical cords yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID385_nom_sg_02.mp3", "audio/ID385_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 386,
+    "nuer": "kuɛl",
+    "ipa": "/(a)kwɛ̂ɛl/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:kuɛli",
+    "senses": ["star"],
+    "sense_info": "noun;plural:stars",
+    "examples": [
+      {
+        "nuer": "Cä kuɛl nɛn pan.",
+        "english": "I saw a star yesterday."
+      },
+      {
+        "nuer": "Cä kuɛl nɛn pan.",
+        "english": "I saw stars yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID386_nom_sg_02.mp3", "audio/ID386_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 387,
+    "nuer": "dey",
+    "ipa": "/dě̤j/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:dëth",
+    "senses": ["hammer"],
+    "sense_info": "noun;plural:hammers",
+    "examples": [
+      {
+        "nuer": "Cä dey nɛn pan.",
+        "english": "I saw a hammer yesterday."
+      },
+      {
+        "nuer": "Cä dëth nɛn pan.",
+        "english": "I saw hammers yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID387_nom_sg_02.mp3", "audio/ID387_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 388,
+    "nuer": "jieek",
+    "ipa": "/ɟjè̤e̤e̤k/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:jiek",
+    "senses": ["bad thing"],
+    "sense_info": "noun;plural:bad things",
+    "examples": [
+      {
+        "nuer": "Cä jieek nɛn pan.",
+        "english": "I saw a bad thing yesterday."
+      },
+      {
+        "nuer": "Cä jiek nɛn pan.",
+        "english": "I saw bad things yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID388_nom_sg_02.mp3", "audio/ID388_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 389,
+    "nuer": "gɔɔy",
+    "ipa": "/gɔ̌ɔɔj/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:gɔy",
+    "senses": ["good thing"],
+    "sense_info": "noun;plural:good things",
+    "examples": [
+      {
+        "nuer": "Cä gɔɔy nɛn pan.",
+        "english": "I saw a good thing yesteday."
+      },
+      {
+        "nuer": "Cä gɔy nɛn pan.",
+        "english": "I saw good things yesteday."
+      }
+    ],
+    "audio_files": ["audio/ID389_nom_sg_02.mp3", "audio/ID389_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 390,
+    "nuer": "ti̱eey",
+    "ipa": "/(a)tì̤e̤e̤e̤j/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:ti̱eeini",
+    "senses": ["pupil (of the eye)"],
+    "sense_info": "noun;plural:pupils (of the eye)",
+    "examples": [
+      {
+        "nuer": "Cä ti̱eey nɛn pan.",
+        "english": "I saw a pupil yesterday."
+      },
+      {
+        "nuer": "Cä ti̱eeini nɛn pan.",
+        "english": "I saw pupils yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID390_nom_sg_02.mp3", "audio/ID390_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 391,
+    "nuer": "ŋër",
+    "ipa": "/ŋêer/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:ŋer",
+    "senses": ["harvest"],
+    "sense_info": "noun;plural:harvests",
+    "examples": [
+      {
+        "nuer": "Cä ŋër nɛn pan.",
+        "english": "I saw a harvest yesterday."
+      },
+      {
+        "nuer": "Cä ŋer nɛn pan.",
+        "english": "I saw harvests yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID391_nom_sg_02.mp3", "audio/ID391_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 392,
+    "nuer": "miɛth",
+    "ipa": "/(a)mɪ̀ɛt̪/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:miith",
+    "senses": ["fin"],
+    "sense_info": "noun;plural:fins",
+    "examples": [
+      {
+        "nuer": "Cä miɛth nɛn pan.",
+        "english": "I saw a fin yesterday."
+      },
+      {
+        "nuer": "Cä miith nɛn pan.",
+        "english": "I saw fins yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID392_nom_sg_02.mp3", "audio/ID392_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 393,
+    "nuer": "buɔth",
+    "ipa": "/(a)bwɔ̤́t̪/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:buaath",
+    "senses": ["hunger", "famine"],
+    "sense_info": "noun;plural:famines",
+    "examples": [
+      {
+        "nuer": "Cä buɔth nɛn pan.",
+        "english": "I saw hunger yesterday."
+      },
+      {
+        "nuer": "Cä buaath nɛn pan.",
+        "english": "I saw famines yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID393_nom_sg_02.mp3", "audio/ID393_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 394,
+    "nuer": "tuäc",
+    "ipa": "/(a)twé̤c/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:tuäcni",
+    "senses": ["container (for storing grain)"],
+    "sense_info": "noun;plural:containers (for storing grain)",
+    "examples": [
+      {
+        "nuer": "Cä tuäc nɛn pan.",
+        "english": "I saw a container for storing grain yesterday."
+      },
+      {
+        "nuer": "Cä tuäcni nɛn pan.",
+        "english": "I saw containers for storing grain yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID394_nom_sg_02.mp3", "audio/ID394_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 395,
+    "nuer": "kɛ̈c",
+    "ipa": "/(a)kɛ̀ac/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:kɛc",
+    "senses": ["greater honeyguide"],
+    "sense_info": "noun;plural:greater honeyguides",
+    "examples": [
+      {
+        "nuer": "Cä kɛ̈c nɛn pan.",
+        "english": "I saw a bird (sp.) yesterday."
+      },
+      {
+        "nuer": "Cä kɛc nɛn pan.",
+        "english": "I saw birds (sp.) yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID395_nom_sg_02.mp3", "audio/ID395_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 396,
+    "nuer": "wuɔ̱t",
+    "ipa": "/wɔ̤̀t/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:wut",
+    "senses": ["body decoration"],
+    "sense_info": "noun;plural:body decorations",
+    "examples": [
+      {
+        "nuer": "Cä wuɔ̱t nɛn pan.",
+        "english": "I saw a decoration yesterday."
+      },
+      {
+        "nuer": "Cä wut nɛn pan.",
+        "english": "I saw decorations yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID396_nom_sg_02.mp3", "audio/ID396_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 397,
+    "nuer": "dhök",
+    "ipa": "/(a)d̪ôk/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:dho̱k",
+    "senses": ["throat sack (of a bird)"],
+    "sense_info": "noun;plural:throat sacks (of a bird)",
+    "examples": [
+      {
+        "nuer": "Cä dhök nɛn pan.",
+        "english": "I saw a bird's throat sack yesterday."
+      },
+      {
+        "nuer": "Cä dho̱k nɛn pan.",
+        "english": "I saw birds' throat sacks yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID397_nom_sg_02.mp3", "audio/ID397_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 398,
+    "nuer": "gi̱i̱r",
+    "ipa": "/gí̤i̤i̤r/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:gi̱er",
+    "senses": ["craving"],
+    "sense_info": "noun;plural:cravings",
+    "examples": [
+      {
+        "nuer": "Cä gi̱i̱r nɛn pan.",
+        "english": "I saw a craving yesterday."
+      },
+      {
+        "nuer": "Cä gi̱er nɛn pan.",
+        "english": "I saw cravings yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID398_nom_sg_02.mp3", "audio/ID398_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 399,
+    "nuer": "tɛ̱̈ɛ̱̈",
+    "ipa": "/tɛ̤̀a̤a̤a̤/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:tɛ̱̈ɛ̱̈kni",
+    "senses": ["secret"],
+    "sense_info": "noun;plural:secrets",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 423,
+    "nuer": "ba̱r",
+    "ipa": "/bá̤a̤r/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:bär",
+    "senses": ["Bar (member of the Bar tribe)"],
+    "sense_info": "noun;plural:Bars (members of the Bar tribe)",
+    "examples": [
+      {
+        "nuer": "Cä ba̱r nɛn pan.",
+        "english": "I saw a Bar tribesman yesterday."
+      },
+      {
+        "nuer": "Cä bär nɛn pan.",
+        "english": "I saw Bar tribesmen yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID423_nom_sg_02.mp3", "audio/ID423_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 424,
+    "nuer": "ba̱r",
+    "ipa": "/bá̤r/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:ba̱a̱r",
+    "senses": ["shot"],
+    "sense_info": "noun;plural:shots",
+    "examples": [
+      {
+        "nuer": "Cä ba̱r nɛn pan.",
+        "english": "I saw a shot yesterday."
+      },
+      {
+        "nuer": "Cä ba̱a̱r nɛn pan.",
+        "english": "I saw shots yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID424_nom_sg_02.mp3", "audio/ID424_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 425,
+    "nuer": "bar",
+    "ipa": "/bâar/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:bar",
+    "senses": ["lake (large)", "sea"],
+    "sense_info": "noun;plural:lake (large)",
+    "examples": [
+      {
+        "nuer": "Cä bar nɛn pan.",
+        "english": "I saw a big lake yesterday."
+      },
+      {
+        "nuer": "Cä bar nɛn pan.",
+        "english": "I saw big lakes yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID425_nom_sg_02.mp3", "audio/ID425_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 426,
+    "nuer": "lëk",
+    "ipa": "/lèx/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:lëëk",
+    "senses": ["Lek (member of the Lek tribe)"],
+    "sense_info": "noun;plural:Leks (members of the Lek tribe)",
+    "examples": [
+      {
+        "nuer": "Cä lëk guɔ̱ɔ̱r pan.",
+        "english": "I followed a member of Lek section of Nuer yesterday."
+      },
+      {
+        "nuer": "Cä lëëk guɔ̱ɔ̱r pan.",
+        "english": "I followed members of Lek section of Nuer yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID426_nom_sg_03.mp3", "audio/ID426_nom_pl_03.mp3"],
+    "dialect": "Bentiu dialect"
+  },
+  {
+    "id": 427,
+    "nuer": "tɛ̈t",
+    "ipa": "/tɛ̀ar̥/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:tɛ̈ɛ̈t",
+    "senses": ["Shilluk (member of the Shilluk tribe)"],
+    "sense_info": "noun;plural:Shilluks (members of the Shilluk tribe)",
+    "examples": [
+      {
+        "nuer": "Cä tɛ̈t guɔ̱ɔ̱r pan.",
+        "english": "I followed a member of Shilluk tribe yesterday."
+      },
+      {
+        "nuer": "Cä tɛ̈ɛ̈t guɔ̱ɔ̱r pan.",
+        "english": "I followed members of Shilluk tribe yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID427_nom_sg_03.mp3", "audio/ID427_nom_pl_03.mp3"],
+    "dialect": "Bentiu dialect"
+  },
+  {
+    "id": 428,
+    "nuer": "mut",
+    "ipa": "/mṳ́t/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:muɔ̱t",
+    "senses": ["piercing (of an ear, etc.)"],
+    "sense_info": "noun;plural:piercings (of an ear, etc.)",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 429,
+    "nuer": "lɔaa",
+    "ipa": "/lɔ̀aaa/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:lɔw",
+    "senses": ["Low (member of the Low tribe)"],
+    "sense_info": "noun;plural:Lows (members of the Low tribe)",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 430,
+    "nuer": "roor",
+    "ipa": "/rʊ̌ʊʊr/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:roori",
+    "senses": ["lizard (sp.)"],
+    "sense_info": "noun;plural:lizards (sp.)",
+    "examples": [
+      {
+        "nuer": "Cä roor guɔ̱ɔ̱r pan.",
+        "english": "I followed a lizard (k.o.) yesterday."
+      },
+      {
+        "nuer": "Cä roori nɛn pan.",
+        "english": "I saw lizards (k.o.) yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID430_nom_sg_02.mp3", "audio/ID430_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 431,
+    "nuer": "kërkër",
+    "ipa": "/kèrkèr/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:kërkëri",
+    "senses": ["lizard (sp.)"],
+    "sense_info": "noun;plural:lizards (sp.)",
+    "examples": [
+      {
+        "nuer": "Cä kërkër kɔk pan.",
+        "english": "I bought a lizard (k.o.) yesterday."
+      },
+      {
+        "nuer": "Cä kërkëri kɔk pan.",
+        "english": "I bought lizards (k.o.) yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID431_nom_sg_02.mp3", "audio/ID431_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 433,
+    "nuer": "muth",
+    "ipa": "/mṳ́t̪/",
+    "part_of_speech": "noun",
+    "plural_info": "kɛl:muth",
+    "senses": ["darkness"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Cä muth nɛn pan.",
+        "english": "I saw darkness yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID433_nom_sg_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 434,
+    "nuer": "muɔ̱ɔ̱th",
+    "ipa": "/mṳ̀ɔ̤ɔ̤ɔ̤t̪/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:muɔ̱ɔ̱thni",
+    "senses": ["grass (sp.)"],
+    "sense_info": "noun;plural:grasses (sp.)",
+    "examples": [
+      {
+        "nuer": "Cä muɔ̱ɔ̱th nɛn pan.",
+        "english": "I saw a grass (k.o.) yesterday"
+      },
+      {
+        "nuer": "Cä muɔ̱ɔ̱thni nɛn pan.",
+        "english": "I saw grasses (k.o.) yesterday"
+      }
+    ],
+    "audio_files": ["audio/ID434_nom_sg_02.mp3", "audio/ID434_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 435,
+    "nuer": "mɔak",
+    "ipa": "/mɔ̂ak/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:mɔakni",
+    "senses": ["river tide"],
+    "sense_info": "noun;plural:river tides",
+    "examples": [
+      {
+        "nuer": "Cä mɔak nɛn pan.",
+        "english": "I saw a river tide yesterday."
+      },
+      {
+        "nuer": "Cä mɔakni nɛn pan.",
+        "english": "I saw river tides yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID435_nom_sg_02.mp3", "audio/ID435_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 436,
+    "nuer": "dɔ̱n",
+    "ipa": "/dɔ̤̀ɔ̤n/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:dɔ̱ni",
+    "senses": ["ebb (of river)"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Cä dɔ̱n nɛn pan.",
+        "english": "I saw an ebbing of the river."
+      },
+      {
+        "nuer": "Cä dɔ̱ni nɛn pan.",
+        "english": "I saw ebbings of the river."
+      }
+    ],
+    "audio_files": ["audio/ID436_nom_sg_02.mp3", "audio/ID436_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 437,
+    "nuer": "lɛ̈l",
+    "ipa": "/lɛ̌al/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:lɛ̈li",
+    "senses": ["grinding stone, piece of"],
+    "sense_info": "noun;plural:grinding stone, pieces of",
+    "examples": [
+      {
+        "nuer": "Cä lɛ̈l nɛn pan.",
+        "english": "I saw a piece of a grinding stone yesterday."
+      },
+      {
+        "nuer": "Cä lɛ̈li nɛn pan.",
+        "english": "I saw pieces of a grinding stone yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID437_nom_sg_02.mp3", "audio/ID437_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 438,
+    "nuer": "mɛ̈ɛ̈c",
+    "ipa": "/mɛ̀aaaj/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:mɛɛc",
+    "senses": ["root of a plant (fine)"],
+    "sense_info": "noun;plural:roots of a plant (fine)",
+    "examples": [
+      {
+        "nuer": "Cä mɛ̈ɛ̈j nɛn pan.",
+        "english": "I saw a root yesterday."
+      },
+      {
+        "nuer": "Cä mɛɛj nɛn pan.",
+        "english": "I saw roots yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID438_nom_sg_02.mp3", "audio/ID438_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 439,
+    "nuer": "mɔ̱m",
+    "ipa": "/mɔ̤́m/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:mɔ̱a̱mni",
+    "senses": ["roan antelope"],
+    "sense_info": "noun;plural:roan antelopes",
+    "examples": [
+      {
+        "nuer": "Cä mɔ̱m kɔk pan.",
+        "english": "I bought a roan antelope yesterday."
+      },
+      {
+        "nuer": "Cä mɔ̱a̱mni kɔk pan.",
+        "english": "I bought roan antelopes yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID439_nom_sg_02.mp3", "audio/ID439_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 440,
+    "nuer": "yieen",
+    "ipa": "/jé̤e̤e̤n/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:yiëën",
+    "senses": ["udder"],
+    "sense_info": "noun;plural:udders",
+    "examples": [
+      {
+        "nuer": "Cä yieen nɛn pan.",
+        "english": "I saw an udder yesterday."
+      },
+      {
+        "nuer": "Cä yiëën nɛn pan.",
+        "english": "I saw udders yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID440_nom_sg_02.mp3", "audio/ID440_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 441,
+    "nuer": "muaŋ",
+    "ipa": "/mwâŋ/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:muaŋni",
+    "senses": ["wave"],
+    "sense_info": "noun;plural:waves",
+    "examples": [
+      {
+        "nuer": "Cä muaŋ nɛn pan.",
+        "english": "I saw a wave yesterday."
+      },
+      {
+        "nuer": "Cä muaŋni nɛn pan.",
+        "english": "I saw waves yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID441_nom_sg_02.mp3", "audio/ID441_nom_pl_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 442,
+    "nuer": "ruɔɔr",
+    "ipa": "/rʊ̂ɔɔɔr/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:roor",
+    "senses": ["infant", "baby"],
+    "sense_info": "noun;plural:infants",
+    "examples": [
+      {
+        "nuer": "Cä ruɔɔr guɔ̱ɔ̱r pan.",
+        "english": "I followed a baby yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID442_nom_sg_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 443,
+    "nuer": "liir",
+    "ipa": "/(a)lɪ̂ɪɪr/",
+    "part_of_speech": "noun",
+    "plural_info": "kɛl:liir",
+    "senses": ["cancer", "disease"],
+    "sense_info": "noun;plural:cancers",
+    "examples": [
+      {
+        "nuer": "Cä liir nɛn pan.",
+        "english": "I saw cancer."
+      }
+    ],
+    "audio_files": ["audio/ID443_nom_sg_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 444,
+    "nuer": "dɔ̱k",
+    "ipa": "/dɔ̤́ɔ̤k/",
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:dɔ̱a̱kni",
+    "senses": ["pearl"],
+    "sense_info": "noun;plural:pearls",
+    "examples": [
+      {
+        "nuer": "Cä dɔ̱k kɔk pan.",
+        "english": "I bought a pearl yesterday."
+      },
+      {
+        "nuer": "Cä dɔ̱a̱kni kɔk pan.",
+        "english": "I bought pearls yesterday."
+      }
+    ],
+    "audio_files": ["audio/ID444_nom_sg_02.mp3"],
+    "dialect": "Jikany Gatjiok dialect"
+  },
+  {
+    "id": 600,
+    "nuer": "woc",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["undress"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän wuɔcä bi̱eeni.",
+        "english": "I am taking off the clothes."
+      },
+      {
+        "nuer": "Jɛn wocɛ bi̱eeni.",
+        "english": "S/he is taking off the clothes."
+      }
+    ],
+    "audio_files": ["audio/ID600_TR_1SG_01.mp3", "audio/ID600_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 601,
+    "nuer": "gɛɛr",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["drive"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän gɛ̈ɛ̈rä thurbil.",
+        "english": "I am driving the car."
+      },
+      {
+        "nuer": "Jɛn gɛɛrɛ thurbil.",
+        "english": "S/he is driving the car."
+      }
+    ],
+    "audio_files": ["audio/ID601_TR_1SG_01.mp3", "audio/ID601_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 602,
+    "nuer": "kuɛt",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["kick"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän kuɛ̈tä raan.",
+        "english": "I am kicking the person."
+      },
+      {
+        "nuer": "Jɛn kuɛtɛ raan.",
+        "english": "S/he is kicking the person."
+      }
+    ],
+    "audio_files": ["audio/ID602_TR_1SG_01.mp3", "audio/ID602_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 603,
+    "nuer": "thal",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["cook"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän thaalä kuän.",
+        "english": "I am cooking grain."
+      },
+      {
+        "nuer": "Jɛn thaalɛ kuän.",
+        "english": "S/he is cooking grain."
+      }
+    ],
+    "audio_files": ["audio/ID603_TR_1SG_01.mp3", "audio/ID603_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 604,
+    "nuer": "thɔr",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["float"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän thɔaarä gat.",
+        "english": "I am making the child float."
+      },
+      {
+        "nuer": "Jɛn thɔɔrɛ gat.",
+        "english": "S/he is making the child float."
+      }
+    ],
+    "audio_files": ["audio/ID604_TR_1SG_01.mp3", "audio/ID604_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 605,
+    "nuer": "ɣɔ̱l",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["pound"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän ɣɔ̱a̱a̱lä bɛl.",
+        "english": "I am pounding dura."
+      },
+      {
+        "nuer": "Jɛn ɣɔ̱ɔ̱lɛ bɛl.",
+        "english": "S/he is pounding dura."
+      }
+    ],
+    "audio_files": ["audio/ID605_TR_1SG_01.mp3", "audio/ID605_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 606,
+    "nuer": "col",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["compensate"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän cuɔɔlä raan.",
+        "english": "I am compensating the person."
+      },
+      {
+        "nuer": "Jɛn coolɛ raan.",
+        "english": "S/he is compensating the person."
+      }
+    ],
+    "audio_files": ["audio/ID606_TR_1SG_01.mp3", "audio/ID606_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 607,
+    "nuer": "luc",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["kill in secret"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän luɔ̱cä raan.",
+        "english": "I am killing the person in secret."
+      },
+      {
+        "nuer": "Jɛn lucɛ raan.",
+        "english": "S/he is killing the person in secret."
+      }
+    ],
+    "audio_files": ["audio/ID607_TR_1SG_01.mp3", "audio/ID607_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 608,
+    "nuer": "kit",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["sing, start to"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän kiɛtä dit.",
+        "english": "I am starting to sing the song."
+      },
+      {
+        "nuer": "Jɛn kitɛ dit.",
+        "english": "S/he is starting to sing the song."
+      }
+    ],
+    "audio_files": [],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 639,
+    "nuer": "käp",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["catch", "receive"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän ka̱pä raan.",
+        "english": "I am catching the person."
+      },
+      {
+        "nuer": "Jɛn käpɛ raan.",
+        "english": "S/he is catching the person."
+      }
+    ],
+    "audio_files": ["audio/ID639_TR_1SG_01.mp3", "audio/ID639_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 640,
+    "nuer": "ca̱t",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["tell (stories)", "narrate"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän ca̱a̱tä ŋuani̱.",
+        "english": "I am telling tales."
+      },
+      {
+        "nuer": "Jɛn cäätɛ ŋuani̱.",
+        "english": "S/he is telling tales."
+      }
+    ],
+    "audio_files": ["audio/ID640_TR_1SG_01.mp3", "audio/ID640_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 641,
+    "nuer": "ner",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["greet"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän nëërä raan.",
+        "english": "I am greeting the person."
+      },
+      {
+        "nuer": "Jɛn neerɛ raan.",
+        "english": "S/he is greeting the person."
+      }
+    ],
+    "audio_files": ["audio/ID641_TR_1SG_01.mp3", "audio/ID641_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 642,
+    "nuer": "yɛth",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["spear"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän yɛ̈ɛ̈thä raan.",
+        "english": "I am spearing the person."
+      },
+      {
+        "nuer": "Jɛn yɛɛthɛ raan.",
+        "english": "S/he is spearing the person."
+      }
+    ],
+    "audio_files": ["audio/ID642_TR_1SG_01.mp3", "audio/ID642_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 643,
+    "nuer": "tit",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["observe"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän tiɛtä raan.",
+        "english": "I am observing the person."
+      },
+      {
+        "nuer": "Jɛn titɛ raan.",
+        "english": "S/he is observing the person."
+      }
+    ],
+    "audio_files": ["audio/ID643_TR_1SG_01.mp3", "audio/ID643_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 644,
+    "nuer": "tɛt",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["claim back", "reclaim"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän tɛ̈ɛ̈tä ŋuani̱.",
+        "english": "I am claiming the things back."
+      },
+      {
+        "nuer": "Jɛn tɛɛtɛ ŋuani̱.",
+        "english": "S/he is claiming the things back."
+      }
+    ],
+    "audio_files": ["audio/ID644_TR_1SG_01.mp3", "audio/ID644_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 645,
+    "nuer": "ŋol",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["spit"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän ŋuɔɔlä ruɛj.",
+        "english": "I am spitting saliva."
+      },
+      {
+        "nuer": "Jɛn ŋoolɛ ruɛj.",
+        "english": "S/he is spitting saliva."
+      }
+    ],
+    "audio_files": ["audio/ID645_TR_1SG_01.mp3", "audio/ID645_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 646,
+    "nuer": "pät",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["burst"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän pa̱tä duɔɔr.",
+        "english": "I am bursting the thing."
+      },
+      {
+        "nuer": "Jɛn pätɛ duɔɔr.",
+        "english": "S/he is bursting the thing."
+      }
+    ],
+    "audio_files": ["audio/ID646_TR_1SG_01.mp3", "audio/ID646_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 647,
+    "nuer": "ker",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["awaken"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän këërä gat.",
+        "english": "I am waking up the child."
+      },
+      {
+        "nuer": "Jɛn keerɛ gat.",
+        "english": "S/he is waking up the child."
+      }
+    ],
+    "audio_files": ["audio/ID647_TR_1SG_01.mp3", "audio/ID647_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 648,
+    "nuer": "bär",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["shoot"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän ba̱a̱rä raan.",
+        "english": "I am shooting the person."
+      },
+      {
+        "nuer": "Jɛn bäärɛ raan.",
+        "english": "S/he is shooting the person."
+      }
+    ],
+    "audio_files": ["audio/ID648_TR_1SG_01.mp3", "audio/ID648_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 649,
+    "nuer": "to̱l",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["harvest (maize)", "break (pencil or maizelike objects)"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän tölä pencil.",
+        "english": "I am breaking the pencil."
+      },
+      {
+        "nuer": "Jɛn to̱lɛ pencil.",
+        "english": "S/he is breaking the pencil."
+      }
+    ],
+    "audio_files": ["audio/ID649_TR_1SG_01.mp3", "audio/ID649_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 650,
+    "nuer": "cuɔth",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["insert"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän cuɔthä duɔɔr.",
+        "english": "I am inserting the thing."
+      },
+      {
+        "nuer": "Jɛn cothɛ duɔɔr.",
+        "english": "S/he is inserting the thing."
+      }
+    ],
+    "audio_files": ["audio/ID650_TR_1SG_01.mp3", "audio/ID650_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 652,
+    "nuer": "kɛt",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["sing"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän kɛ̈tä dit.",
+        "english": "I am singing the song."
+      },
+      {
+        "nuer": "Jɛn kɛtɛ dit.",
+        "english": "S/he is singing the song."
+      }
+    ],
+    "audio_files": ["audio/ID652_TR_1SG_01.mp3", "audio/ID652_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 653,
+    "nuer": "ɣɔ̱a̱n",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["try"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän ɣɔ̱a̱a̱nä bi̱.",
+        "english": "I am trying the clothing."
+      },
+      {
+        "nuer": "Jɛn ɣɔ̱ɔ̱nɛ duɔɔr.",
+        "english": "S/he is trying the thing."
+      }
+    ],
+    "audio_files": ["audio/ID653_TR_1SG_01.mp3", "audio/ID653_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 654,
+    "nuer": "mam",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["attack"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän mamä raan.",
+        "english": "I am attacking the person."
+      },
+      {
+        "nuer": "Jɛn mamɛ raan.",
+        "english": "S/he is attacking the person."
+      }
+    ],
+    "audio_files": ["audio/ID654_TR_1SG_01.mp3", "audio/ID654_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 655,
+    "nuer": "ɣɔ̱n",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["test"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän ɣɔ̱a̱a̱nä raan.",
+        "english": "I am testing the person."
+      },
+      {
+        "nuer": "Jɛn ɣɔ̱ɔ̱nɛ raan.",
+        "english": "S/he is testing the person."
+      }
+    ],
+    "audio_files": ["audio/ID655_TR_1SG_01.mp3", "audio/ID655_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 656,
+    "nuer": "jäl",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["walk"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän ja̱lä ɛ wɛnɛmɛ.",
+        "english": "I am walking over here."
+      },
+      {
+        "nuer": "Jɛn jälɛ ɛ wɛnɛ.",
+        "english": "She is walking here."
+      }
+    ],
+    "audio_files": ["audio/ID656_IN_1SG_01.mp3", "audio/ID656_IN_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 657,
+    "nuer": "mi̱th",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["eat"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän mi̱ethä kɛ.",
+        "english": "I am eating food."
+      },
+      {
+        "nuer": "Jɛn mi̱thɛ kɛ.",
+        "english": "She is eating food."
+      }
+    ],
+    "audio_files": ["audio/ID657_IN_1SG_01.mp3", "audio/ID657_IN_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 658,
+    "nuer": "jiök",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["tell"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän jiökä Bool ɛ bir.",
+        "english": "I am telling Bool (PN) to come."
+      },
+      {
+        "nuer": "jiɛn jio̱kɛ Bool ɛ bir.",
+        "english": "S/he is telling Bool (PN) to come."
+      }
+    ],
+    "audio_files": ["audio/ID658_TR_1SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 694,
+    "nuer": "yɔ̱t",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["whip"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän yɔ̱a̱tä raan.",
+        "english": "I am whipping the person."
+      },
+      {
+        "nuer": "Jɛn yɔ̱tɛ raan.",
+        "english": "S/he is whipping the person."
+      }
+    ],
+    "audio_files": ["audio/ID694_TR_1SG_01.mp3", "audio/ID694_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 695,
+    "nuer": "kuir",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["wrestle down"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän kuiɛɛrä raan.",
+        "english": "I am wrestling the person down."
+      },
+      {
+        "nuer": "Jɛn kuiirɛ raan.",
+        "english": "S/he is wrestling the person down."
+      }
+    ],
+    "audio_files": ["audio/ID695_TR_1SG_01.mp3", "audio/ID695_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 696,
+    "nuer": "rith",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["wrap"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän riɛthä ŋuani̱.",
+        "english": "I am wrapping things."
+      },
+      {
+        "nuer": "Jɛn rithɛ ŋuani̱.",
+        "english": "S/he is wrapping things."
+      }
+    ],
+    "audio_files": ["audio/ID696_TR_1SG_01.mp3", "audio/ID696_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 697,
+    "nuer": "diɛɛr",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["worry"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän diɛɛrä .",
+        "english": "I worry here."
+      },
+      {
+        "nuer": "Jɛn diɛɛrɛ .",
+        "english": "S/he worries."
+      }
+    ],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 698,
+    "nuer": "nyuɔ̱ɔ̱r",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["sit on (something)"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän nyuɔ̱ɔ̱rä ɛ wɛnɛ.",
+        "english": "I am sitting here."
+      },
+      {
+        "nuer": "Jɛn nyuurɛ ɛ wɛnɛ.",
+        "english": "S/he is sitting here."
+      }
+    ],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 700,
+    "nuer": "jɔc",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["appear"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän jɔacä ɛ wɛnɛ.",
+        "english": "I am appearing here."
+      },
+      {
+        "nuer": "Jɛn jɔcɛ ɛ wɛnɛ.",
+        "english": "S/he is appearing here."
+      }
+    ],
+    "audio_files": ["audio/ID700_IN_1SG_01.mp3", "audio/ID700_IN_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 701,
+    "nuer": "tɛth",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["fall"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän tɛ̈thä ɛ wɛnɛ.",
+        "english": "I am falling here."
+      },
+      {
+        "nuer": "Jɛn tɛthɛ ɛ wɛnɛ.",
+        "english": "S/he is falling here."
+      }
+    ],
+    "audio_files": ["audio/ID701_IN_1SG_01.mp3", "audio/ID701_IN_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 702,
+    "nuer": "räth",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["go without stopping"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän ra̱thä rɛaaɣ.",
+        "english": "I am going to town without stopping."
+      },
+      {
+        "nuer": "Jɛn räthɛ rɛaaɣ.",
+        "english": "S/he is going to town without stopping."
+      }
+    ],
+    "audio_files": ["audio/ID702_IN_1SG_01.mp3", "audio/ID702_IN_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 703,
+    "nuer": "ŋuɔ̱c",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["sniff"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän ŋuɔ̱a̱a̱cä duɔɔr.",
+        "english": "I am sniffing the thing."
+      },
+      {
+        "nuer": "Jɛn ŋuɔ̱ɔ̱cɛ duɔɔr.",
+        "english": "S/he is sniffing the thing."
+      }
+    ],
+    "audio_files": ["audio/ID703_TR_1SG_01.mp3", "audio/ID703_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 704,
+    "nuer": "thiɛm",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["sneeze"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän thiɛ̈mä ɛ wɛnɛ.",
+        "english": "I am sneezing here."
+      },
+      {
+        "nuer": "Jɛn thiɛmɛ.",
+        "english": "S/he is sneezing."
+      }
+    ],
+    "audio_files": ["audio/ID704_IN_1SG_01.mp3", "audio/ID704_IN_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 706,
+    "nuer": "ruat",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["sniff"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän ruatä duɔɔr.",
+        "english": "I am sniffing the thing."
+      },
+      {
+        "nuer": "Jɛn ruatɛ duɔɔr.",
+        "english": "S/he is sniffing the thing."
+      }
+    ],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 707,
+    "nuer": "ruet",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["be pregnant with", "make someone pregnant"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän ruëtä gat.",
+        "english": "I am pregnant with the child."
+      },
+      {
+        "nuer": "Jɛn ruetɛ gat.",
+        "english": "She is pregnant with the child."
+      }
+    ],
+    "audio_files": ["audio/ID707_TR_1SG_01.mp3", "audio/ID707_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 708,
+    "nuer": "kuɔny",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["bury"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän kuɔnyä raan.",
+        "english": "I am burrying the person."
+      },
+      {
+        "nuer": "Jɛn konyɛ raan.",
+        "english": "S/he is burrying the person."
+      }
+    ],
+    "audio_files": ["audio/ID708_TR_1SG_01.mp3", "audio/ID708_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 709,
+    "nuer": "joc",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["chase"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän juɔcä raan.",
+        "english": "I am chasing the person."
+      },
+      {
+        "nuer": "Jɛn jocɛ raan.",
+        "english": "S/he is chasing the person."
+      }
+    ],
+    "audio_files": ["audio/ID709_TR_1SG_01.mp3", "audio/ID709_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 710,
+    "nuer": "joc",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["eat cartilages off (bone)"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän juɔcä cɔ̱a̱a̱.",
+        "english": "I am eating cartilages off the bone."
+      },
+      {
+        "nuer": "Jɛn jocɛ cɔ̱a̱a̱.",
+        "english": "S/he is eating cartilages off the bone."
+      }
+    ],
+    "audio_files": ["audio/ID710_TR_1SG_01.mp3", "audio/ID710_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 711,
+    "nuer": "guɛny",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["part"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän guɛ̈nyä mi̱em.",
+        "english": "I am parting hair."
+      },
+      {
+        "nuer": "Jɛn guɛnyɛ mi̱em.",
+        "english": "S/he is parting hair."
+      }
+    ],
+    "audio_files": ["audio/ID711_TR_1SG_01.mp3", "audio/ID711_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 712,
+    "nuer": "kuɛth",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["speak badly to"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän kuɛ̈thä raan.",
+        "english": "I am speaking badly to the person."
+      },
+      {
+        "nuer": "Jɛn kuɛthɛ raan.",
+        "english": "S/he is speaking badly to the person."
+      }
+    ],
+    "audio_files": ["audio/ID712_TR_1SG_01.mp3", "audio/ID712_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 713,
+    "nuer": "lot",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["suck out (bone marrow)"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän luɔɔtä kɔ̱a̱.",
+        "english": "I am sucking out bone marrow."
+      },
+      {
+        "nuer": "Jɛn lootɛ  kɔ̱a̱.",
+        "english": "S/he is sucking bone marrow."
+      }
+    ],
+    "audio_files": [],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 747,
+    "nuer": "pik",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["fill with", "pay back (money)"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän piɛkä pi̱u.",
+        "english": "I am filling with water."
+      },
+      {
+        "nuer": "Jɛn pikɛ pi̱u.",
+        "english": "S/he is filling with water."
+      }
+    ],
+    "audio_files": ["audio/ID747_TR_1SG_01.mp3", "audio/ID747_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 748,
+    "nuer": "liŋ",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["hear", "listen to"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän liɛŋä dit.",
+        "english": "I hear the song."
+      },
+      {
+        "nuer": "Jɛn liŋɛ dit.",
+        "english": "S/he hears the song."
+      }
+    ],
+    "audio_files": ["audio/ID748_TR_1SG_01.mp3", "audio/ID748_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 749,
+    "nuer": "kɔŋ",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["greet joyfully", "meet joyfully"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän kɔaaŋä raan.",
+        "english": "I am greeting the person joyfully."
+      },
+      {
+        "nuer": "Jɛn kɔɔŋɛ raan.",
+        "english": "S/he is greeting the person joyfully."
+      }
+    ],
+    "audio_files": ["audio/ID749_TR_1SG_01.mp3", "audio/ID749_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 750,
+    "nuer": "tiɛŋ",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["shake by making small movements"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän tiɛŋä ŋuani̱.",
+        "english": "I am shaking things by making small movements."
+      },
+      {
+        "nuer": "Jɛn tiŋɛ ŋuani̱.",
+        "english": "S/he is shaking things by making small movements."
+      }
+    ],
+    "audio_files": ["audio/ID750_TR_1SG_01.mp3", "audio/ID750_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 751,
+    "nuer": "li̱ek",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["tickle"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän li̱ekä raan.",
+        "english": "I am tickling the person."
+      },
+      {
+        "nuer": "Jɛn li̱kɛ raan.",
+        "english": "S/he is tickling the person."
+      }
+    ],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 752,
+    "nuer": "wi̱k",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["cry about"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän wi̱eekä raan.",
+        "english": "I am crying about the person."
+      },
+      {
+        "nuer": "Jɛn wii̱kɛ raan.",
+        "english": "S/he is crying about the person."
+      }
+    ],
+    "audio_files": ["audio/ID752_TR_1SG_01.mp3", "audio/ID752_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 753,
+    "nuer": "ci̱th",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["have diarrhea"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän ci̱thä ɣä.",
+        "english": "I am having a diarrhea."
+      },
+      {
+        "nuer": "Jɛn ci̱thɛ jɛ.",
+        "english": "S/he is having a diarrhea."
+      }
+    ],
+    "audio_files": ["audio/ID753_TR_1SG_01.mp3", "audio/ID753_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 754,
+    "nuer": "cic",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["complain about", "moan about"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän ciɛcä ŋuani̱.",
+        "english": "I am complating about things."
+      },
+      {
+        "nuer": "Jɛn cicɛ ŋuani̱.",
+        "english": "S/he is complaining about things."
+      }
+    ],
+    "audio_files": ["audio/ID754_TR_1SG_01.mp3", "audio/ID754_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 755,
+    "nuer": "mɔc",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["drown"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän mɔacä raan.",
+        "english": "I am making the person drown."
+      },
+      {
+        "nuer": "Jɛn mɔcɛ raan.",
+        "english": "S/he is making the person drown."
+      }
+    ],
+    "audio_files": ["audio/ID755_TR_1SG_01.mp3", "audio/ID755_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 756,
+    "nuer": "guir",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["manage"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän guiɛɛrä ŋuani̱.",
+        "english": "I am managing things."
+      },
+      {
+        "nuer": "Jɛn guiirɛ ŋuani̱.",
+        "english": "S/he is managing things."
+      }
+    ],
+    "audio_files": ["audio/ID756_TR_1SG_01.mp3", "audio/ID756_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 757,
+    "nuer": "guir",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["spread rumours about"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän guiɛɛrä raan.",
+        "english": "I am spreading rumours about the person."
+      },
+      {
+        "nuer": "Jɛn guiirɛ raan.",
+        "english": "S/he is spreading rumours about the person."
+      }
+    ],
+    "audio_files": ["audio/ID757_TR_1SG_01.mp3", "audio/ID757_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 758,
+    "nuer": "täth",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["build with mud"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän ta̱thä duɔɔr.",
+        "english": "I am building the thing with mud."
+      },
+      {
+        "nuer": "Jɛn täthɛ duɔɔr.",
+        "english": "S/he is building the thing with mud."
+      }
+    ],
+    "audio_files": ["audio/ID758_TR_1SG_01.mp3", "audio/ID758_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 759,
+    "nuer": "dɔŋ",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["knock on"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän dɔaŋä bap.",
+        "english": "I am knocking on the door."
+      },
+      {
+        "nuer": "Jɛn dɔŋɛ bap.",
+        "english": "S/he is knocking on the door."
+      }
+    ],
+    "audio_files": ["audio/ID759_TR_1SG_01.mp3", "audio/ID759_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 760,
+    "nuer": "ro̱t",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["make noise about", "cry about", "need"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän röötä ŋuani̱.",
+        "english": "I am making noise about things."
+      },
+      {
+        "nuer": "Jɛn ro̱o̱tɛ ŋuani̱.",
+        "english": "S/he is making noise about things."
+      }
+    ],
+    "audio_files": ["audio/ID760_TR_1SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 761,
+    "nuer": "rɔaal",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["quarrel"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän rɔaalä ɛ wɛnɛ.",
+        "english": "I am quarreling here."
+      },
+      {
+        "nuer": "Jɛn rɔaalɛ ɛ wɛnɛ.",
+        "english": "S/he is quarreling here."
+      }
+    ],
+    "audio_files": ["audio/ID761_IN_1SG_01.mp3", "audio/ID761_IN_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 762,
+    "nuer": "lɔ̱ŋ",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["relax"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän lɔ̱̱a̱ŋä tetdä.",
+        "english": "I am relaxing my hand."
+      },
+      {
+        "nuer": "Jɛn lɔ̱ŋɛ tetdɛ.",
+        "english": "S/he is relaxing her/his hand."
+      }
+    ],
+    "audio_files": ["audio/ID762_TR_1SG_01.mp3", "audio/ID762_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 763,
+    "nuer": "tɔ̱̱a̱t",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["spend rainy season"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän tɔ̱̱a̱tä .",
+        "english": "I am spendng the rainy season here."
+      },
+      {
+        "nuer": "Jɛn tɔ̱ɔ̱tɛ .",
+        "english": "S/he is spending the rainy season here."
+      }
+    ],
+    "audio_files": ["audio/ID763_IN_1SG_01.mp3", "audio/ID763_IN_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 764,
+    "nuer": "ruel",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["spend cold season"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän ruëlä cieŋ.",
+        "english": "I am spendng the cold season here."
+      },
+      {
+        "nuer": "Jɛn ruelɛ cieŋ.",
+        "english": "S/he is spending the cold season at home."
+      }
+    ],
+    "audio_files": ["audio/ID764_IN_1SG_01.mp3", "audio/ID764_IN_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 765,
+    "nuer": "jɔm",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["spend windy season"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän jɔamä cieŋ.",
+        "english": "I am spendng the windy season here."
+      },
+      {
+        "nuer": "Jɛn jɔmɛ cieŋ.",
+        "english": "S/he is spending the windy season at home."
+      }
+    ],
+    "audio_files": ["audio/ID765_IN_1SG_01.mp3", "audio/ID765_IN_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 802,
+    "nuer": "guɔ̱l",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["make sit", "sit curled up in a ball"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän guɔ̱lä raan gat.",
+        "english": "I am making a child sit for the person."
+      },
+      {
+        "nuer": "Jɛn gulɛ raan gat.",
+        "english": "S/he is making a child sit for the person."
+      }
+    ],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 804,
+    "nuer": "cuŋ",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["be straight"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän cuɔ̱ŋä raan.",
+        "english": "I am standing up straight for the person."
+      },
+      {
+        "nuer": "Jɛn cuŋɛ raan.",
+        "english": "S/he is standing up straight for the person."
+      }
+    ],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 805,
+    "nuer": "cuŋ",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["stand", "make stand"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän cuɔ̱ŋä raan.",
+        "english": "I am standing for the person."
+      },
+      {
+        "nuer": "Jɛn cuŋɛ raan.",
+        "english": "S/he is standing for the person."
+      }
+    ],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 806,
+    "nuer": "puɔ̱t",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["crumble (food)"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän puɔ̱tä duɔɔr.",
+        "english": "I am crumpling the thing."
+      },
+      {
+        "nuer": "Jɛn putɛ duɔɔr.",
+        "english": "S/he is crumpling the thing."
+      }
+    ],
+    "audio_files": ["audio/ID806_TR_1SG_01.mp3", "audio/ID806_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 807,
+    "nuer": "guur",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["follow"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän guɔ̱ɔ̱rä duɔɔr.",
+        "english": "I am following the thing."
+      },
+      {
+        "nuer": "Jɛn guurɛ duɔɔr.",
+        "english": "S/he is following the thing."
+      }
+    ],
+    "audio_files": ["audio/ID807_TR_1SG_01.mp3", "audio/ID807_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 808,
+    "nuer": "cuɔ̱k",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["march (person)"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän cuɔ̱kä raan.",
+        "english": "I am making the person march."
+      },
+      {
+        "nuer": "Jɛn cukɛ raan.",
+        "english": "S/he is making the person march."
+      }
+    ],
+    "audio_files": ["audio/ID808_TR_1SG_01.mp3", "audio/ID808_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 809,
+    "nuer": "cuɔ̱k",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["give orders to", "order around", "boss around"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän cuɔ̱kä raan.",
+        "english": "I am giving orders to the person."
+      },
+      {
+        "nuer": "Jɛn cukɛ raan.",
+        "english": "S/he is  giving orders to the person."
+      }
+    ],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 810,
+    "nuer": "mac",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["rob"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän macä raan.",
+        "english": "I am robbing the person."
+      },
+      {
+        "nuer": "Jɛn macɛ raan.",
+        "english": "S/he is robbing the person."
+      }
+    ],
+    "audio_files": ["audio/ID810_TR_1SG_01.mp3", "audio/ID810_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 811,
+    "nuer": "guur",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["remove", "behead", "skin"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän guɔ̱ɔ̱rä guɔ̱ɔ̱p.",
+        "english": "I am removing skin."
+      },
+      {
+        "nuer": "Jɛn guurɛ guɔ̱ɔ̱p.",
+        "english": "S/he is removing skin."
+      }
+    ],
+    "audio_files": ["audio/ID811_TR_1SG_01.mp3", "audio/ID811_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 812,
+    "nuer": "cuɔl",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["be dark"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän cuɔlä ɛ wɛnɛ.",
+        "english": "I am being dark."
+      },
+      {
+        "nuer": "Jɛn colɛ ɛ wɛnɛ.",
+        "english": "S/he is being dark."
+      }
+    ],
+    "audio_files": ["audio/ID812_TR_1SG_01.mp3", "audio/ID812_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 813,
+    "nuer": "köŋ",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["compete"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän köŋä ɛ wɛnɛ.",
+        "english": "I am competing here."
+      },
+      {
+        "nuer": "Jɛn ko̱ŋɛ ɛ wɛnɛ.",
+        "english": "S/he is competing here."
+      }
+    ],
+    "audio_files": ["audio/ID813_IN_1SG_01.mp3", "audio/ID813_IN_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 814,
+    "nuer": "goŋ",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["bend forward", "bow to"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän guɔŋä raan.",
+        "english": "I am bowing to a person."
+      },
+      {
+        "nuer": "Jɛn goŋɛ raan.",
+        "english": "S/he is bowing to a person."
+      }
+    ],
+    "audio_files": ["audio/ID814_TR_1SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 815,
+    "nuer": "bäl",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["cross over"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän ba̱a̱lä duɔɔr.",
+        "english": "I am crossing the thing over."
+      },
+      {
+        "nuer": "Jɛn bäälɛ duɔɔr.",
+        "english": "S/he is crossing the thing over."
+      }
+    ],
+    "audio_files": ["audio/ID815_TR_1SG_01.mp3", "audio/ID815_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 816,
+    "nuer": "pɔ̱a̱t",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["hammer in (thethering stick)"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän pɔ̱a̱tä lo̱c piny.",
+        "english": "I am hammering in a tethering stick."
+      },
+      {
+        "nuer": "Jɛn pɔ̱tɛ lo̱c piny.",
+        "english": "S/he is hammering in a tethering stick."
+      }
+    ],
+    "audio_files": ["audio/ID816_TR_1SG_01.mp3", "audio/ID816_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 817,
+    "nuer": "yɔ̱c",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["haul"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän yɔ̱a̱a̱cä ŋuani̱.",
+        "english": "I am hauling things."
+      },
+      {
+        "nuer": "Jɛn yɔ̱ɔ̱cɛ ŋuani̱.",
+        "english": "S/he is hauling things."
+      }
+    ],
+    "audio_files": ["audio/ID817_TR_1SG_01.mp3", "audio/ID817_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 818,
+    "nuer": "pɛc",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["kidnap"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän pɛ̈cä raan.",
+        "english": "I am kidnapping the person."
+      },
+      {
+        "nuer": "Jɛn pɛcɛ raan.",
+        "english": "S/he is kidnapping the person."
+      }
+    ],
+    "audio_files": ["audio/ID818_TR_1SG_01.mp3", "audio/ID818_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 819,
+    "nuer": "guŋ",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["peek under at"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän guɔ̱ɔ̱ŋä ŋuani̱.",
+        "english": "I am peeking under at things."
+      },
+      {
+        "nuer": "Jɛn guuŋɛ ŋuani̱.",
+        "english": "S/he is peeking under at things."
+      }
+    ],
+    "audio_files": ["audio/ID819_TR_1SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 859,
+    "nuer": "rueth",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["drink", "eat watery food"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän ruethä cak.",
+        "english": "I am drinking milk."
+      },
+      {
+        "nuer": "Jɛn ruEthɛ cak.",
+        "english": "S/he is drinking milk."
+      }
+    ],
+    "audio_files": ["audio/ID859_TR_1SG_01.mp3", "audio/ID859_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 860,
+    "nuer": "göl",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["surround", "enclose"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän gölä le̱y.",
+        "english": "I am enclosing animals."
+      },
+      {
+        "nuer": "Jɛn go̱lɛ le̱y.",
+        "english": "S/he is enclosing animals."
+      }
+    ],
+    "audio_files": ["audio/ID860_TR_1SG_01.mp3", "audio/ID860_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 861,
+    "nuer": "dho̱k",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["fatten"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän dhöökä le̱y.",
+        "english": "I am fattening animals."
+      },
+      {
+        "nuer": "Jɛn dho̱o̱kɛ le̱y.",
+        "english": "S/he is fattening animals."
+      }
+    ],
+    "audio_files": ["audio/ID861_TR_1SG_01.mp3", "audio/ID861_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 862,
+    "nuer": "com",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["encourage"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän cuɔmä raan.",
+        "english": "I am encouraging the person."
+      },
+      {
+        "nuer": "Jɛn comɛ raan.",
+        "english": "S/he is encouraging the person."
+      }
+    ],
+    "audio_files": ["audio/ID862_TR_1SG_01.mp3", "audio/ID862_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 863,
+    "nuer": "yeny",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["extinguish"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän yënyä mac.",
+        "english": "I am extinguishing the fire."
+      },
+      {
+        "nuer": "Jɛn yenyɛ mac.",
+        "english": "S/he is extinguishing the fire."
+      }
+    ],
+    "audio_files": ["audio/ID863_TR_1SG_01.mp3", "audio/ID863_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 864,
+    "nuer": "pɔat",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["tie to tethering stick"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän pɔatä yaŋ.",
+        "english": "I am tying the cow to the tethering stick."
+      },
+      {
+        "nuer": "Jɛn pɔtɛ yaŋ.",
+        "english": "S/he is tying the cow to the tethering stick."
+      }
+    ],
+    "audio_files": ["audio/ID864_TR_1SG_01.mp3", "audio/ID864_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 865,
+    "nuer": "jäny",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["talk badly to", "behave badly towards"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän ja̱a̱nyä raan.",
+        "english": "I am talking badly to a person."
+      },
+      {
+        "nuer": "Jɛn jäänyɛ raan.",
+        "english": "S/he is talking badly to a person."
+      }
+    ],
+    "audio_files": ["audio/ID865_TR_1SG_01.mp3", "audio/ID865_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 866,
+    "nuer": "riŋ",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["run"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän riɛŋä ɛ wɛnɛ.",
+        "english": "I am running here."
+      },
+      {
+        "nuer": "Jɛn riŋɛ ɛ wɛnɛ.",
+        "english": "S/he is running here."
+      }
+    ],
+    "audio_files": ["audio/ID866_IN_1SG_01.mp3", "audio/ID866_IN_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 867,
+    "nuer": "wuɔ̱r",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["run"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän wuɔ̱ɔ̱rä kooŋ.",
+        "english": "I am running a marathon."
+      },
+      {
+        "nuer": "Jɛn wuurɛ kooŋ.",
+        "english": "S/he is running a marathon."
+      }
+    ],
+    "audio_files": ["audio/ID867_TR_1SG_01.mp3", "audio/ID867_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 868,
+    "nuer": "ŋuɔc",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["run"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän ŋuɔacä kooŋ.",
+        "english": "I am running a marathon."
+      },
+      {
+        "nuer": "Jɛn ŋuɔcɛ kooŋ.",
+        "english": "S/he is running a marathon."
+      }
+    ],
+    "audio_files": ["audio/ID868_TR_1SG_01.mp3", "audio/ID868_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 869,
+    "nuer": "kuɛn",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["read"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän kuɛ̈nä bok.",
+        "english": "I am reading a book."
+      },
+      {
+        "nuer": "Jɛn kuɛnɛ bok.",
+        "english": "S/he is reading a book."
+      }
+    ],
+    "audio_files": ["audio/ID869_TR_1SG_01.mp3", "audio/ID869_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 870,
+    "nuer": "ja̱k",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["send"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän ja̱kä ŋuani̱.",
+        "english": "I am sending things."
+      },
+      {
+        "nuer": "Jɛn jäkɛ ŋuani̱.",
+        "english": "S/he is sending things."
+      }
+    ],
+    "audio_files": ["audio/ID870_TR_1SG_01.mp3", "audio/ID870_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 871,
+    "nuer": "jak",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["let"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän jakä raan.",
+        "english": "I am letting the person go."
+      },
+      {
+        "nuer": "Jɛn jakɛ raan.",
+        "english": "S/he is letting the person go."
+      }
+    ],
+    "audio_files": ["audio/ID871_TR_1SG_01.mp3", "audio/ID871_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 872,
+    "nuer": "jɛn",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["leave and come back"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän jɛ̈yä cieŋ.",
+        "english": "I leave the house and come back."
+      },
+      {
+        "nuer": "Jɛn jɛyɛ cieŋ.",
+        "english": "S/he leaves the house and comes back."
+      }
+    ],
+    "audio_files": ["audio/ID872_IN_1SG_01.mp3", "audio/ID872_IN_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 873,
+    "nuer": "te",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["stay", "exist", "have"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän ta̱ ɛ wɛnɛ.",
+        "english": "I am staying here."
+      },
+      {
+        "nuer": "Jɛn tɛ ɛ wɛnɛ.",
+        "english": "S/he is staying here."
+      }
+    ],
+    "audio_files": ["audio/ID873_IN_1SG_01.mp3", "audio/ID873_IN_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 874,
+    "nuer": "wä",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["go"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän wää kä lat.",
+        "english": "I am going to work."
+      },
+      {
+        "nuer": "Jɛn wɛ kä lat.",
+        "english": "S/he is going to work."
+      }
+    ],
+    "audio_files": ["audio/ID874_IN_1SG_01.mp3", "audio/ID874_IN_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 875,
+    "nuer": "ben",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["be"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän bä la ciek.",
+        "english": "I am becoming a woman."
+      },
+      {
+        "nuer": "Jɛn bɛ la ciek.",
+        "english": "She is becoming a woman."
+      }
+    ],
+    "audio_files": ["audio/ID875_IN_1SG_01.mp3", "audio/ID875_IN_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 876,
+    "nuer": "naŋ",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["take"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän naŋä duɔɔr.",
+        "english": "I am taking the thing."
+      },
+      {
+        "nuer": "Jɛn naŋɛ duɔɔr.",
+        "english": "S/he is taking the thing."
+      }
+    ],
+    "audio_files": ["audio/ID876_TR_1SG_01.mp3", "audio/ID876_TR_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 877,
+    "nuer": "ruat",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["snore"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän ruatä ɛ wɛnɛ.",
+        "english": "I am snoring here."
+      },
+      {
+        "nuer": "Jɛn ruatɛ ɛ wɛnɛ.",
+        "english": "S/he is snoring here."
+      }
+    ],
+    "audio_files": ["audio/ID877_IN_1SG_01.mp3", "audio/ID877_IN_3SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 879,
+    "nuer": "cɔt",
+    "ipa": null,
+    "part_of_speech": null,
+    "plural_info": null,
+    "senses": ["labour push"],
+    "sense_info": null,
+    "examples": [
+      {
+        "nuer": "Ɣän cɔatä gat.",
+        "english": "I am pushing out the child during labour."
+      },
+      {
+        "nuer": "Jɛn cɔtɛ gat.",
+        "english": "She is pushing out the child during labour."
+      }
+    ],
+    "audio_files": ["audio/ID879_TR_1SG_01.mp3"],
+    "dialect": "Lou dialect"
+  },
+  {
+    "id": 2009,
+    "nuer": "kɔn",
+    "ipa": null,
+    "part_of_speech": "pron.",
+    "plural_info": null,
+    "senses": ["us (includng addressee)"],
+    "sense_info": null,
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2010,
+    "nuer": "kɔ",
+    "ipa": null,
+    "part_of_speech": "pron.",
+    "plural_info": null,
+    "senses": ["us (excluding addressee)"],
+    "sense_info": null,
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2011,
+    "nuer": "yɛ",
+    "ipa": null,
+    "part_of_speech": "pron.",
+    "plural_info": null,
+    "senses": ["you (plural object)"],
+    "sense_info": null,
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2012,
+    "nuer": "kɛ",
+    "ipa": null,
+    "part_of_speech": "pron.",
+    "plural_info": null,
+    "senses": ["them"],
+    "sense_info": null,
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2013,
+    "nuer": "kiɛl",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": null,
+    "senses": ["cough"],
+    "sense_info": "noun;plural:coughs",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2014,
+    "nuer": "kööŋ",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": null,
+    "senses": ["competition"],
+    "sense_info": "noun;plural:competitions",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2015,
+    "nuer": "ben",
+    "ipa": null,
+    "part_of_speech": "intr. verb",
+    "plural_info": null,
+    "senses": ["come"],
+    "sense_info": null,
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2016,
+    "nuer": "pan",
+    "ipa": null,
+    "part_of_speech": "adverb",
+    "plural_info": null,
+    "senses": ["yesterday"],
+    "sense_info": null,
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2017,
+    "nuer": "juɔk",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:juɔkni",
+    "senses": ["week"],
+    "sense_info": "noun;plural:weeks",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2018,
+    "nuer": "rɛ̈ɛ̈th",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": null,
+    "senses": ["drought"],
+    "sense_info": "noun;plural:droughts",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2019,
+    "nuer": "duelgɔ̱ɔ̱rä",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": null,
+    "senses": ["school"],
+    "sense_info": "noun;plural:schools",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2020,
+    "nuer": "ŋua̱l",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": null,
+    "senses": ["debt"],
+    "sense_info": "noun;plural:debts",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2080,
+    "nuer": "ka̱a̱ŋ",
+    "ipa": null,
+    "part_of_speech": "tr. verb",
+    "plural_info": null,
+    "senses": ["lie to", "trick"],
+    "sense_info": null,
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2081,
+    "nuer": "miŋ",
+    "ipa": null,
+    "part_of_speech": "adj. verb",
+    "plural_info": null,
+    "senses": ["deaf"],
+    "sense_info": null,
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2082,
+    "nuer": "mi̱i̱ŋ",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": null,
+    "senses": ["deafness"],
+    "sense_info": null,
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2083,
+    "nuer": "riɛk",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": null,
+    "senses": ["problem"],
+    "sense_info": "noun;plural:problems",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2084,
+    "nuer": "ɛ",
+    "ipa": null,
+    "part_of_speech": "cop.",
+    "plural_info": null,
+    "senses": ["is; am; was (equative)"],
+    "sense_info": null,
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2085,
+    "nuer": "rɛy",
+    "ipa": null,
+    "part_of_speech": "loc. noun",
+    "plural_info": null,
+    "senses": ["inside", "within"],
+    "sense_info": null,
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2086,
+    "nuer": "maalɛ",
+    "ipa": null,
+    "part_of_speech": "exclam.",
+    "plural_info": null,
+    "senses": ["hello"],
+    "sense_info": null,
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2087,
+    "nuer": "rue̱e̱c",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": null,
+    "senses": ["king"],
+    "sense_info": "noun;plural:kings",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2088,
+    "nuer": "luk",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": null,
+    "senses": ["judge"],
+    "sense_info": "noun;plural:judges",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2090,
+    "nuer": "tɛ̈t",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": null,
+    "senses": ["canal"],
+    "sense_info": "noun;plural:canals",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2091,
+    "nuer": "pul",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": null,
+    "senses": ["lake", "island, small"],
+    "sense_info": "noun;plural:lakes",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2093,
+    "nuer": "jiom",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": null,
+    "senses": ["wind"],
+    "sense_info": "noun;plural:winds",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2150,
+    "nuer": "jiɛn da̱ŋ rɛw wi̱cdɛ ŋuaan",
+    "ipa": null,
+    "part_of_speech": "num.",
+    "plural_info": null,
+    "senses": ["twenty four"],
+    "sense_info": null,
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2151,
+    "nuer": "jiɛn da̱ŋ rɛw wi̱cdɛ dhieec",
+    "ipa": null,
+    "part_of_speech": "num.",
+    "plural_info": null,
+    "senses": ["twenty five"],
+    "sense_info": null,
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2152,
+    "nuer": "jiɛn da̱ŋ rɛw wi̱cdɛ bäkɛl",
+    "ipa": null,
+    "part_of_speech": "num.",
+    "plural_info": null,
+    "senses": ["twenty six"],
+    "sense_info": null,
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2153,
+    "nuer": "jiɛn da̱ŋ rɛw wi̱cdɛ bärɔw",
+    "ipa": null,
+    "part_of_speech": "num.",
+    "plural_info": null,
+    "senses": ["twenty seven"],
+    "sense_info": null,
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2154,
+    "nuer": "jiɛn da̱ŋ rɛw wi̱cdɛ bädäk",
+    "ipa": null,
+    "part_of_speech": "num.",
+    "plural_info": null,
+    "senses": ["twenty eight"],
+    "sense_info": null,
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2155,
+    "nuer": "jiɛn da̱ŋ rɛw wi̱cdɛ bäŋuan",
+    "ipa": null,
+    "part_of_speech": "num.",
+    "plural_info": null,
+    "senses": ["twenty nine"],
+    "sense_info": null,
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2156,
+    "nuer": "jiɛn da̱ŋ diɔ̱k",
+    "ipa": null,
+    "part_of_speech": "num.",
+    "plural_info": null,
+    "senses": ["thirty"],
+    "sense_info": null,
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2157,
+    "nuer": "jiɛn da̱ŋ diɔ̱k wi̱cdɛ kɛl",
+    "ipa": null,
+    "part_of_speech": "num.",
+    "plural_info": null,
+    "senses": ["thirty one"],
+    "sense_info": null,
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2158,
+    "nuer": "jiɛn da̱ŋ diɔ̱k wi̱cdɛ rɛw",
+    "ipa": null,
+    "part_of_speech": "num.",
+    "plural_info": null,
+    "senses": ["thirty two"],
+    "sense_info": null,
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2159,
+    "nuer": "jiɛn da̱ŋ diɔ̱k wi̱cdɛ diɔ̱k",
+    "ipa": null,
+    "part_of_speech": "num.",
+    "plural_info": null,
+    "senses": ["thirty three"],
+    "sense_info": null,
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2160,
+    "nuer": "jiɛn da̱ŋ diɔ̱k wi̱cdɛ ŋuaan",
+    "ipa": null,
+    "part_of_speech": "num.",
+    "plural_info": null,
+    "senses": ["thirty four"],
+    "sense_info": null,
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2161,
+    "nuer": "jiɛn da̱ŋ diɔ̱k wi̱cdɛ dhieec",
+    "ipa": null,
+    "part_of_speech": "num.",
+    "plural_info": null,
+    "senses": ["thirty five"],
+    "sense_info": null,
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2211,
+    "nuer": "lel",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": null,
+    "senses": ["doum palm"],
+    "sense_info": "noun;plural:doum palms",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2212,
+    "nuer": "pɛl pɛl",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": null,
+    "senses": ["hare"],
+    "sense_info": "noun;plural:hare",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2213,
+    "nuer": "kacik",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": null,
+    "senses": ["donkey"],
+    "sense_info": "noun;plural:donkeys",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2214,
+    "nuer": "nyigol",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": null,
+    "senses": ["vulture"],
+    "sense_info": "noun;plural:vultures",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2215,
+    "nuer": "nyakuoth-gɛɛr",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": null,
+    "senses": ["hoopoe"],
+    "sense_info": "noun;plural:hoopoes",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2216,
+    "nuer": "jak-gɛ̈r-gɛ̈ɛ̈r",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": null,
+    "senses": ["white stork"],
+    "sense_info": "noun;plural:white storks",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2217,
+    "nuer": "lɛ̈ɛ̈m",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": null,
+    "senses": ["great grey shrike"],
+    "sense_info": "noun;plural:great grey shrikes",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2218,
+    "nuer": "jakɔ̱k",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": null,
+    "senses": ["pied crow"],
+    "sense_info": "noun;plural:pied crows",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2219,
+    "nuer": "lip",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": null,
+    "senses": ["cormorant"],
+    "sense_info": "noun;plural:cormorants",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2220,
+    "nuer": "nyaŋlew",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": null,
+    "senses": ["nightjar"],
+    "sense_info": "noun;plural:nightjars",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2221,
+    "nuer": "yiiw",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": null,
+    "senses": ["spiky fish"],
+    "sense_info": "noun;plural:spiky fish",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2222,
+    "nuer": "luth",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": null,
+    "senses": ["mudfish"],
+    "sense_info": "noun;plural:mudfish",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2223,
+    "nuer": "ruɛy",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": null,
+    "senses": ["saliva", "spit"],
+    "sense_info": null,
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2224,
+    "nuer": "diëëth",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:diëëth",
+    "senses": [],
+    "sense_info": "noun;plural:parents",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2225,
+    "nuer": "murkäb",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:murkäbni",
+    "senses": ["ship"],
+    "sense_info": "noun;plural:ships",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2226,
+    "nuer": "jia̱c",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": null,
+    "senses": ["stomach"],
+    "sense_info": "noun;plural:stomachs",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2227,
+    "nuer": "tak",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": null,
+    "senses": ["pancreas"],
+    "sense_info": "noun;plural:pacreases",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2228,
+    "nuer": "kën yaŋ",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:këën ɤɔ̱ɔ̱k",
+    "senses": ["cattle egret"],
+    "sense_info": "noun;plural:cattle egrets",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2229,
+    "nuer": "kën yier",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:këën yier",
+    "senses": ["little egret"],
+    "sense_info": "noun;plural:little egrets",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2230,
+    "nuer": "kën ka̱w ka̱w",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:këën kawkaw",
+    "senses": ["great egret"],
+    "sense_info": "noun;plural:great egrets",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2231,
+    "nuer": "go̱k wijua̱t",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:go̱k wijuatni",
+    "senses": ["grey heron"],
+    "sense_info": "noun;plural:grey herons",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2232,
+    "nuer": "ŋo̱k kɔa̱m",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:ŋo̱k kɔa̱mni",
+    "senses": ["squacco heron"],
+    "sense_info": "noun;plural:squacco herons",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2233,
+    "nuer": "ŋo̱k rɛc",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:ŋo̱k rɛcni",
+    "senses": ["Goliath heron"],
+    "sense_info": "noun;plural:Goliath herons",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2234,
+    "nuer": "kën ŋo̱k",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:këën ŋök",
+    "senses": ["black-crowned night-heron"],
+    "sense_info": "noun;plural:black-crowned night-herons",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2235,
+    "nuer": "do̱p gɛɛl",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:do̱p gɛɛli",
+    "senses": ["hammerkop"],
+    "sense_info": "noun;plural:hammerkops",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2236,
+    "nuer": "ŋo̱k tik yua̱k",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:ŋo̱k tik yua̱k",
+    "senses": ["black-headed heron"],
+    "sense_info": "noun;plural:black-headed herons",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2237,
+    "nuer": "nyaguic piw",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:nyaguic piw",
+    "senses": ["crowned plover"],
+    "sense_info": "noun;plural:crowned plovers",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2238,
+    "nuer": "thok kiɛr",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:thok kiɛri",
+    "senses": ["three-banded plover"],
+    "sense_info": "noun;plural:three-banded plovers",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2239,
+    "nuer": "kët rɛc",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:kët rɛc",
+    "senses": ["blacksmith plover"],
+    "sense_info": "noun;plural:blacksmith plovers",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2240,
+    "nuer": "guicpiw",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:guicpiw",
+    "senses": ["crocodile bird; Egyptian plover"],
+    "sense_info": "noun;plural:crocodile birds; Egyptian plovers",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2241,
+    "nuer": "jiec thok-jak",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:jiec thok jak",
+    "senses": ["oystercatcher"],
+    "sense_info": "noun;plural:oystercatchers",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2242,
+    "nuer": "jak yier",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:jak yieeri",
+    "senses": ["greater flamingo"],
+    "sense_info": "noun;plural:greater flamingos",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2243,
+    "nuer": "ŋo̱k thok pur",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:ŋök thok puuri",
+    "senses": ["shoebill"],
+    "sense_info": "noun;plural:shoebills",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2244,
+    "nuer": "jak thok pur",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:jak thok puuri",
+    "senses": ["African spoonbill"],
+    "sense_info": "noun;plural:African spoonbills",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2245,
+    "nuer": "waw-waaw",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:waw-wawni",
+    "senses": ["hadada ibis; hadeda ibis"],
+    "sense_info": "noun;plural:hadada ibises; hadeda ibises",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2246,
+    "nuer": "riak",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:riakni",
+    "senses": ["grey-crowned crane"],
+    "sense_info": "noun;plural:grey-crowned cranes",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2247,
+    "nuer": "yiël wɛɛc",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:yiäl wɛɛcni",
+    "senses": ["blue crane"],
+    "sense_info": "noun;plural:blue cranes",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2248,
+    "nuer": "nyarial gɛr",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:nyarial gɛɛri",
+    "senses": ["black-capped avocet; pied avocet"],
+    "sense_info": "noun;plural:black-capped avocets; pied avocets",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2249,
+    "nuer": "kuey lual yier",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:kuäy lual yieeri",
+    "senses": ["red-knobbed coot"],
+    "sense_info": "noun;plural:red-knobbed coots",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2250,
+    "nuer": "rial bɛɛk",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:rial bɛɛkni",
+    "senses": ["saddle-billed stork"],
+    "sense_info": "noun;plural:saddle-billed storks",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2251,
+    "nuer": "kët yier",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:kät yiɛɛri",
+    "senses": ["black-winged stilt"],
+    "sense_info": "noun;plural:black-winged stilts",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2252,
+    "nuer": "kuën",
+    "ipa": null,
+    "part_of_speech": "gerund",
+    "plural_info": null,
+    "senses": ["counting"],
+    "sense_info": null,
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2253,
+    "nuer": "da̱ŋ",
+    "ipa": null,
+    "part_of_speech": "num. classifier",
+    "plural_info": null,
+    "senses": ["numeral classifier"],
+    "sense_info": null,
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2254,
+    "nuer": "di̱är",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:di̱eri",
+    "senses": ["warthog"],
+    "sense_info": "noun;plural:warthogs",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2255,
+    "nuer": "ket",
+    "ipa": null,
+    "part_of_speech": "gerund",
+    "plural_info": null,
+    "senses": ["swimming"],
+    "sense_info": null,
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2256,
+    "nuer": "ro̱tdä",
+    "ipa": null,
+    "part_of_speech": "gerund",
+    "plural_info": null,
+    "senses": ["roaring"],
+    "sense_info": null,
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2257,
+    "nuer": "ɛŋa",
+    "ipa": null,
+    "part_of_speech": "pron.",
+    "plural_info": null,
+    "senses": ["who"],
+    "sense_info": null,
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2258,
+    "nuer": "ɔ",
+    "ipa": null,
+    "part_of_speech": "pron.",
+    "plural_info": null,
+    "senses": ["resumptive pronoun"],
+    "sense_info": null,
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2259,
+    "nuer": "mäth",
+    "ipa": null,
+    "part_of_speech": "gerund",
+    "plural_info": null,
+    "senses": ["drinking"],
+    "sense_info": null,
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2260,
+    "nuer": "kɛɛl",
+    "ipa": null,
+    "part_of_speech": "adverb",
+    "plural_info": null,
+    "senses": ["together"],
+    "sense_info": null,
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2261,
+    "nuer": "kul",
+    "ipa": null,
+    "part_of_speech": "noun",
+    "plural_info": "ŋuan:kuli",
+    "senses": ["warthog"],
+    "sense_info": "noun;plural:warthogs",
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2262,
+    "nuer": "Rialgiɛɛr",
+    "ipa": null,
+    "part_of_speech": "prop. noun",
+    "plural_info": null,
+    "senses": ["Rialgieer"],
+    "sense_info": null,
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  },
+  {
+    "id": 2263,
+    "nuer": "mɛmɛ",
+    "ipa": null,
+    "part_of_speech": "dem. pron.",
+    "plural_info": null,
+    "senses": ["this"],
+    "sense_info": null,
+    "examples": [],
+    "audio_files": [],
+    "dialect": null
+  }
+]

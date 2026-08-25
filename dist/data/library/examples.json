@@ -1,0 +1,1489 @@
+{
+  "meta": {
+    "description": "Curated Thok Nath ↔ English sentence pairs for few-shot prompting in Naath AI",
+    "total_examples": 221,
+    "version": "1.0",
+    "sources": [
+      "Ethio Language Box (ELB) — Open Source",
+      "African Storybook (ASB) — CC BY 4.0",
+      "Nuer Bible (RUAC KUƆTH IN RƐL RƆ) — Bible Society in South Sudan",
+      "Nuer Grammar Rules (THOK_NATH_GRAMMAR_RULES.md)"
+    ],
+    "categories": {
+      "bible": 18,
+      "complex_sentences": 8,
+      "directions": 6,
+      "emotions": 10,
+      "essential_phrases": 8,
+      "family": 19,
+      "farewells_wishes": 8,
+      "future_tense": 10,
+      "greetings": 7,
+      "identity": 10,
+      "narrative": 25,
+      "numbers": 15,
+      "past_tense": 19,
+      "possession": 10,
+      "present_continuous": 9,
+      "present_tense": 21,
+      "questions": 13,
+      "reflexive": 5
+    },
+    "key_grammar_reminders": [
+      "Negation prefix /: always attached directly to the word — /Cu, /Ciɛ, /Kän (never / Cu)",
+      "Past tense: Cu (3rd person), Cä (I did), Ci̱ (was). Negative past: /Kän",
+      "Future tense: bɛ (he/she/they), bä (I), ba (we). Pronoun comes BEFORE marker: jɛn bɛ wä",
+      "Copula ɛ = 'to be' (present positive). /Ciɛɛ = am/is not, /Ci̱kɛ = are not",
+      "Kinship terms are inherently possessive: maar=my mother, gua̱a̱r=my father, dämaar=my brother, nyimaar=my sister",
+      "Possessive suffixes on nouns: -dä (my), -du (your sg.), -dɛ (his/her), -da/-dan (our), -diɛn (their)",
+      "Question marker: ɔ? at end for yes/no. Ɛŋa? = who, Ɛŋu? = what, Rɛy ŋa? = where/when",
+      "Conjunction kä = and/then/but. ɣöö = that/because/so that. mi = who/which/when/that",
+      "Cardinal directions: Caam = North, Cueec = South, Nhiam = East, Jɔk = West"
+    ]
+  },
+  "examples": [
+    {
+      "nuer": "Jäli̱ kɛ mal/Ja̱lɛ kɛ mal.",
+      "english": "Bye.",
+      "category": "greetings",
+      "pattern": "greeting"
+    },
+    {
+      "nuer": "Malɛ?",
+      "english": "Hi?",
+      "category": "greetings",
+      "pattern": "greeting"
+    },
+    {
+      "nuer": "Ci̱ baak kɛ mal!",
+      "english": "Good morning!",
+      "category": "greetings",
+      "pattern": "greeting_morning"
+    },
+    {
+      "nuer": "Ci̱ buut kɛ mal!",
+      "english": "Good afternoon!",
+      "category": "greetings",
+      "pattern": "greeting_afternoon"
+    },
+    {
+      "nuer": "Ci̱ thiaaŋ kɛ mal!",
+      "english": "Good evening!",
+      "category": "greetings",
+      "pattern": "greeting_evening"
+    },
+    {
+      "nuer": "Ci̱ lɔcdä tɛɛth!",
+      "english": "I am glad to see you!",
+      "category": "greetings",
+      "pattern": "greeting_glad"
+    },
+    {
+      "nuer": "Raan mi ci̱ baak kɛ mal, cuɛ ŋäth kɛ Kuoth.",
+      "english": "One who greets in the morning trusts in God.",
+      "category": "greetings",
+      "pattern": "greeting_proverb"
+    },
+    {
+      "nuer": "Butni̱ kɛ mal!",
+      "english": "Have a nice day!",
+      "category": "farewells_wishes",
+      "pattern": "wish"
+    },
+    {
+      "nuer": "Nini̱ kɛ mal!",
+      "english": "Have a good night!",
+      "category": "farewells_wishes",
+      "pattern": "wish"
+    },
+    {
+      "nuer": "Teni̱ kɛ mal kɛ ni̱n lɔ̱ŋä jokä!",
+      "english": "Have a nice weekend!",
+      "category": "farewells_wishes",
+      "pattern": "wish"
+    },
+    {
+      "nuer": "Teni̱ rɛy la̱tdu mi̱ gɔaa!",
+      "english": "Have a nice job!",
+      "category": "farewells_wishes",
+      "pattern": "wish"
+    },
+    {
+      "nuer": "Ruɔ̱ɔ̱n mi̱ gɔaa!",
+      "english": "Happy new year!",
+      "category": "farewells_wishes",
+      "pattern": "wish"
+    },
+    {
+      "nuer": "Bër kɛ mal!/Biaa kɛ mal!",
+      "english": "Welcome!",
+      "category": "farewells_wishes",
+      "pattern": "wish"
+    },
+    {
+      "nuer": "Ci̱ lɔcdä tɛɛth!/Ci̱ lɔc nath tɛɛth!",
+      "english": "Congratulations!",
+      "category": "farewells_wishes",
+      "pattern": "wish"
+    },
+    {
+      "nuer": "Ci̱ lɔcdä tɛɛth!",
+      "english": "Thank you!",
+      "category": "farewells_wishes",
+      "pattern": "wish"
+    },
+    {
+      "nuer": "Lär malɛ kä.",
+      "english": "Saying hello.",
+      "category": "essential_phrases",
+      "pattern": "phrase"
+    },
+    {
+      "nuer": "Malɛ! Tëë di̱ kɛ ji̱?",
+      "english": "Hello! How are you?",
+      "category": "essential_phrases",
+      "pattern": "phrase"
+    },
+    {
+      "nuer": "Malɛ mi̱ gɔaa, ci̱ lɔcdä tɛɛth.",
+      "english": "Fine, thanks.",
+      "category": "essential_phrases",
+      "pattern": "phrase"
+    },
+    {
+      "nuer": "Malɛ! Tëë di̱ kɛ yɛ?",
+      "english": "Hello! How are you doing?",
+      "category": "essential_phrases",
+      "pattern": "phrase"
+    },
+    {
+      "nuer": "Malɛ mi̱ gɔaa, ci̱ lɔcdä tɛɛth. Kä ji̱n?",
+      "english": "Fine, thanks. And you?",
+      "category": "essential_phrases",
+      "pattern": "phrase"
+    },
+    {
+      "nuer": "Malɛ! Cɛ gɔa kɛ ɣöö ci̱ kɔn jëk.",
+      "english": "Hello! It's nice to meet you.",
+      "category": "essential_phrases",
+      "pattern": "phrase"
+    },
+    {
+      "nuer": "Malɛ kɛ runwaŋ. Malɛ kɛ cäŋdäär. Malɛ kɛ thiaŋ.",
+      "english": "Good morning. Good afternoon. Good evening.",
+      "category": "essential_phrases",
+      "pattern": "phrase"
+    },
+    {
+      "nuer": "Lär däk kä piny",
+      "english": "Saying good-bye",
+      "category": "essential_phrases",
+      "pattern": "phrase"
+    },
+    {
+      "nuer": "Ciötdä cɔalɛ Gatwec.",
+      "english": "My name is Gatwec.",
+      "category": "identity",
+      "pattern": "self_intro"
+    },
+    {
+      "nuer": "Ciötdä cɔalɛ Cuɔɔl/Ɛ ɣän Cuɔɔl.",
+      "english": "My name is Cuɔɔl/I am cuɔɔl.",
+      "category": "identity",
+      "pattern": "self_intro"
+    },
+    {
+      "nuer": "Ta̱a̱ kɛ run ti̱ 25 di̱tkädä.",
+      "english": "I'm 25 years old.",
+      "category": "identity",
+      "pattern": "self_intro"
+    },
+    {
+      "nuer": "Dap kɛ ɣä kɛ cäŋ kä 3 kä Duät ruɔ̱ɔ̱n 1984.",
+      "english": "I was born on May 3, 1984.",
+      "category": "identity",
+      "pattern": "self_intro"
+    },
+    {
+      "nuer": "Dap kɛ ɣä rɛy wec mi̱ tɔt mi̱ thieek kɛn Ba̱dhi̱eel.",
+      "english": "I was born in a small village near Ba̱dhi̱eel.",
+      "category": "identity",
+      "pattern": "self_intro"
+    },
+    {
+      "nuer": "Piɛthä kä Ba̱dhi̱eel",
+      "english": "I grew up in Ba̱dhi̱eel.",
+      "category": "identity",
+      "pattern": "self_intro"
+    },
+    {
+      "nuer": "Cä we dueel gɔ̱rä kä Ba̱dhi̱eel.",
+      "english": "I went to school in Ba̱dhi̱eel.",
+      "category": "identity",
+      "pattern": "self_intro"
+    },
+    {
+      "nuer": "Ci̱ ciëë maari̱ ɣo̱th kä Addi̱th kɛ kɔr runi̱ da̱ŋ dhieec tëë ci̱ we.",
+      "english": "My family moved to Addis Ababa five years ago.",
+      "category": "identity",
+      "pattern": "self_intro"
+    },
+    {
+      "nuer": "Gua̱a̱r ɛ puur ka̱kni̱ (ɛ gäath, ɛ geer, ɛ däktör , ɛ ŋi̱i̱c).",
+      "english": "My father is a farmer (a merchant, a driver, a doctor, a teacher).",
+      "category": "identity",
+      "pattern": "self_intro"
+    },
+    {
+      "nuer": "Maar ɛ ŋɔ̱ɔ̱th duëël wa̱l (ɛ thook, ɛ ko̱o̱c, ɛ gɔ̱ɔ̱r ruaacni̱, ɛ kuur).",
+      "english": "My mother is a nurse (a journalist, a tailor, a secretary, an engineer).",
+      "category": "identity",
+      "pattern": "self_intro"
+    },
+    {
+      "nuer": "Tɛ̈ɛ̈thlɔac, Tɛ̈ɛ̈thlɔac.",
+      "english": "Joy, happiness",
+      "category": "emotions",
+      "pattern": "feeling"
+    },
+    {
+      "nuer": "Jɛn cɛ gɔaa! Jɛn caa mi̱ gɔaa!",
+      "english": "It's great! That's great!",
+      "category": "emotions",
+      "pattern": "feeling"
+    },
+    {
+      "nuer": "Jɛn cɛ gɔaa! Jɛn caa mi̱ gɔaa!",
+      "english": "It's wonderful! That's wonderful!",
+      "category": "emotions",
+      "pattern": "feeling"
+    },
+    {
+      "nuer": "Gɔaaɛ!Balaŋ!Gɔaaɛ!Gɔaaɛ!Gɔaaɛ!",
+      "english": "Great! Beautiful! Wonderful! Excellent! Terrific!",
+      "category": "emotions",
+      "pattern": "feeling"
+    },
+    {
+      "nuer": "Ɛ cäŋ mi̱ gɔaa mi̱ te di̱!",
+      "english": "What a wonderful day!",
+      "category": "emotions",
+      "pattern": "feeling"
+    },
+    {
+      "nuer": "Ɣän tɛth lɔcdä!",
+      "english": "I'm so happy!",
+      "category": "emotions",
+      "pattern": "feeling"
+    },
+    {
+      "nuer": "Ɣän nhɔakä jɛ!",
+      "english": "I love it!",
+      "category": "emotions",
+      "pattern": "feeling"
+    },
+    {
+      "nuer": "Ɣöw, ɛmuc mi̱ gɔaa mi te di̱?",
+      "english": "Oh, what a wonderful gift!",
+      "category": "emotions",
+      "pattern": "feeling"
+    },
+    {
+      "nuer": "Ɛ jɛn puɔ̱nykä mëë go̱o̱r ɣänɛ!",
+      "english": "That's exactly what I wanted!",
+      "category": "emotions",
+      "pattern": "feeling"
+    },
+    {
+      "nuer": "Ɛ jɛn i̱nɔ!",
+      "english": "Just the thing!",
+      "category": "emotions",
+      "pattern": "feeling"
+    },
+    {
+      "nuer": "Kɛ yiɛn di̱?",
+      "english": "How many are you?",
+      "category": "family",
+      "pattern": "family_talk"
+    },
+    {
+      "nuer": "Kɛ kɔn dhieec.",
+      "english": "We are five.",
+      "category": "family",
+      "pattern": "family_talk"
+    },
+    {
+      "nuer": "Cɔal guur i̱di̱?",
+      "english": "What is your father’s name?",
+      "category": "family",
+      "pattern": "family_talk"
+    },
+    {
+      "nuer": "Gua̱a̱r cɔal ciötdɛ Pi̱tɛr",
+      "english": "My father’s name is Mr.Peter",
+      "category": "family",
+      "pattern": "family_talk"
+    },
+    {
+      "nuer": "Ɛŋu la la̱t guurɔ?",
+      "english": "What is your father’s job?",
+      "category": "family",
+      "pattern": "family_talk"
+    },
+    {
+      "nuer": "Gua̱a̱r ɛ puur ka̱kni̱.",
+      "english": "My father is a farmer.",
+      "category": "family",
+      "pattern": "family_talk"
+    },
+    {
+      "nuer": "Ti̱i̱ kɛ gaat muɔɔr kɛnɛ nyi̱ämuɔɔr?",
+      "english": "Do you have brothers and sisters?",
+      "category": "family",
+      "pattern": "family_talk"
+    },
+    {
+      "nuer": "Ɣä, ta̱a̱ kɛ.",
+      "english": "Yes, I have.",
+      "category": "family",
+      "pattern": "family_talk"
+    },
+    {
+      "nuer": "Ti̱i̱ kɛ dämuɔɔri̱ da̱ŋdi̱?",
+      "english": "How many brothers do you have?",
+      "category": "family",
+      "pattern": "family_talk"
+    },
+    {
+      "nuer": "Ta̱a̱ dämaari̱ da̱ŋ ŋuaan.",
+      "english": "I have four brothers.",
+      "category": "family",
+      "pattern": "family_talk"
+    },
+    {
+      "nuer": "Mɛmɛ ɛ maar.",
+      "english": "This is my mother.",
+      "category": "family",
+      "pattern": "kinship_demonstrative",
+      "note": "Kinship terms are inherently possessive — no -dä needed: maar=my mother, gua̱a̱r=my father, dämaar=my brother, nyimaar=my sister, maadɔɔŋ=my grandmother"
+    },
+    {
+      "nuer": "Mɛmɛ ɛ gua̱a̱r.",
+      "english": "This is my father.",
+      "category": "family",
+      "pattern": "kinship_demonstrative",
+      "note": "Kinship terms are inherently possessive — no -dä needed: maar=my mother, gua̱a̱r=my father, dämaar=my brother, nyimaar=my sister, maadɔɔŋ=my grandmother"
+    },
+    {
+      "nuer": "Mɛmɛ ɛ dämaar.",
+      "english": "This is my brother.",
+      "category": "family",
+      "pattern": "kinship_demonstrative",
+      "note": "Kinship terms are inherently possessive — no -dä needed: maar=my mother, gua̱a̱r=my father, dämaar=my brother, nyimaar=my sister, maadɔɔŋ=my grandmother"
+    },
+    {
+      "nuer": "Mɛmɛ ɛ nyimaar.",
+      "english": "This is my sister.",
+      "category": "family",
+      "pattern": "kinship_demonstrative",
+      "note": "Kinship terms are inherently possessive — no -dä needed: maar=my mother, gua̱a̱r=my father, dämaar=my brother, nyimaar=my sister, maadɔɔŋ=my grandmother"
+    },
+    {
+      "nuer": "Mɛmɛ ɛ maadɔɔŋ.",
+      "english": "This is my grandmother.",
+      "category": "family",
+      "pattern": "kinship_demonstrative",
+      "note": "Kinship terms are inherently possessive — no -dä needed: maar=my mother, gua̱a̱r=my father, dämaar=my brother, nyimaar=my sister, maadɔɔŋ=my grandmother"
+    },
+    {
+      "nuer": "Mɛmɛ ɛ gua̱a̱dɔɔŋ.",
+      "english": "This is my grandfather.",
+      "category": "family",
+      "pattern": "kinship_demonstrative",
+      "note": "Kinship terms are inherently possessive — no -dä needed: maar=my mother, gua̱a̱r=my father, dämaar=my brother, nyimaar=my sister, maadɔɔŋ=my grandmother"
+    },
+    {
+      "nuer": "Ti̱ti̱ kɛ ciëŋmaari.",
+      "english": "This is my family.",
+      "category": "family",
+      "pattern": "kinship_demonstrative",
+      "note": "Kinship terms are inherently possessive — no -dä needed: maar=my mother, gua̱a̱r=my father, dämaar=my brother, nyimaar=my sister, maadɔɔŋ=my grandmother"
+    },
+    {
+      "nuer": "Dämaar ni Lual ɛ camjiɛc.",
+      "english": "My brother Lual was very greedy.",
+      "category": "family",
+      "pattern": "kinship_narrative",
+      "note": "Kinship terms are inherently possessive — no -dä needed: maar=my mother, gua̱a̱r=my father, dämaar=my brother, nyimaar=my sister, maadɔɔŋ=my grandmother"
+    },
+    {
+      "nuer": "Ɣän cua̱ car ni maar kɛnɛ dämaar tin te cieŋ.",
+      "english": "I stayed with my mother and brother who were at home.",
+      "category": "family",
+      "pattern": "kinship_narrative",
+      "note": "Kinship terms are inherently possessive — no -dä needed: maar=my mother, gua̱a̱r=my father, dämaar=my brother, nyimaar=my sister, maadɔɔŋ=my grandmother"
+    },
+    {
+      "nuer": "Ɛ Ɣän.",
+      "english": "I am.",
+      "category": "present_tense",
+      "pattern": "copula_positive",
+      "note": "Copula ɛ = \"to be\" (present positive). Pattern: ɛ + Subject (or Subject + ɛ + predicate)"
+    },
+    {
+      "nuer": "Kɛ kɔn.",
+      "english": "We are.",
+      "category": "present_tense",
+      "pattern": "copula_positive",
+      "note": "Copula ɛ = \"to be\" (present positive). Pattern: ɛ + Subject (or Subject + ɛ + predicate)"
+    },
+    {
+      "nuer": "Ɛ ji̱n.",
+      "english": "You are.",
+      "category": "present_tense",
+      "pattern": "copula_positive",
+      "note": "Copula ɛ = \"to be\" (present positive). Pattern: ɛ + Subject (or Subject + ɛ + predicate)"
+    },
+    {
+      "nuer": "Ɛ jɛn.",
+      "english": "She is.",
+      "category": "present_tense",
+      "pattern": "copula_positive",
+      "note": "Copula ɛ = \"to be\" (present positive). Pattern: ɛ + Subject (or Subject + ɛ + predicate)"
+    },
+    {
+      "nuer": "Kɛ yiɛn.",
+      "english": "You are.",
+      "category": "present_tense",
+      "pattern": "copula_positive",
+      "note": "Copula ɛ = \"to be\" (present positive). Pattern: ɛ + Subject (or Subject + ɛ + predicate)"
+    },
+    {
+      "nuer": "Kɛ kɛn.",
+      "english": "They are.",
+      "category": "present_tense",
+      "pattern": "copula_positive",
+      "note": "Copula ɛ = \"to be\" (present positive). Pattern: ɛ + Subject (or Subject + ɛ + predicate)"
+    },
+    {
+      "nuer": "/Ciɛ ɣän.",
+      "english": "I am not.",
+      "category": "present_tense",
+      "pattern": "copula_negative",
+      "note": "Present negative copula: /Ciɛɛ (I/he/she am/is not), /Ci̱kɛ (we/you/they are not)"
+    },
+    {
+      "nuer": "/Ciɛ kɔn.",
+      "english": "We are not.",
+      "category": "present_tense",
+      "pattern": "copula_negative",
+      "note": "Present negative copula: /Ciɛɛ (I/he/she am/is not), /Ci̱kɛ (we/you/they are not)"
+    },
+    {
+      "nuer": "/Ciɛ ji̱n.",
+      "english": "You are not.",
+      "category": "present_tense",
+      "pattern": "copula_negative",
+      "note": "Present negative copula: /Ciɛɛ (I/he/she am/is not), /Ci̱kɛ (we/you/they are not)"
+    },
+    {
+      "nuer": "/Ciɛ jɛn.",
+      "english": "She is not.",
+      "category": "present_tense",
+      "pattern": "copula_negative",
+      "note": "Present negative copula: /Ciɛɛ (I/he/she am/is not), /Ci̱kɛ (we/you/they are not)"
+    },
+    {
+      "nuer": "/Ciɛ yiɛn.",
+      "english": "You are not.",
+      "category": "present_tense",
+      "pattern": "copula_negative",
+      "note": "Present negative copula: /Ciɛɛ (I/he/she am/is not), /Ci̱kɛ (we/you/they are not)"
+    },
+    {
+      "nuer": "La ɣän wargak lääri̱ ɛ kuɛɛn ni̱ ciaŋ.",
+      "english": "I read newspaper every day.",
+      "category": "present_tense",
+      "pattern": "present_affirmative"
+    },
+    {
+      "nuer": "La nɛy wargak lääri̱ ɛ kuɛɛn ni̱ ciaŋ.",
+      "english": "We read newspaper every day.",
+      "category": "present_tense",
+      "pattern": "present_affirmative"
+    },
+    {
+      "nuer": "La ji̱n wargak lääri̱ ɛ kuɛɛn ni̱ ciaŋ.",
+      "english": "You read newspaper every day.",
+      "category": "present_tense",
+      "pattern": "present_affirmative"
+    },
+    {
+      "nuer": "La jɛn wargak lääri̱ ɛ kuɛɛn ni̱ ciaŋ.",
+      "english": "She reads newspaper every day.",
+      "category": "present_tense",
+      "pattern": "present_affirmative"
+    },
+    {
+      "nuer": "La yiɛn wargak lääri̱ ɛ kuɛɛn ni̱ ciaŋ.",
+      "english": "You read newspaper every day.",
+      "category": "present_tense",
+      "pattern": "present_affirmative"
+    },
+    {
+      "nuer": "La kɛn wargak lääri̱ ɛ kuɛɛn ni̱ ciaŋ.",
+      "english": "They read newspaper every day.",
+      "category": "present_tense",
+      "pattern": "present_affirmative"
+    },
+    {
+      "nuer": "/Ci̱ ɣän wargak lääri̱ ɛ kuɛɛn ni ciaŋ.",
+      "english": "I do not read newspaper every day.",
+      "category": "present_tense",
+      "pattern": "present_negative",
+      "note": "Present negative: /Ciɛ before subject"
+    },
+    {
+      "nuer": "/Ci̱ kɔn wargak lääri̱ ɛ kuɛɛn ni ciaŋ.",
+      "english": "We do not read newspaper every day.",
+      "category": "present_tense",
+      "pattern": "present_negative",
+      "note": "Present negative: /Ciɛ before subject"
+    },
+    {
+      "nuer": "/Ci̱ ji̱n wargak lääri̱ ɛ kuɛɛn ni ciaŋ.",
+      "english": "You do not read newspaper every day.",
+      "category": "present_tense",
+      "pattern": "present_negative",
+      "note": "Present negative: /Ciɛ before subject"
+    },
+    {
+      "nuer": "/Ci̱ jɛn wargak lääri̱ ɛ kuɛɛn ni ciaŋ.",
+      "english": "She does not read newspaper every day.",
+      "category": "present_tense",
+      "pattern": "present_negative",
+      "note": "Present negative: /Ciɛ before subject"
+    },
+    {
+      "nuer": "Ci̱ ɣän.",
+      "english": "I was.",
+      "category": "past_tense",
+      "pattern": "past_copula_positive",
+      "note": "Past tense marker: Cu (3rd person/they/we), Cä (I did), Ci̱ (was). Negative: /Kän + subject"
+    },
+    {
+      "nuer": "Ci̱ nɛy.",
+      "english": "We were.",
+      "category": "past_tense",
+      "pattern": "past_copula_positive",
+      "note": "Past tense marker: Cu (3rd person/they/we), Cä (I did), Ci̱ (was). Negative: /Kän + subject"
+    },
+    {
+      "nuer": "Ci̱ ji̱n.",
+      "english": "You were.",
+      "category": "past_tense",
+      "pattern": "past_copula_positive",
+      "note": "Past tense marker: Cu (3rd person/they/we), Cä (I did), Ci̱ (was). Negative: /Kän + subject"
+    },
+    {
+      "nuer": "Ci̱ jɛn.",
+      "english": "She was.",
+      "category": "past_tense",
+      "pattern": "past_copula_positive",
+      "note": "Past tense marker: Cu (3rd person/they/we), Cä (I did), Ci̱ (was). Negative: /Kän + subject"
+    },
+    {
+      "nuer": "Ci̱ yiɛn.",
+      "english": "You were.",
+      "category": "past_tense",
+      "pattern": "past_copula_positive",
+      "note": "Past tense marker: Cu (3rd person/they/we), Cä (I did), Ci̱ (was). Negative: /Kän + subject"
+    },
+    {
+      "nuer": "/Kän ɣän.",
+      "english": "I was not.",
+      "category": "past_tense",
+      "pattern": "past_copula_negative",
+      "note": "Past negative copula: /Kän + Subject"
+    },
+    {
+      "nuer": "/Kän nɛy.",
+      "english": "We were not.",
+      "category": "past_tense",
+      "pattern": "past_copula_negative",
+      "note": "Past negative copula: /Kän + Subject"
+    },
+    {
+      "nuer": "/Kän ji̱n.",
+      "english": "You were not.",
+      "category": "past_tense",
+      "pattern": "past_copula_negative",
+      "note": "Past negative copula: /Kän + Subject"
+    },
+    {
+      "nuer": "/Kän jɛn.",
+      "english": "She was not.",
+      "category": "past_tense",
+      "pattern": "past_copula_negative",
+      "note": "Past negative copula: /Kän + Subject"
+    },
+    {
+      "nuer": "Ɣän cä wargak lääri̱ kuɛn pan.",
+      "english": "I read newspaper yesterday.",
+      "category": "past_tense",
+      "pattern": "past_affirmative",
+      "note": "Past tense marker: Cu (3rd person/they/we), Cä (I did), Ci̱ (was). Negative: /Kän + subject"
+    },
+    {
+      "nuer": "Kɔn ci̱ nɛy wargak lääri̱ kuɛn pan.",
+      "english": "We read newspaper yesterday.",
+      "category": "past_tense",
+      "pattern": "past_affirmative",
+      "note": "Past tense marker: Cu (3rd person/they/we), Cä (I did), Ci̱ (was). Negative: /Kän + subject"
+    },
+    {
+      "nuer": "Ji̱n ci̱ wargak lääri̱ kuɛn pan.",
+      "english": "You read newspaper yesterday.",
+      "category": "past_tense",
+      "pattern": "past_affirmative",
+      "note": "Past tense marker: Cu (3rd person/they/we), Cä (I did), Ci̱ (was). Negative: /Kän + subject"
+    },
+    {
+      "nuer": "Jɛn cɛ wargak lääri̱ kuɛn pan.",
+      "english": "She read newspaper yesterday.",
+      "category": "past_tense",
+      "pattern": "past_affirmative",
+      "note": "Past tense marker: Cu (3rd person/they/we), Cä (I did), Ci̱ (was). Negative: /Kän + subject"
+    },
+    {
+      "nuer": "Yiɛn cia wargak lääri̱ kuɛn pan.",
+      "english": "You read newspaper yesterday.",
+      "category": "past_tense",
+      "pattern": "past_affirmative",
+      "note": "Past tense marker: Cu (3rd person/they/we), Cä (I did), Ci̱ (was). Negative: /Kän + subject"
+    },
+    {
+      "nuer": "Kɛn ci̱ kɛn wargak lääri̱ kuɛn pan.",
+      "english": "They read newspaper yesterday.",
+      "category": "past_tense",
+      "pattern": "past_affirmative",
+      "note": "Past tense marker: Cu (3rd person/they/we), Cä (I did), Ci̱ (was). Negative: /Kän + subject"
+    },
+    {
+      "nuer": "Ɣän /ka̱n wargak lääri̱ kuɛn pan.",
+      "english": "I did not read newspaper yesterday.",
+      "category": "past_tense",
+      "pattern": "past_negative"
+    },
+    {
+      "nuer": "Kɔn /kän nɛy wargak lääri̱ kuɛn pan.",
+      "english": "We did not read newspaper yesterday.",
+      "category": "past_tense",
+      "pattern": "past_negative"
+    },
+    {
+      "nuer": "Ji̱n /käni̱ wargak lääri̱ kuɛn pan.",
+      "english": "You did not read newspaper yesterday.",
+      "category": "past_tense",
+      "pattern": "past_negative"
+    },
+    {
+      "nuer": "Jɛn /känɛ wargak lääri̱ kuɛn pan.",
+      "english": "She did not read newspaper yesterday.",
+      "category": "past_tense",
+      "pattern": "past_negative"
+    },
+    {
+      "nuer": "Ɣän bä wargak lääri̱ kuɛn i̱ruun.",
+      "english": "I will read newspaper tomorrow.",
+      "category": "future_tense",
+      "pattern": "future_affirmative",
+      "note": "Future marker: bɛ (he/she/they will), bä (I will), ba (we will). Pronoun comes BEFORE bɛ: jɛn bɛ wä = he will go"
+    },
+    {
+      "nuer": "Kɔn bi̱ nɛy wargak lääri̱ kuɛn i̱ruun.",
+      "english": "We will read newspaper tomorrow.",
+      "category": "future_tense",
+      "pattern": "future_affirmative",
+      "note": "Future marker: bɛ (he/she/they will), bä (I will), ba (we will). Pronoun comes BEFORE bɛ: jɛn bɛ wä = he will go"
+    },
+    {
+      "nuer": "Ji̱n bi̱ wargak lääri̱ kuɛn i̱ruun.",
+      "english": "You will read newspaper tomorrow.",
+      "category": "future_tense",
+      "pattern": "future_affirmative",
+      "note": "Future marker: bɛ (he/she/they will), bä (I will), ba (we will). Pronoun comes BEFORE bɛ: jɛn bɛ wä = he will go"
+    },
+    {
+      "nuer": "Jɛn bɛ wargak lääri̱ kuɛn i̱ruun.",
+      "english": "She will read newspaper tomorrow.",
+      "category": "future_tense",
+      "pattern": "future_affirmative",
+      "note": "Future marker: bɛ (he/she/they will), bä (I will), ba (we will). Pronoun comes BEFORE bɛ: jɛn bɛ wä = he will go"
+    },
+    {
+      "nuer": "Yiɛn bia wargak lääri̱ kuɛn i̱ruun.",
+      "english": "You will read newspaper tomorrow.",
+      "category": "future_tense",
+      "pattern": "future_affirmative",
+      "note": "Future marker: bɛ (he/she/they will), bä (I will), ba (we will). Pronoun comes BEFORE bɛ: jɛn bɛ wä = he will go"
+    },
+    {
+      "nuer": "Kɛn bi̱ kɛn wargak lääri̱ kuɛn i̱ruun.",
+      "english": "They will read newspaper tomorrow.",
+      "category": "future_tense",
+      "pattern": "future_affirmative",
+      "note": "Future marker: bɛ (he/she/they will), bä (I will), ba (we will). Pronoun comes BEFORE bɛ: jɛn bɛ wä = he will go"
+    },
+    {
+      "nuer": "Ɣän /cän wargak lääri̱ bi̱ kuɛn i̱ruun.",
+      "english": "I will not read newspaper tomorrow.",
+      "category": "future_tense",
+      "pattern": "future_negative"
+    },
+    {
+      "nuer": "Kɔn /ci̱ nɛy wargak lääri̱ bi̱ kuɛn i̱ruun.",
+      "english": "We will not read newspaper tomorrow.",
+      "category": "future_tense",
+      "pattern": "future_negative"
+    },
+    {
+      "nuer": "Ji̱n /ci̱ wargak lääri̱ bi̱ kuɛn i̱ruun.",
+      "english": "You will not read newspaper tomorrow.",
+      "category": "future_tense",
+      "pattern": "future_negative"
+    },
+    {
+      "nuer": "Jɛn/cɛ wargak lääri̱ bi̱ kuɛn i̱ruun.",
+      "english": "She will not read newspaper tomorrow.",
+      "category": "future_tense",
+      "pattern": "future_negative"
+    },
+    {
+      "nuer": "Ɣän ɛ kuɛɛn wargak lääri̱ ni̱.",
+      "english": "I am reading newspaper.",
+      "category": "present_continuous",
+      "pattern": "present_cont_affirmative",
+      "note": "Present continuous: La + Subject + verb (+ ɛnëë optional). La ɣänɛ = I am doing"
+    },
+    {
+      "nuer": "Kɔn ɛ kuɛɛn wargak lääri̱ ni̱.",
+      "english": "We are reading newspaper.",
+      "category": "present_continuous",
+      "pattern": "present_cont_affirmative",
+      "note": "Present continuous: La + Subject + verb (+ ɛnëë optional). La ɣänɛ = I am doing"
+    },
+    {
+      "nuer": "Ji̱n ɛ kuɛɛn wargak lääri̱ ni̱.",
+      "english": "You are reading newspaper.",
+      "category": "present_continuous",
+      "pattern": "present_cont_affirmative",
+      "note": "Present continuous: La + Subject + verb (+ ɛnëë optional). La ɣänɛ = I am doing"
+    },
+    {
+      "nuer": "Jɛn ɛ kuɛɛn wargak lääri̱ ni̱.",
+      "english": "She is reading newspaper.",
+      "category": "present_continuous",
+      "pattern": "present_cont_affirmative",
+      "note": "Present continuous: La + Subject + verb (+ ɛnëë optional). La ɣänɛ = I am doing"
+    },
+    {
+      "nuer": "Yiɛn ɛ kuɛɛn wargak lääri̱ ni̱.",
+      "english": "You are reading newspaper.",
+      "category": "present_continuous",
+      "pattern": "present_cont_affirmative",
+      "note": "Present continuous: La + Subject + verb (+ ɛnëë optional). La ɣänɛ = I am doing"
+    },
+    {
+      "nuer": "Ɣän /cän wargak lääri̱ ɛ kuɛɛn.",
+      "english": "I am not reading newspaper.",
+      "category": "present_continuous",
+      "pattern": "present_cont_negative"
+    },
+    {
+      "nuer": "Kɔn /ci̱ nɛy wargak lääri̱ ɛ kuɛɛn.",
+      "english": "We are not reading newspaper.",
+      "category": "present_continuous",
+      "pattern": "present_cont_negative"
+    },
+    {
+      "nuer": "Ji̱n /ci̱ wargak lääri̱ ɛ kuɛɛni̱.",
+      "english": "You are not reading newspaper.",
+      "category": "present_continuous",
+      "pattern": "present_cont_negative"
+    },
+    {
+      "nuer": "Jɛn /cɛ wargak lääri̱ ɛ kuɛɛnɛ.",
+      "english": "She is not reading newspaper.",
+      "category": "present_continuous",
+      "pattern": "present_cont_negative"
+    },
+    {
+      "nuer": "La ɣän wargak lääri̱ ɛ kuɛɛn ni̱ ciaŋ?",
+      "english": "Do I read newspaper every day?",
+      "category": "questions",
+      "pattern": "question_present",
+      "note": "Question words: Ɛŋa? (who), Ɛŋu? (what), Eyɛ?/Rɛy ŋa? (where/when), Ɛyɛ kɛ? (how). Yes/No: add ɔ? at end"
+    },
+    {
+      "nuer": "La nɛy wargak lääri̱ ɛ kuɛɛn ni̱ ciaŋ?",
+      "english": "Do we read newspaper every day?",
+      "category": "questions",
+      "pattern": "question_present",
+      "note": "Question words: Ɛŋa? (who), Ɛŋu? (what), Eyɛ?/Rɛy ŋa? (where/when), Ɛyɛ kɛ? (how). Yes/No: add ɔ? at end"
+    },
+    {
+      "nuer": "La ji̱n wargak lääri̱ ɛ kuɛɛn ni̱ ciaŋ?",
+      "english": "Do you read newspaper every day?",
+      "category": "questions",
+      "pattern": "question_present",
+      "note": "Question words: Ɛŋa? (who), Ɛŋu? (what), Eyɛ?/Rɛy ŋa? (where/when), Ɛyɛ kɛ? (how). Yes/No: add ɔ? at end"
+    },
+    {
+      "nuer": "La jɛn wargak lääri̱ ɛ kuɛɛn ni̱ ciaŋ?",
+      "english": "Does she read newspaper every day?",
+      "category": "questions",
+      "pattern": "question_present",
+      "note": "Question words: Ɛŋa? (who), Ɛŋu? (what), Eyɛ?/Rɛy ŋa? (where/when), Ɛyɛ kɛ? (how). Yes/No: add ɔ? at end"
+    },
+    {
+      "nuer": "La yiɛn wargak lääri̱ ɛ kuɛɛn ni̱ ciaŋ?",
+      "english": "Do you read newspaper every day?",
+      "category": "questions",
+      "pattern": "question_present",
+      "note": "Question words: Ɛŋa? (who), Ɛŋu? (what), Eyɛ?/Rɛy ŋa? (where/when), Ɛyɛ kɛ? (how). Yes/No: add ɔ? at end"
+    },
+    {
+      "nuer": "Ɣän bä wargak lääri̱ kuɛn i̱ruun?",
+      "english": "Will I read newspaper tomorrow?",
+      "category": "questions",
+      "pattern": "question_future"
+    },
+    {
+      "nuer": "Kɔn bi̱ nɛy wargak lääri̱ kuɛn i̱ruun?",
+      "english": "Will we read newspaper tomorrow?",
+      "category": "questions",
+      "pattern": "question_future"
+    },
+    {
+      "nuer": "Ji̱n bi̱ wargak lääri̱ kuɛn i̱ruun?",
+      "english": "Will you read newspaper tomorrow?",
+      "category": "questions",
+      "pattern": "question_future"
+    },
+    {
+      "nuer": "Ɛŋu εn nεmɔ?",
+      "english": "What is that?",
+      "category": "questions",
+      "pattern": "question_words"
+    },
+    {
+      "nuer": "Nεmɔ ε galam jiaath.",
+      "english": "That is a pencil.",
+      "category": "questions",
+      "pattern": "question_words"
+    },
+    {
+      "nuer": "Nεmε ε ŋu?",
+      "english": "What is this?",
+      "category": "questions",
+      "pattern": "question_words"
+    },
+    {
+      "nuer": "Nεmε ε galam jiaath",
+      "english": "This is a pencil.",
+      "category": "questions",
+      "pattern": "question_words"
+    },
+    {
+      "nuer": "Titi kε ŋuuni̱?",
+      "english": "What are these?",
+      "category": "questions",
+      "pattern": "question_words"
+    },
+    {
+      "nuer": "Ɣän ta̱a̱.",
+      "english": "I have.",
+      "category": "possession",
+      "pattern": "have_positive",
+      "note": "Possession \"to have\": te + Subject + noun. Possessive suffixes: -dä (my), -du (your sg.), -dɛ (his/her), -da (our), -diɛn (their)"
+    },
+    {
+      "nuer": "Kɔn te Kɔn. (Nɛy te nɛy.)",
+      "english": "We have.",
+      "category": "possession",
+      "pattern": "have_positive",
+      "note": "Possession \"to have\": te + Subject + noun. Possessive suffixes: -dä (my), -du (your sg.), -dɛ (his/her), -da (our), -diɛn (their)"
+    },
+    {
+      "nuer": "Ji̱n ti̱i̱.",
+      "english": "You have.",
+      "category": "possession",
+      "pattern": "have_positive",
+      "note": "Possession \"to have\": te + Subject + noun. Possessive suffixes: -dä (my), -du (your sg.), -dɛ (his/her), -da (our), -diɛn (their)"
+    },
+    {
+      "nuer": "Jɛn tëë.",
+      "english": "She has.",
+      "category": "possession",
+      "pattern": "have_positive",
+      "note": "Possession \"to have\": te + Subject + noun. Possessive suffixes: -dä (my), -du (your sg.), -dɛ (his/her), -da (our), -diɛn (their)"
+    },
+    {
+      "nuer": "Yiɛn te yiɛn.",
+      "english": "You have.",
+      "category": "possession",
+      "pattern": "have_positive",
+      "note": "Possession \"to have\": te + Subject + noun. Possessive suffixes: -dä (my), -du (your sg.), -dɛ (his/her), -da (our), -diɛn (their)"
+    },
+    {
+      "nuer": "Bokdä.",
+      "english": "My book.",
+      "category": "possession",
+      "pattern": "possessive_pronouns",
+      "note": "Possession \"to have\": te + Subject + noun. Possessive suffixes: -dä (my), -du (your sg.), -dɛ (his/her), -da (our), -diɛn (their)"
+    },
+    {
+      "nuer": "Bokda.",
+      "english": "Our book.",
+      "category": "possession",
+      "pattern": "possessive_pronouns",
+      "note": "Possession \"to have\": te + Subject + noun. Possessive suffixes: -dä (my), -du (your sg.), -dɛ (his/her), -da (our), -diɛn (their)"
+    },
+    {
+      "nuer": "Bokdu.",
+      "english": "Your book.",
+      "category": "possession",
+      "pattern": "possessive_pronouns",
+      "note": "Possession \"to have\": te + Subject + noun. Possessive suffixes: -dä (my), -du (your sg.), -dɛ (his/her), -da (our), -diɛn (their)"
+    },
+    {
+      "nuer": "Bokdɛ.",
+      "english": "Her book.",
+      "category": "possession",
+      "pattern": "possessive_pronouns",
+      "note": "Possession \"to have\": te + Subject + noun. Possessive suffixes: -dä (my), -du (your sg.), -dɛ (his/her), -da (our), -diɛn (their)"
+    },
+    {
+      "nuer": "Bokdun.",
+      "english": "Your book.",
+      "category": "possession",
+      "pattern": "possessive_pronouns",
+      "note": "Possession \"to have\": te + Subject + noun. Possessive suffixes: -dä (my), -du (your sg.), -dɛ (his/her), -da (our), -diɛn (their)"
+    },
+    {
+      "nuer": "Ɣän thɔalä ca̱y.",
+      "english": "I myself make tea.",
+      "category": "reflexive",
+      "pattern": "reflexive_pronouns",
+      "note": "Reflexive: puɔ̱ny + suffix (puɔ̱nydä=myself, puɔ̱nydɛ=himself, puɔ̱nydan=ourselves)"
+    },
+    {
+      "nuer": "Tho̱l kɔn kɛ ca̱y.",
+      "english": "We ourselves make tea.",
+      "category": "reflexive",
+      "pattern": "reflexive_pronouns",
+      "note": "Reflexive: puɔ̱ny + suffix (puɔ̱nydä=myself, puɔ̱nydɛ=himself, puɔ̱nydan=ourselves)"
+    },
+    {
+      "nuer": "Ji̱n puɔ̱ny du tho̱li̱ kɛ ca̱y.",
+      "english": "You yourself make tea.",
+      "category": "reflexive",
+      "pattern": "reflexive_pronouns",
+      "note": "Reflexive: puɔ̱ny + suffix (puɔ̱nydä=myself, puɔ̱nydɛ=himself, puɔ̱nydan=ourselves)"
+    },
+    {
+      "nuer": "Jɛn puɔ̱ny dɛ tho̱lɛ kɛ ca̱y.",
+      "english": "She herself makes tea.",
+      "category": "reflexive",
+      "pattern": "reflexive_pronouns",
+      "note": "Reflexive: puɔ̱ny + suffix (puɔ̱nydä=myself, puɔ̱nydɛ=himself, puɔ̱nydan=ourselves)"
+    },
+    {
+      "nuer": "Tho̱l yiɛn kɛ ca̱y",
+      "english": "You yourself make tea.",
+      "category": "reflexive",
+      "pattern": "reflexive_pronouns",
+      "note": "Reflexive: puɔ̱ny + suffix (puɔ̱nydä=myself, puɔ̱nydɛ=himself, puɔ̱nydan=ourselves)"
+    },
+    {
+      "nuer": "Bok kεnε galam",
+      "english": "Book and pen",
+      "category": "complex_sentences",
+      "pattern": "conjunction",
+      "note": "Key conjunctions: kä (and/then/but), ɣöö (that/because/so that), mi (who/which/when/that)"
+    },
+    {
+      "nuer": "Bun kiε ca̱y",
+      "english": "Coffee or tea",
+      "category": "complex_sentences",
+      "pattern": "conjunction",
+      "note": "Key conjunctions: kä (and/then/but), ɣöö (that/because/so that), mi (who/which/when/that)"
+    },
+    {
+      "nuer": "Jɛn cε ben ni wen duŋdε ɣöö/känε lät.",
+      "english": "He came but he did not work.",
+      "category": "complex_sentences",
+      "pattern": "conjunction",
+      "note": "Key conjunctions: kä (and/then/but), ɣöö (that/because/so that), mi (who/which/when/that)"
+    },
+    {
+      "nuer": "Jεn bëë kε jɔak kε ɣöö dεm nhial ɛnëë.",
+      "english": "He came late because it was raining.",
+      "category": "complex_sentences",
+      "pattern": "conjunction",
+      "note": "Key conjunctions: kä (and/then/but), ɣöö (that/because/so that), mi (who/which/when/that)"
+    },
+    {
+      "nuer": "Mi ci ben, bi ben ŋiäc.",
+      "english": "If you come, I will teach you.",
+      "category": "complex_sentences",
+      "pattern": "conditional"
+    },
+    {
+      "nuer": "Mi ci thiëc, bä ji luäk.",
+      "english": "If you ask, I will help you.",
+      "category": "complex_sentences",
+      "pattern": "conditional"
+    },
+    {
+      "nuer": "Mi nhɔki jɛ, deri ben dhɔrä.",
+      "english": "If you like, you can come to my home.",
+      "category": "complex_sentences",
+      "pattern": "conditional"
+    },
+    {
+      "nuer": "Mi ci ɣä cɔal dhɔru, bä ben.",
+      "english": "If you invite me, I will come to your home.",
+      "category": "complex_sentences",
+      "pattern": "conditional"
+    },
+    {
+      "nuer": "Bi ɣä pälika! /ɛlɔcdau kɔc kuär! /man ciëŋdä! /kiɛ mar!",
+      "english": "Excuse me! / Excuse me, sir! / Excuse me, madam! / Excuse me, miss!",
+      "category": "directions",
+      "pattern": "directions"
+    },
+    {
+      "nuer": "Jin, deri ɣä la̱r duɔ̱p in dëë gua̱th/muktäp yi̱o̱o̱ni jeek thin?",
+      "english": "Could you tell me how to get to the bank, please?",
+      "category": "directions",
+      "pattern": "directions"
+    },
+    {
+      "nuer": "Jin mi ci jiɛn kä ötɛ̈l wer kɛ kuic cam in te kɛ päny bi dhöör da̱ŋ diɔk jek thin.",
+      "english": "When you leave the hotel, turn left and walk three blocks.",
+      "category": "directions",
+      "pattern": "directions"
+    },
+    {
+      "nuer": "Wer kɛ kuic cam bi cu wä gua̱th tɔwä buɔkni.",
+      "english": "Make a left turn at the bookstore.",
+      "category": "directions",
+      "pattern": "directions"
+    },
+    {
+      "nuer": "Bi gua̱th ma̱th ca̱yni nɛn kɛnɛ muktäp wargakni",
+      "english": "You will see a cafe and a post office.",
+      "category": "directions",
+      "pattern": "directions"
+    },
+    {
+      "nuer": "Duel yi̱o̱o̱ni thiëkɛ kɛ gua̱th wargakni.",
+      "english": "The bank is next to the post office.",
+      "category": "directions",
+      "pattern": "directions"
+    },
+    {
+      "nuer": "Baŋ",
+      "english": "zero, nought",
+      "category": "numbers",
+      "pattern": "cardinal"
+    },
+    {
+      "nuer": "Kεl",
+      "english": "One",
+      "category": "numbers",
+      "pattern": "cardinal"
+    },
+    {
+      "nuer": "Rεw",
+      "english": "Two",
+      "category": "numbers",
+      "pattern": "cardinal"
+    },
+    {
+      "nuer": "Di̱ɔ̱k",
+      "english": "Three",
+      "category": "numbers",
+      "pattern": "cardinal"
+    },
+    {
+      "nuer": "ŋuaan",
+      "english": "Four",
+      "category": "numbers",
+      "pattern": "cardinal"
+    },
+    {
+      "nuer": "Dhi̱eec",
+      "english": "Five",
+      "category": "numbers",
+      "pattern": "cardinal"
+    },
+    {
+      "nuer": "Ba̱kεl",
+      "english": "Six",
+      "category": "numbers",
+      "pattern": "cardinal"
+    },
+    {
+      "nuer": "Ba̱rɔw",
+      "english": "Seven",
+      "category": "numbers",
+      "pattern": "cardinal"
+    },
+    {
+      "nuer": "Ba̱däk",
+      "english": "Eight",
+      "category": "numbers",
+      "pattern": "cardinal"
+    },
+    {
+      "nuer": "Ba̱ŋuan",
+      "english": "Nine",
+      "category": "numbers",
+      "pattern": "cardinal"
+    },
+    {
+      "nuer": "Wäl",
+      "english": "Ten",
+      "category": "numbers",
+      "pattern": "cardinal"
+    },
+    {
+      "nuer": "Wäl kεl",
+      "english": "Eleven",
+      "category": "numbers",
+      "pattern": "cardinal"
+    },
+    {
+      "nuer": "Wäl rεw",
+      "english": "Twelve",
+      "category": "numbers",
+      "pattern": "cardinal"
+    },
+    {
+      "nuer": "Wäl di̱ɔ̱k",
+      "english": "Thirteen",
+      "category": "numbers",
+      "pattern": "cardinal"
+    },
+    {
+      "nuer": "Wäl ŋuaan",
+      "english": "Fourteen",
+      "category": "numbers",
+      "pattern": "cardinal"
+    },
+    {
+      "nuer": "Mandɔɔŋ cɛ dɔw jiaath nööŋ kä thuk.",
+      "english": "Grandmother brought fruit from the market.",
+      "category": "narrative",
+      "pattern": "asb_story",
+      "note": "ASB story: Greed"
+    },
+    {
+      "nuer": "Ɛŋa ci dɔw jiaath kac ɔ?",
+      "english": "Who bit the fruits?",
+      "category": "narrative",
+      "pattern": "asb_story",
+      "note": "ASB story: Greed"
+    },
+    {
+      "nuer": "Cu mandɔɔŋ gaak kä cuɛ rɔal.",
+      "english": "Grandmother became angry and shouted.",
+      "category": "narrative",
+      "pattern": "asb_story",
+      "note": "ASB story: Greed"
+    },
+    {
+      "nuer": "Cu Both kɛnɛ Nyayow ni̱n lɔ̱ŋä duëëlgɔ̱rä tin bi ben lip.",
+      "english": "Both and Nyayow waited for the school holidays to come.",
+      "category": "narrative",
+      "pattern": "asb_story",
+      "note": "ASB story: Visiting grandmother"
+    },
+    {
+      "nuer": "Ɛ jɛn gua̱a̱th in ro̱ŋ kɛ ɣöö bikɛ mandɔɔŋdiɛn gui̱l kɛ jɛ.",
+      "english": "It was time for them to visit their grandmother.",
+      "category": "narrative",
+      "pattern": "asb_story",
+      "note": "ASB story: Visiting grandmother"
+    },
+    {
+      "nuer": "Cukɛ gër kɛ rɛy pääm, le̱y dɔaar amäni ka̱a̱k.",
+      "english": "They drove past mountains, wild animals and farms.",
+      "category": "narrative",
+      "pattern": "asb_story",
+      "note": "ASB story: Visiting grandmother"
+    },
+    {
+      "nuer": "Tëëkɛ gua̱n kakä mi tekɛ thäk mi dɔaaŋ.",
+      "english": "A farmer had an old ox.",
+      "category": "narrative",
+      "pattern": "asb_story",
+      "note": "ASB story: Donkey and Ox"
+    },
+    {
+      "nuer": "Kä tëëkɛ kacik bä. Ɛn thäk kɛnɛ kacik kɛ mäth.",
+      "english": "He had a donkey too.The ox and the donkey were friends.",
+      "category": "narrative",
+      "pattern": "asb_story",
+      "note": "ASB story: Donkey and Ox"
+    },
+    {
+      "nuer": "Kɛ thiaŋ, cu thäk kacik jiök i̱, \"Ɣän cä cuuc ɛlɔ̱ŋ ɛn wa̱lɛ.\"",
+      "english": "One evening, the ox told the donkey, \"I am very tired today.\"",
+      "category": "narrative",
+      "pattern": "asb_story",
+      "note": "ASB story: Donkey and Ox"
+    },
+    {
+      "nuer": "Guɔ̱r kɛl wëë maath kɛ pi̱.",
+      "english": "One elephant is going to drink water.",
+      "category": "narrative",
+      "pattern": "asb_story",
+      "note": "ASB story: Counting animals"
+    },
+    {
+      "nuer": "Guëc da̱ŋ rɛw wäkɛ maath kɛ pi̱.",
+      "english": "Two giraffes are going to drink water.",
+      "category": "narrative",
+      "pattern": "asb_story",
+      "note": "ASB story: Counting animals"
+    },
+    {
+      "nuer": "Mök da̱ŋ diɔ̱k kɛnɛ diit da̱ŋ ŋuaan wäkɛ maath kɛ pi̱ bä.",
+      "english": "Three buffaloes and four birds are also going to drink water.",
+      "category": "narrative",
+      "pattern": "asb_story",
+      "note": "ASB story: Counting animals"
+    },
+    {
+      "nuer": "Manpalɛ̈k kɛnɛ Ci̱rci̱r cikɛ kɔn a mäth.",
+      "english": "Chicken and Millipede were friends.",
+      "category": "narrative",
+      "pattern": "asb_story",
+      "note": "ASB story: Chicken and Millipede"
+    },
+    {
+      "nuer": "Cu Manpalɛ̈k a käp go̱o̱nä.",
+      "english": "Chicken was the goal keeper.",
+      "category": "narrative",
+      "pattern": "asb_story",
+      "note": "ASB story: Chicken and Millipede"
+    },
+    {
+      "nuer": "Cu Ci̱rci̱r gööni diɔ̱k la̱th!",
+      "english": "Millipede scored three goals!",
+      "category": "narrative",
+      "pattern": "asb_story",
+      "note": "ASB story: Chicken and Millipede"
+    },
+    {
+      "nuer": "Cuɛ tekɛ lörɛ mi di̱i̱t mi lëër piny wi̱i̱ pa̱a̱m.",
+      "english": "A big truck was driving down the hill.",
+      "category": "narrative",
+      "pattern": "asb_story",
+      "note": "ASB story: Serious accident"
+    },
+    {
+      "nuer": "Kä thurbil riŋɛ nhial kɛ pɛth wee wi̱i̱ pa̱a̱m.",
+      "english": "A car was speeding up the hill.",
+      "category": "narrative",
+      "pattern": "asb_story",
+      "note": "ASB story: Serious accident"
+    },
+    {
+      "nuer": "Ɛn ge̱e̱r lörɛkä wëëkɛ mi ruacɛ kɛ tɛlɛpon. Jɛn /cɛ duɔ̱p guic.",
+      "english": "The truck driver was talking on his mobile phone. He was not looking at the road.",
+      "category": "narrative",
+      "pattern": "asb_story",
+      "note": "ASB story: Serious accident"
+    },
+    {
+      "nuer": "Jio̱k Nyapëc mi ci buɔthɛ näk tëë käk.",
+      "english": "Hungry Jackal was hunting.",
+      "category": "narrative",
+      "pattern": "asb_story",
+      "note": "ASB story: Ungrateful Jackal"
+    },
+    {
+      "nuer": "Jɛn cuɛ kun joc.Ɛn kun cuɛ rɔ tɔ̱w piny pa̱a̱m mi di̱i̱t.",
+      "english": "He chased a mouse.The mouse hid under a big rock.",
+      "category": "narrative",
+      "pattern": "asb_story",
+      "note": "ASB story: Ungrateful Jackal"
+    },
+    {
+      "nuer": "Jio̱k Nyapëc cuɛ päm tɛt.Ɛn päm cuɛ pɛn cio̱kädɛ.",
+      "english": "Jackal dug.The rock fell on his paw.",
+      "category": "narrative",
+      "pattern": "asb_story",
+      "note": "ASB story: Ungrateful Jackal"
+    },
+    {
+      "nuer": "Ɣän cɔalkɛ ɣä i̱ Yien.",
+      "english": "My name is Simo.",
+      "category": "narrative",
+      "pattern": "asb_story",
+      "note": "ASB story: Friends"
+    },
+    {
+      "nuer": "Ta̱a̱kɛ mäthni da̱ŋ ŋuaan.",
+      "english": "I have four friends.",
+      "category": "narrative",
+      "pattern": "asb_story",
+      "note": "ASB story: Friends"
+    },
+    {
+      "nuer": "Ciöötkiɛn ɛ Lam kɛ Nyagɔaa kɛ Dak kɛ Nyajuɔk.",
+      "english": "Their names are Zizo, Lele, Sisa and Ayanda.",
+      "category": "narrative",
+      "pattern": "asb_story",
+      "note": "ASB story: Friends"
+    },
+    {
+      "nuer": "Jɛn gua̱a̱th cuŋä thuɔ̱rbiɛɛli rɛy rɛ̈ɛ̈kda la thiäŋɛ kɛ naath.",
+      "english": "The bus stop in my town was full of people.",
+      "category": "narrative",
+      "pattern": "asb_story",
+      "note": "ASB story: Going to the city"
+    },
+    {
+      "nuer": "“Kɛ ɣöö nhɔk Kuoth nɛy diaal ɛlɔ̱ŋ, cuɛ Gatdɛ kɛl ni kärɔa muɔc, kɛ ɣöö ram mi wä jɛ ŋäth, /cɛ bi li̱w, bɛ tekɛ tëk mi thil pek.",
+      "english": "For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life.",
+      "category": "bible",
+      "pattern": "bible_gospel",
+      "note": "John 3:16"
+    },
+    {
+      "nuer": "Ruac tëë wa̱nɔ a /ka̱n ɣɔw ni cak, kä Ruac tëë kɛɛl kɛ Kuoth, kä Ruac ɛ jɛn Kuoth.",
+      "english": "In the beginning was the Word, and the Word was with God, and the Word was God.",
+      "category": "bible",
+      "pattern": "bible_gospel",
+      "note": "John 1:1 — In the beginning was the Word"
+    },
+    {
+      "nuer": "Cu Yecu jɛ jiök i̱, “Ɛ ɣän duɔ̱ɔ̱p, ɛ ɣän thuɔ̱k, kä ɛ ɣän tëk. Thilɛ ram mi wä kä Kuoth Nhial, a /cɛ bä kɛ ɣä.",
+      "english": "Jesus answered, “I am the way and the truth and the life. No one comes to the Father except through me.",
+      "category": "bible",
+      "pattern": "bible_gospel",
+      "note": "John 14:6 — I am the way, the truth, and the life"
+    },
+    {
+      "nuer": "Kä palɛ inɛ, ‘Gua̱a̱ra in te nhial, a ciötdu luɔ̱thkɛ.",
+      "english": "“This, then, is how you should pray: “ ‘Our Father in heaven, hallowed be your name,",
+      "category": "bible",
+      "pattern": "bible_prayer",
+      "note": "Matthew 6:9 — The Lord's Prayer (opening)"
+    },
+    {
+      "nuer": "A kuääru bëë. A ruaacniku latkɛ piny, ce̱tkɛ min latkɛ kɛ nhial.",
+      "english": "your kingdom come, your will be done, on earth as it is in heaven.",
+      "category": "bible",
+      "pattern": "bible_prayer",
+      "note": "Matthew 6:10 — Your kingdom come"
+    },
+    {
+      "nuer": "Käm nikɔ mi̱ethda ɛn cäŋ ɛ walɛ, min la camkɔ ciaŋ.",
+      "english": "Give us today our daily bread.",
+      "category": "bible",
+      "pattern": "bible_prayer",
+      "note": "Matthew 6:11 — Give us today our daily bread"
+    },
+    {
+      "nuer": "Kä wiaa, kä jakɛ naath kä ji̱ kɔaarä rɛy dööri diaal, kä lakɛ kɛ kɛ ciöt Gua̱a̱r in te nhial, kɛ Gat, kɛ Yiëë in Gɔaa in Rɛl Rɔ,",
+      "english": "Therefore go and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit,",
+      "category": "bible",
+      "pattern": "bible_gospel",
+      "note": "Matthew 28:19 — Great Commission"
+    },
+    {
+      "nuer": "Kuoth Nhial gaŋɛ ɣä ce̱tkɛ, yieen deet mi gaŋ detkɛ.",
+      "english": "The Lord is my shepherd, I lack nothing.",
+      "category": "bible",
+      "pattern": "bible_psalm",
+      "note": "Psalms 23:1 — The Lord is my shepherd"
+    },
+    {
+      "nuer": "A cäŋ ja̱lä rɛy lo̱o̱lä li̱eth mi col, /cä bi dual kɛ jiäk. Kä kɛ ɣöö ti̱i̱ kɛɛl kɛ ɣä, taaŋdu min go̱o̱ŋ kɛnɛ kɛɛtdu la gaŋkɛ ɣä.",
+      "english": "Even though I walk through the darkest valley, I will fear no evil, for you are with me; your rod and your staff, they comfort me.",
+      "category": "bible",
+      "pattern": "bible_psalm",
+      "note": "Psalms 23:4 — Even though I walk through the valley"
+    },
+    {
+      "nuer": "Ruacdu ɛ lɛmbär kä ɣä, kä ɛ buay ciöknikä.",
+      "english": "Your word is a lamp for my feet, a light on my path.",
+      "category": "bible",
+      "pattern": "bible_psalm",
+      "note": "Psalms 119:105 — Your word is a lamp"
+    },
+    {
+      "nuer": "Tɛ̈th lɔaac akɛ nɛy ti /ca guur ni ruac ji̱ nyuɔɔni, kä /ci wä kɛ duɔ̱ɔ̱p ji̱ dueeri, kä /ci lät ni tin la̱tkɛ ɛ nɛy tin la yɔaŋkɛ naath.",
+      "english": "Blessed is the one who does not walk in step with the wicked or stand in the way that sinners take or sit in the company of mockers,",
+      "category": "bible",
+      "pattern": "bible_psalm",
+      "note": "Psalms 1:1"
+    },
+    {
+      "nuer": "Ni tukädɛ Kuoth cɛ Nhial kɛnɛ piny cak.",
+      "english": "In the beginning God created the heavens and the earth.",
+      "category": "bible",
+      "pattern": "bible_genesis",
+      "note": "Genesis 1:1 — In the beginning"
+    },
+    {
+      "nuer": "Duundɛ ɣöö nɛy tin ŋa̱thkɛ ni Kuoth Nhial, bikɛ buɔ̱m nyɔk kɛ jek, bikɛ rɔ̱ jiɛc kɛ gɔ̱k ce̱tnikɛ cor, bikɛ wur kä /cikɛ bi ŋɔa̱a̱ŋ, bikɛ ja̱l kä /cikɛ bi cuuc.",
+      "english": "but those who hope in the Lord will renew their strength. They will soar on wings like eagles; they will run and not grow weary, they will walk and not be faint.",
+      "category": "bible",
+      "pattern": "bible_prophets",
+      "note": "Isaiah 40:31 — Those who hope in the Lord"
+    },
+    {
+      "nuer": "Kɛ ɣöö ɣän ŋa̱cä min cä car kɛ kui̱dun, ca̱r mi gɔaa a /ci mɔ a ca̱r mi jiäk, ca̱r mi bi jak ni yɛ kä tekɛ nhiam kɛnɛ ŋa̱th.",
+      "english": "For I know the plans I have for you,” declares the Lord , “plans to prosper you and not to harm you, plans to give you hope and a future.",
+      "category": "bible",
+      "pattern": "bible_prophets",
+      "note": "Jeremiah 29:11 — Plans to prosper you"
+    },
+    {
+      "nuer": "Ŋäc kɔn ɛ rɛy kä ti diaal, i̱ lät Kuoth kɛ kui̱ gɔɔyä nɛɛni tin nhɔakɛ jɛ, tin ca cɔl ce̱tkɛ luɔtdɛ.",
+      "english": "And we know that in all things God works for the good of those who love him, who have been called according to his purpose.",
+      "category": "bible",
+      "pattern": "bible_epistle",
+      "note": "Romans 8:28"
+    },
+    {
+      "nuer": "Dëë ti diaal la̱t rɛydɛ ɛn min jak ɣä kä bum.",
+      "english": "I can do all this through him who gives me strength.",
+      "category": "bible",
+      "pattern": "bible_epistle",
+      "note": "Philippians 4:13 — I can do all things"
+    },
+    {
+      "nuer": "Nhök ɛ päl piny, kä ɛ gɔɔy. Nhök thilɛ jɛ tiɛɛl, kiɛ ŋuën kiɛ liak kɛ rɔ,",
+      "english": "Love is patient, love is kind. It does not envy, it does not boast, it is not proud.",
+      "category": "bible",
+      "pattern": "bible_epistle",
+      "note": "1 Corinthians 13:4 — Love is patient"
+    },
+    {
+      "nuer": "Kä ɛn täämɛ, ti̱ti̱ da̱ŋ diɔ̱k tekɛ thi̱n, ŋa̱th, kɛ ŋa̱th kɛ ti bi ben, kɛnɛ nhök, kä min di̱t ni jɛn ɛlɔ̱ŋ kä kɛn ti̱ti̱ ɛ nhök.",
+      "english": "And now these three remain: faith, hope and love. But the greatest of these is love.",
+      "category": "bible",
+      "pattern": "bible_epistle",
+      "note": "1 Corinthians 13:13 — Faith, hope and love"
+    }
+  ]
+}
