@@ -1,55 +1,70 @@
-// Nuer and Dinka text-to-speech — powered by Meta's MMS (Massively Multilingual Speech)
-// Models: facebook/mms-tts-nus (Nuer) and facebook/mms-tts-din (Dinka)
-// Backend: Hugging Face Inference API
-//
-// No Google. No browser fallback. Strictly Meta MMS.
+import { Client } from "@gradio/client";
 
-const HF_INFERENCE_BASE = "https://api-inference.huggingface.co/models";
+// Hugging Face Space endpoints
+const NUER_TTS_SPACE = "dayomtechnologies/Text_To_Speech_Thok_Naath";
+const DINKA_TTS_SPACE = "Alaak/Dinka_Text_To_Speech";
 
-const MMS_MODELS = {
-  nus: "facebook/mms-tts-nus",
-  din: "facebook/mms-tts-din",
-};
+let nuerClientPromise = null;
+let dinkaClientPromise = null;
 
-// Optional — set VITE_HF_TOKEN in .env to raise rate limits
-const HF_TOKEN = import.meta.env?.VITE_HF_TOKEN;
+function getNuerClient() {
+  if (!nuerClientPromise) nuerClientPromise = Client.connect(NUER_TTS_SPACE);
+  return nuerClientPromise;
+}
 
-async function callMmsModel(lang, text) {
-  const model = MMS_MODELS[lang];
-  if (!model) throw new Error(`Unsupported TTS language: ${lang}`);
+function getDinkaClient() {
+  if (!dinkaClientPromise) dinkaClientPromise = Client.connect(DINKA_TTS_SPACE);
+  return dinkaClientPromise;
+}
 
-  const headers = { "Content-Type": "application/json" };
-  if (HF_TOKEN) headers.Authorization = `Bearer ${HF_TOKEN}`;
+async function callGradioSpace(clientPromise, text, seed = 42) {
+  const client = await clientPromise;
+  const result = await client.predict("/synthesize", { text, seed });
+  const audioData = result?.data?.[0];
+  const url = audioData?.url || audioData?.path;
+  if (!url) throw new Error("No audio returned from TTS model.");
+  return url;
+}
 
-  const response = await fetch(`${HF_INFERENCE_BASE}/${model}`, {
-    method: "POST",
-    headers,
-    body: JSON.stringify({ inputs: text }),
-  });
-
-  if (!response.ok) {
-    if (response.status === 503) {
-      let wait = 20;
-      try {
-        const body = await response.json();
-        if (body?.estimated_time) wait = Math.ceil(body.estimated_time);
-      } catch { /* ignore */ }
-      throw new Error(`MMS ${lang} model is warming up — try again in about ${wait}s.`);
+export function speakEnglish(text) {
+  return new Promise((resolve, reject) => {
+    if (!("speechSynthesis" in window)) {
+      reject(new Error("Browser does not support speech synthesis."));
+      return;
     }
-    throw new Error(`Meta MMS request failed (${response.status}).`);
-  }
-
-  const blob = await response.blob();
-  return URL.createObjectURL(blob);
+    window.speechSynthesis.cancel();
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = "en-US";
+    utterance.rate = 0.9;
+    utterance.onend = resolve;
+    utterance.onerror = (e) => reject(new Error(`Speech error: ${e.error}`));
+    window.speechSynthesis.speak(utterance);
+  });
 }
 
 /**
- * Synthesize speech using Meta's MMS models.
- * @param {string} text - Text to speak.
- * @param {string} lang - 'nus' (Nuer) | 'din' (Dinka)
- * @returns {Promise<string>} Object URL for playable audio.
+ * Synthesize speech from text.
+ * @param {string} text
+ * @param {string} lang  - 'nus' | 'din' | 'en'
+ * @param {number} seed  - Nuer/Dinka Gradio seed (default 42)
+ * @returns {Promise<string|null>} Audio URL for nus/din; null for en
  */
-export async function synthesizeSpeech(text, lang = "nus") {
-  if (!MMS_MODELS[lang]) throw new Error(`Unsupported TTS language: ${lang}`);
-  return callMmsModel(lang, text);
+export async function synthesizeSpeech(text, lang = "nus", seed = 42) {
+  if (!text || !text.trim()) throw new Error("No text provided.");
+
+  switch (lang) {
+    case "nus":
+      return callGradioSpace(getNuerClient(), text.trim(), seed);
+    case "din":
+      return callGradioSpace(getDinkaClient(), text.trim(), seed);
+    case "en":
+      await speakEnglish(text.trim());
+      return null;
+    default:
+      throw new Error(`Unsupported TTS language: ${lang}`);
+  }
+}
+
+export function isTTSSupported(lang) {
+  return ["nus", "din", "en"].includes(lang);
 }
