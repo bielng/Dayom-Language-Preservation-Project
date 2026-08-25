@@ -1,31 +1,100 @@
-import { Client } from "@gradio/client";
+import { TTS } from "../config/site.js";
 
-// Hugging Face Space endpoints
-const NUER_TTS_SPACE = "dayomtechnologies/Text_To_Speech_Thok_Naath";
-const DINKA_TTS_SPACE = "Alaak/Dinka_Text_To_Speech";
+/**
+ * Nuer + Dinka text-to-speech, both on Meta's MMS (Massively Multilingual
+ * Speech) checkpoints — facebook/mms-tts-nus and facebook/mms-tts-din —
+ * called directly on the Hugging Face Inference API. One provider, one
+ * code path, no Google/browser SpeechSynthesis fallback for either
+ * language.
+ */
 
-let nuerClientPromise = null;
-let dinkaClientPromise = null;
+const HF_INFERENCE_URL = "https://api-inference.huggingface.co/models";
 
-function getNuerClient() {
-  if (!nuerClientPromise) nuerClientPromise = Client.connect(NUER_TTS_SPACE);
-  return nuerClientPromise;
+// A hung request should fail loudly rather than spin forever.
+const REQUEST_TIMEOUT_MS = 20_000;
+
+// Cold checkpoints return a 503 with an estimated load time instead of
+// audio. Auto-retry a couple of times (short, capped waits) before making
+// the user click again.
+const MAX_COLD_START_RETRIES = 2;
+const MAX_COLD_START_WAIT_MS = 8_000;
+
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-function getDinkaClient() {
-  if (!dinkaClientPromise) dinkaClientPromise = Client.connect(DINKA_TTS_SPACE);
-  return dinkaClientPromise;
+async function requestMMS(model, text) {
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
+
+  try {
+    return await fetch(`${HF_INFERENCE_URL}/${model}`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ inputs: text }),
+      signal: controller.signal,
+    });
+  } catch (err) {
+    if (err.name === "AbortError") {
+      throw new Error(
+        `MMS voice model timed out after ${REQUEST_TIMEOUT_MS / 1000}s — try again.`,
+        { cause: err },
+      );
+    }
+    throw err;
+  } finally {
+    clearTimeout(timeoutId);
+  }
 }
 
-async function callGradioSpace(clientPromise, text, seed = 42) {
-  const client = await clientPromise;
-  const result = await client.predict("/synthesize", { text, seed });
-  const audioData = result?.data?.[0];
-  const url = audioData?.url || audioData?.path;
-  if (!url) throw new Error("No audio returned from TTS model.");
-  return url;
+async function callMMS(model, text, attempt = 0) {
+  const res = await requestMMS(model, text);
+
+  if (!res.ok) {
+    if (res.status === 503) {
+      let waitMs = 3000;
+      try {
+        const body = await res.json();
+        if (body?.estimated_time) {
+          waitMs = Math.min(
+            Math.ceil(body.estimated_time * 1000),
+            MAX_COLD_START_WAIT_MS,
+          );
+        }
+      } catch {
+        // no JSON body to read — keep the default wait
+      }
+
+      if (attempt < MAX_COLD_START_RETRIES) {
+        await sleep(waitMs);
+        return callMMS(model, text, attempt + 1);
+      }
+
+      throw new Error(
+        `Meta MMS voice model is still warming up after ${attempt + 1} tries — try again in a moment.`,
+      );
+    }
+
+    let detail = "";
+    try {
+      const body = await res.json();
+      detail = body?.error ? ` (${body.error})` : "";
+    } catch {
+      // response wasn't JSON — nothing extra to add
+    }
+    throw new Error(`MMS TTS request failed: ${res.status}${detail}`);
+  }
+
+  const audioBlob = await res.blob();
+  if (!audioBlob.size) throw new Error("No audio returned from the MMS model.");
+  return URL.createObjectURL(audioBlob);
 }
 
+/**
+ * Browser SpeechSynthesis, used ONLY for English playback (StudioTranslate's
+ * "listen" button when the target language is English). Nuer and Dinka
+ * never touch this path — they always go through callMMS above.
+ */
 export function speakEnglish(text) {
   return new Promise((resolve, reject) => {
     if (!("speechSynthesis" in window)) {
@@ -43,28 +112,22 @@ export function speakEnglish(text) {
 }
 
 /**
- * Synthesize speech from text.
+ * Synthesize speech from text using Meta's MMS models (Nuer/Dinka only).
+ * Retries automatically on a cold-model 503 and times out a hung request —
+ * callers only ever see a resolved audio URL or a final, user-facing Error.
  * @param {string} text
- * @param {string} lang  - 'nus' | 'din' | 'en'
- * @param {number} seed  - Nuer/Dinka Gradio seed (default 42)
- * @returns {Promise<string|null>} Audio URL for nus/din; null for en
+ * @param {string} lang - 'nus' (Nuer) | 'din' (Dinka)
+ * @returns {Promise<string>} an object URL for the synthesized audio
  */
-export async function synthesizeSpeech(text, lang = "nus", seed = 42) {
+export async function synthesizeSpeech(text, lang = "nus") {
   if (!text || !text.trim()) throw new Error("No text provided.");
 
-  switch (lang) {
-    case "nus":
-      return callGradioSpace(getNuerClient(), text.trim(), seed);
-    case "din":
-      return callGradioSpace(getDinkaClient(), text.trim(), seed);
-    case "en":
-      await speakEnglish(text.trim());
-      return null;
-    default:
-      throw new Error(`Unsupported TTS language: ${lang}`);
-  }
+  const model = TTS.models[lang];
+  if (!model) throw new Error(`Unsupported TTS language: ${lang}`);
+
+  return callMMS(model, text.trim());
 }
 
 export function isTTSSupported(lang) {
-  return ["nus", "din", "en"].includes(lang);
+  return Object.prototype.hasOwnProperty.call(TTS.models, lang);
 }
