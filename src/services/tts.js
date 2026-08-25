@@ -157,14 +157,14 @@ export async function synthesizeSpeech(text, lang = "nus") {
       return await spaceTTS(clean, "din");
     } catch (spaceErr) {
       console.warn("[TTS] Dinka Space failed:", spaceErr.message);
-      // Dinka Space is a placeholder pointing to Nuer — if it fails,
-      // try the base MMS model via Inference API as fallback.
+      // Space (Alaak/Dinka_Text_To_Speech, facebook/mms-tts-dik) is down or
+      // asleep — try the base MMS model via Inference API as fallback.
       try {
         return await inferenceTTS(clean, TTS.models.din);
       } catch (infErr) {
         console.warn("[TTS] Dinka Inference fallback failed:", infErr.message);
         throw new Error(
-          "Dinka voice is not available yet. A dedicated model is coming soon.",
+          "Dinka voice is unavailable right now. The model may be waking up — try again in 20 seconds.",
         );
       }
     }

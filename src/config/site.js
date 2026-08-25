@@ -261,12 +261,13 @@ export const TTS = {
   providerUrl: "https://huggingface.co/facebook/mms-tts",
   spaces: {
     nus: "dayomtechnologies/Text_To_Speech_Thok_Naath",
-    din: "dayomtechnologies/Text_To_Speech_Thok_Naath", // placeholder — swap when Dinka Space is ready
+    din: "Alaak/Dinka_Text_To_Speech",
   },
   // Base model IDs kept for reference (Models page, docs, etc.)
+  // and as the last-resort Inference API fallback if the Space is down.
   models: {
     nus: "facebook/mms-tts-nus",
-    din: "facebook/mms-tts-din",
+    din: "facebook/mms-tts-dik",
   },
 };
 

@@ -190,7 +190,7 @@ export default function StudioTTS() {
           Voice:{" "}
           {lang === "nus"
             ? "Fine-tuned Meta MMS (Nuer) via Hugging Face Space"
-            : "Dinka placeholder — dedicated model coming soon"}
+            : "Meta MMS (Dinka, facebook/mms-tts-dik) via Hugging Face Space"}
           . Spaces may take 10–20s to wake up on first use.
         </p>
       </div>
