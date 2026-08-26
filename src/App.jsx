@@ -29,13 +29,22 @@ import PrivacyPage from "./components/pages/PrivacyPage.jsx";
 import TermsPage from "./components/pages/TermsPage.jsx";
 import SafetyPage from "./components/pages/SafetyPage.jsx";
 
-function useHashPath() {
-  const [path, setPath] = useState(() => window.location.hash.replace(/^#/, "") || "/");
+// Strip a trailing slash (except on the root itself) so "/library/" and
+// "/library" are treated as the same route.
+function normalizePath(pathname) {
+  if (pathname.length > 1 && pathname.endsWith("/")) {
+    return pathname.slice(0, -1);
+  }
+  return pathname || "/";
+}
+
+function usePath() {
+  const [path, setPath] = useState(() => normalizePath(window.location.pathname));
 
   useEffect(() => {
-    const onHashChange = () => setPath(window.location.hash.replace(/^#/, "") || "/");
-    window.addEventListener("hashchange", onHashChange);
-    return () => window.removeEventListener("hashchange", onHashChange);
+    const onPopState = () => setPath(normalizePath(window.location.pathname));
+    window.addEventListener("popstate", onPopState);
+    return () => window.removeEventListener("popstate", onPopState);
   }, []);
 
   return path;
@@ -93,13 +102,57 @@ function isRoutePath(path) {
 }
 
 export default function App() {
-  const path = useHashPath();
+  const path = usePath();
 
   useEffect(() => {
     if (isRoutePath(path)) {
       window.scrollTo({ top: 0 });
     }
   }, [path]);
+
+  // Intercept clicks on same-origin links that point at a real client-side
+  // route (e.g. "/library/dictionary") and turn them into pushState
+  // navigations instead of full page reloads. Links that aren't one of our
+  // routes — the static "/naath-library/index.html" mini-site, external
+  // URLs, mailto:, in-page "#about" anchors, etc. — are left completely
+  // alone and behave like normal browser navigation.
+  useEffect(() => {
+    function onClick(event) {
+      if (event.defaultPrevented || event.button !== 0) return;
+      if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+
+      const anchor = event.target.closest("a");
+      if (!anchor) return;
+      if (anchor.target && anchor.target !== "_self") return;
+      if (anchor.hasAttribute("download")) return;
+
+      const href = anchor.getAttribute("href");
+      if (!href || href.startsWith("#") || href.startsWith("mailto:") || href.startsWith("tel:")) {
+        return;
+      }
+
+      let url;
+      try {
+        url = new URL(href, window.location.href);
+      } catch {
+        return;
+      }
+      if (url.origin !== window.location.origin) return;
+
+      const targetPath = normalizePath(url.pathname);
+      if (!isRoutePath(targetPath)) return;
+
+      event.preventDefault();
+      const newUrl = url.pathname + url.search + url.hash;
+      if (newUrl !== window.location.pathname + window.location.search + window.location.hash) {
+        window.history.pushState({}, "", newUrl);
+        window.dispatchEvent(new PopStateEvent("popstate"));
+      }
+    }
+
+    document.addEventListener("click", onClick);
+    return () => document.removeEventListener("click", onClick);
+  }, []);
 
   if (path.startsWith("/studio")) {
     const segment = path.split("/")[2] || "home";

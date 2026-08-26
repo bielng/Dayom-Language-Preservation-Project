@@ -24,7 +24,7 @@ const MODELS = [
       ["Dinka model", TTS.models.din],
       ["Host", "Hugging Face Inference API"],
     ],
-    try: { href: "#/studio/tts", label: "Try text-to-speech" },
+    try: { href: "/studio/tts", label: "Try text-to-speech" },
   },
   {
     id: "translate",
@@ -40,7 +40,7 @@ const MODELS = [
       ["Replacement", "Fine-tuned NLLB-200, in training"],
       ["Training data", `${CORPUS_TOTAL.toLocaleString()} open corpus records`],
     ],
-    try: { href: "#/studio/translate", label: "Try translation" },
+    try: { href: "/studio/translate", label: "Try translation" },
     note:
       "We are fine-tuning NLLB (No Language Left Behind) on the open corpus to replace this backend. Until that ships, treat translation output as a draft to be checked by a speaker.",
   },
@@ -58,7 +58,7 @@ const MODELS = [
       ["Seed data", "551 community pronunciation clips"],
       ["Blocker", "Recording volume — contributions needed"],
     ],
-    try: { href: "#/studio/voice", label: "Open voice studio" },
+    try: { href: "/studio/voice", label: "Open voice studio" },
     note:
       "Being explicit because it matters: this is not yet a Nuer or Dinka speech model. If you want to move it forward, the fastest help is recorded audio.",
   },
@@ -76,7 +76,7 @@ const MODELS = [
       ["Generation", "None — attested phrases only"],
       ["Fallback", "Explicit 'no match' response"],
     ],
-    try: { href: "#/studio/chat", label: "Try the assistant" },
+    try: { href: "/studio/chat", label: "Try the assistant" },
   },
   {
     id: "reasoning",
@@ -178,10 +178,10 @@ export default function ModelsPage() {
 
       <Section eyebrow="Next" title="Build with the models" className="mb-4">
         <div className="flex items-center gap-3 flex-wrap">
-          <a href="#/api" className="btn-primary">
+          <a href="/api" className="btn-primary">
             API access <ArrowUpRight />
           </a>
-          <a href="#/datasets" className="btn-ghost">
+          <a href="/datasets" className="btn-ghost">
             <Database /> The training data
           </a>
           <a href={HUGGINGFACE.models} target="_blank" rel="noreferrer" className="btn-ghost">

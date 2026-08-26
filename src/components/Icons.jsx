@@ -653,3 +653,93 @@ export const Terminal = (p) => (
     <path d='M12 19h8' />
   </svg>
 );
+
+export const ChevronRight = (p) => (
+  <svg
+    width='12'
+    height='12'
+    viewBox='0 0 24 24'
+    fill='none'
+    stroke='currentColor'
+    strokeWidth={2.5}
+    strokeLinecap='round'
+    strokeLinejoin='round'
+    {...p}
+  >
+    <path d='m9 18 6-6-6-6' />
+  </svg>
+);
+
+export const BookOpen = (p) => (
+  <svg
+    width='14'
+    height='14'
+    viewBox='0 0 24 24'
+    fill='none'
+    stroke='currentColor'
+    strokeWidth={2}
+    strokeLinecap='round'
+    strokeLinejoin='round'
+    {...p}
+  >
+    <path d='M12 7v14' />
+    <path d='M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z' />
+  </svg>
+);
+
+export const RotateCcw = (p) => (
+  <svg
+    width='14'
+    height='14'
+    viewBox='0 0 24 24'
+    fill='none'
+    stroke='currentColor'
+    strokeWidth={2}
+    strokeLinecap='round'
+    strokeLinejoin='round'
+    {...p}
+  >
+    <path d='M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8' />
+    <path d='M3 3v5h5' />
+  </svg>
+);
+
+export const Volume2 = (p) => (
+  <svg
+    width='14'
+    height='14'
+    viewBox='0 0 24 24'
+    fill='none'
+    stroke='currentColor'
+    strokeWidth={2}
+    strokeLinecap='round'
+    strokeLinejoin='round'
+    {...p}
+  >
+    <path d='M11 5 6 9H3v6h3l5 4z' />
+    <path d='M15.54 8.46a5 5 0 0 1 0 7.07' />
+    <path d='M19.07 4.93a10 10 0 0 1 0 14.14' />
+  </svg>
+);
+
+export const Bug = (p) => (
+  <svg
+    width='14'
+    height='14'
+    viewBox='0 0 24 24'
+    fill='none'
+    stroke='currentColor'
+    strokeWidth={2}
+    strokeLinecap='round'
+    strokeLinejoin='round'
+    {...p}
+  >
+    <rect x='8' y='6' width='8' height='12' rx='4' />
+    <path d='M8 12H2' />
+    <path d='M22 12h-6' />
+    <path d='m9 4-1.5-1.5' />
+    <path d='m15 4 1.5-1.5' />
+    <path d='m9 20-1.5 1.5' />
+    <path d='m15 20 1.5 1.5' />
+  </svg>
+);

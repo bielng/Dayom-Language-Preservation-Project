@@ -3,28 +3,28 @@ import { Sparkle, Translate, Mic, Volume, ArrowRight } from "../Icons.jsx";
 const FEATURES = [
   {
     id: "chat",
-    href: "#/studio/chat",
+    href: "/studio/chat",
     icon: Sparkle,
     title: "Chat Assistant",
     body: "Ask about Nuer or Dinka words, phrases, and everyday conversation. Answers are grounded in a curated local knowledge base.",
   },
   {
     id: "translate",
-    href: "#/studio/translate",
+    href: "/studio/translate",
     icon: Translate,
     title: "Text Translation",
     body: "Translate freely between English, Nuer (Thok Naath), and Dinka (Thuɔŋjäŋ) in either direction.",
   },
   {
     id: "voice",
-    href: "#/studio/voice",
+    href: "/studio/voice",
     icon: Mic,
     title: "Speech Recognition",
     body: "Speak in English and get a live transcript, then translate it instantly into Nuer or Dinka.",
   },
   {
     id: "tts",
-    href: "#/studio/tts",
+    href: "/studio/tts",
     icon: Volume,
     title: "Text to Speech",
     body: "Turn Nuer or Dinka text into natural spoken audio you can play back or download.",

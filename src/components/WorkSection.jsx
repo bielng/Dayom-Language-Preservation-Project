@@ -48,7 +48,7 @@ export default function WorkSection() {
               specifically optimized for English ↔ Nuer translation, with cultural
               nuance and grammatical accuracy.
             </p>
-            <a href="#/models" className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-ink-900 underline underline-offset-4 decoration-ink-300 hover:decoration-ink-900">
+            <a href="/models" className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-ink-900 underline underline-offset-4 decoration-ink-300 hover:decoration-ink-900">
               Explore Translation <ArrowRight />
             </a>
           </div>
@@ -84,7 +84,7 @@ export default function WorkSection() {
               Building the foundation of Nuer AI from locally curated English ↔ Nuer
               dictionaries, lesson data, conversation pairs, and parallel corpora.
             </p>
-            <a href="#/datasets" className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-ink-900 underline underline-offset-4 decoration-ink-300 hover:decoration-ink-900">
+            <a href="/datasets" className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-ink-900 underline underline-offset-4 decoration-ink-300 hover:decoration-ink-900">
               View Datasets <ArrowRight />
             </a>
           </div>

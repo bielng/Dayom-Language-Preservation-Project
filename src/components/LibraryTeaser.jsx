@@ -24,7 +24,7 @@ export default function LibraryTeaser() {
         </div>
 
         <div className="mt-8">
-          <a href="#/library" className="btn-primary">
+          <a href="/library" className="btn-primary">
             <Sparkle /> Explore the Library <ArrowUpRight />
           </a>
         </div>

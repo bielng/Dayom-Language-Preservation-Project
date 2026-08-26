@@ -47,7 +47,7 @@ const SECTIONS = [
         </li>
         <li>
           <b className="text-ink-900">Honest status labels.</b> Our{" "}
-          <a href="#/models">models page</a> states which features are real models and which are
+          <a href="/models">models page</a> states which features are real models and which are
           still browser fallbacks. Voice input currently has no Nuer or Dinka acoustic model and we
           say so on the page rather than letting the interface imply otherwise.
         </li>
@@ -200,15 +200,15 @@ export default function SafetyPage() {
       closing={
         <p>
           See also the{" "}
-          <a href="#/terms" className="text-ink-900 underline underline-offset-4 decoration-ink-300 hover:decoration-ink-900">
+          <a href="/terms" className="text-ink-900 underline underline-offset-4 decoration-ink-300 hover:decoration-ink-900">
             Terms of Service
           </a>
           ,{" "}
-          <a href="#/privacy" className="text-ink-900 underline underline-offset-4 decoration-ink-300 hover:decoration-ink-900">
+          <a href="/privacy" className="text-ink-900 underline underline-offset-4 decoration-ink-300 hover:decoration-ink-900">
             Privacy Policy
           </a>
           , and the{" "}
-          <a href="#/models" className="text-ink-900 underline underline-offset-4 decoration-ink-300 hover:decoration-ink-900">
+          <a href="/models" className="text-ink-900 underline underline-offset-4 decoration-ink-300 hover:decoration-ink-900">
             model status board
           </a>
           .

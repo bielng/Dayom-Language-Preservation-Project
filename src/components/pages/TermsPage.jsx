@@ -155,7 +155,7 @@ const SECTIONS = [
         speech models on the Hugging Face Inference API, and your browser's own speech recognition.
         Those services have their own terms and their own availability, and we do not control
         either. Section 3 of the{" "}
-        <a href="#/privacy">Privacy Policy</a> lists exactly which features send your input where.
+        <a href="/privacy">Privacy Policy</a> lists exactly which features send your input where.
       </p>
     ),
   },
@@ -182,16 +182,16 @@ export default function TermsPage() {
       closing={
         <p>
           See also the{" "}
-          <a href="#/privacy" className="text-ink-900 underline underline-offset-4 decoration-ink-300 hover:decoration-ink-900">
+          <a href="/privacy" className="text-ink-900 underline underline-offset-4 decoration-ink-300 hover:decoration-ink-900">
             Privacy Policy
           </a>
           ,{" "}
-          <a href="#/safety" className="text-ink-900 underline underline-offset-4 decoration-ink-300 hover:decoration-ink-900">
+          <a href="/safety" className="text-ink-900 underline underline-offset-4 decoration-ink-300 hover:decoration-ink-900">
             Safety
           </a>
           , and the{" "}
           <a
-            href="#/datasets"
+            href="/datasets"
             className="text-ink-900 underline underline-offset-4 decoration-ink-300 hover:decoration-ink-900"
           >
             per-dataset licensing detail

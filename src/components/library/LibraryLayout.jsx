@@ -1,15 +1,15 @@
 import { Logo, ArrowLeft, Home } from "../Icons.jsx";
 
 const NAV_ITEMS = [
-  { id: "home", label: "Home", href: "#/library" },
-  { id: "dictionary", label: "Dictionary", href: "#/library/dictionary" },
-  { id: "vocabulary", label: "Vocabulary", href: "#/library/vocabulary" },
-  { id: "structures", label: "Structures", href: "#/library/structures" },
-  { id: "conversation", label: "Conversation", href: "#/library/conversation" },
-  { id: "grammar", label: "Grammar", href: "#/library/grammar" },
-  { id: "examples", label: "Examples", href: "#/library/examples" },
-  { id: "phrasebook", label: "Phrasebook", href: "#/library/phrasebook" },
-  { id: "guide", label: "Grammar Guide", href: "#/library/guide" },
+  { id: "home", label: "Home", href: "/library" },
+  { id: "dictionary", label: "Dictionary", href: "/library/dictionary" },
+  { id: "vocabulary", label: "Vocabulary", href: "/library/vocabulary" },
+  { id: "structures", label: "Structures", href: "/library/structures" },
+  { id: "conversation", label: "Conversation", href: "/library/conversation" },
+  { id: "grammar", label: "Grammar", href: "/library/grammar" },
+  { id: "examples", label: "Examples", href: "/library/examples" },
+  { id: "phrasebook", label: "Phrasebook", href: "/library/phrasebook" },
+  { id: "guide", label: "Grammar Guide", href: "/library/guide" },
 ];
 
 export default function LibraryLayout({ active, children }) {
@@ -17,7 +17,7 @@ export default function LibraryLayout({ active, children }) {
     <div className="min-h-screen flex flex-col bg-[#f9f6ee]">
       <header className="sticky top-0 z-50 backdrop-blur-md bg-[#FCFAF5]/90 border-b border-ink-200/60">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
-          <a href="#/library" className="flex items-center gap-2 shrink-0">
+          <a href="/library" className="flex items-center gap-2 shrink-0">
             <Logo />
             <span className="font-semibold text-[15px] tracking-tight text-ink-900 hidden sm:inline">
               Naath Dayom Library
@@ -45,7 +45,7 @@ export default function LibraryLayout({ active, children }) {
           </nav>
 
           <a
-            href="#/"
+            href="/"
             className="shrink-0 inline-flex items-center gap-1.5 text-xs sm:text-sm text-ink-500 hover:text-ink-900 transition"
           >
             <ArrowLeft />

@@ -27,10 +27,10 @@ export default function DinkaLibraryTeaser() {
               A dedicated open-data reference for <strong>Thuɔŋjäŋ</strong> (Dinka). Browse 9,199 lexical entries across six dialect regions — Northeast, Northwest, Southwest, South Central, South Aliap, and Southeast.
             </p>
             <div className="flex flex-wrap gap-3">
-              <a href="#/dinka-library/dictionary" className="btn-primary" style={{ backgroundColor: '#C65D3B' }}>
+              <a href="/dinka-library/dictionary" className="btn-primary" style={{ backgroundColor: '#C65D3B' }}>
                 <BookOpen /> Browse Dictionary
               </a>
-              <a href="#/dinka-library" className="btn-ghost">
+              <a href="/dinka-library" className="btn-ghost">
                 Learn more <ArrowRight />
               </a>
             </div>

@@ -168,7 +168,7 @@ export default function ContributePage() {
               The corpus files <ArrowRight />
             </a>
             <a
-              href="#/datasets"
+              href="/datasets"
               className="inline-flex items-center gap-1.5 text-sm text-ink-500 hover:text-ink-900 transition"
             >
               What already exists <ArrowRight />

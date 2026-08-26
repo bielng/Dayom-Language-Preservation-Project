@@ -13,7 +13,7 @@ export default function Hero() {
           models for under-represented languages.
         </p>
         <div className="mt-9 flex items-center justify-center gap-3 flex-wrap">
-          <a href="#/studio" className="btn-primary">
+          <a href="/studio" className="btn-primary">
             Translate for free <ArrowUpRight />
           </a>
           <a href="#about" className="btn-ghost">

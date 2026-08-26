@@ -229,15 +229,15 @@ export default function ApiPage() {
             <span className="font-mono text-[13px]">source</span> and{" "}
             <span className="font-mono text-[13px]">license</span> field on each record before
             redistributing. Full detail on the{" "}
-            <a href="#/datasets">licensing section</a> of the datasets page, and in the{" "}
-            <a href="#/terms">terms of service</a>.
+            <a href="/datasets">licensing section</a> of the datasets page, and in the{" "}
+            <a href="/terms">terms of service</a>.
           </p>
         </Prose>
         <div className="mt-7 flex items-center gap-3 flex-wrap">
-          <a href="#/datasets" className="btn-ghost">
+          <a href="/datasets" className="btn-ghost">
             <Database /> Browse the corpus
           </a>
-          <a href="#/models" className="btn-ghost">
+          <a href="/models" className="btn-ghost">
             Model status <ArrowUpRight />
           </a>
         </div>

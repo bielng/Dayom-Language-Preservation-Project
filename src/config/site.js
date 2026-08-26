@@ -69,7 +69,7 @@ export const CORPUS = {
       name: "Nuer Dictionary",
       entries: 3209,
       file: "/data/library/dictionary.json",
-      href: "#/library/dictionary",
+      href: "/library/dictionary",
       blurb:
         "English ↔ Nuer headwords with part of speech, alternative spellings, and usage examples.",
       fields: [
@@ -88,7 +88,7 @@ export const CORPUS = {
       name: "Dinka Dictionary",
       entries: 9199,
       file: "/data/dinka/dictionary.json",
-      href: "#/dinka-library/dictionary",
+      href: "/dinka-library/dictionary",
       blurb:
         "Dinka (Thuɔŋjäŋ) ↔ English headwords covering 6 dialect regions and 18 dialect subcodes.",
       fields: ["dinka", "english", "partOfSpeech", "dialectTags", "example"],
@@ -100,7 +100,7 @@ export const CORPUS = {
       name: "Sentence Structures",
       entries: 1250,
       file: "/data/library/structures.json",
-      href: "#/library/structures",
+      href: "/library/structures",
       blurb:
         "Sentence-level parallel pairs grouped by grammatical topic, for pattern drilling and few-shot prompting.",
       fields: [
@@ -119,7 +119,7 @@ export const CORPUS = {
       name: "Vocabulary",
       entries: 966,
       file: "/data/library/vocabulary.json",
-      href: "#/library/vocabulary",
+      href: "/library/vocabulary",
       blurb:
         "Topic-organised word lists spanning everyday domains — family, numbers, body, food, place.",
       fields: [
@@ -138,7 +138,7 @@ export const CORPUS = {
       name: "Conversation",
       entries: 810,
       file: "/data/library/conversation.json",
-      href: "#/library/conversation",
+      href: "/library/conversation",
       blurb:
         "Dialogue turns and conversational exchanges covering greetings, requests, and daily interaction.",
       fields: [
@@ -158,7 +158,7 @@ export const CORPUS = {
       entries: 401,
       audioClips: 551,
       file: "/data/phrasebook.json",
-      href: "#/library/phrasebook",
+      href: "/library/phrasebook",
       blurb:
         "Community phrasebook with IPA transcription, plural forms, sense glosses, dialect notes, and recorded pronunciation.",
       fields: [
@@ -179,7 +179,7 @@ export const CORPUS = {
       name: "Grammar Drills",
       entries: 257,
       file: "/data/library/grammar.json",
-      href: "#/library/grammar",
+      href: "/library/grammar",
       blurb:
         "Grammar exercises keyed to specific rules — negation, tense marking, copula, and possession.",
       fields: [
@@ -198,7 +198,7 @@ export const CORPUS = {
       name: "Curated Examples",
       entries: 221,
       file: "/data/library/examples.json",
-      href: "#/library/examples",
+      href: "/library/examples",
       blurb:
         "Hand-checked Thok Nath ↔ English pairs across 18 categories, built specifically for few-shot prompting.",
       fields: ["nuer", "english", "category", "pattern"],
@@ -211,7 +211,7 @@ export const CORPUS = {
   reference: {
     name: "Grammar Guide",
     file: "/data/library/grammar-guide.md",
-    href: "#/library/guide",
+    href: "/library/guide",
     blurb:
       "A long-form Thok Nath grammar reference in Markdown, covering the rule set the datasets encode.",
   },
@@ -271,37 +271,37 @@ export const TTS = {
   },
 };
 
-// Primary navigation — hash routes, matching the existing #/studio and
-// #/library pattern already used across the site.
+// Primary navigation — hash routes, matching the existing /studio and
+// /library pattern already used across the site.
 export const NAV_LINKS = [
-  { label: "About Us", href: "#/about" },
-  { label: "Datasets", href: "#/datasets" },
-  { label: "Models", href: "#/models" },
-  { label: "Library", href: "#/library" },
+  { label: "About Us", href: "/about" },
+  { label: "Datasets", href: "/datasets" },
+  { label: "Models", href: "/models" },
+  { label: "Library", href: "/library" },
   { label: "Living Library", href: "/naath-library/index.html" },
-  { label: "Studio", href: "#/studio" },
-  { label: "API", href: "#/api" },
+  { label: "Studio", href: "/studio" },
+  { label: "API", href: "/api" },
 ];
 
 export const FOOTER_COLUMNS = [
   {
     heading: "Product",
     links: [
-      { label: "Open Corpus", href: "#/datasets" },
-      { label: "Models", href: "#/models" },
-      { label: "API Access", href: "#/api" },
-      { label: "Library", href: "#/library" },
-      { label: "Dinka Library", href: "#/dinka-library" },
-      { label: "Studio", href: "#/studio" },
+      { label: "Open Corpus", href: "/datasets" },
+      { label: "Models", href: "/models" },
+      { label: "API Access", href: "/api" },
+      { label: "Library", href: "/library" },
+      { label: "Dinka Library", href: "/dinka-library" },
+      { label: "Studio", href: "/studio" },
     ],
   },
   {
     heading: "Organisation",
     links: [
-      { label: "About Us", href: "#/about" },
-      { label: "Our Mission", href: "#/about" },
-      { label: "Get Involved", href: "#/contribute" },
-      { label: "News", href: "#/news" },
+      { label: "About Us", href: "/about" },
+      { label: "Our Mission", href: "/about" },
+      { label: "Get Involved", href: "/contribute" },
+      { label: "News", href: "/news" },
       { label: "Contribute on GitHub", href: GITHUB.repoUrl, external: true },
       { label: "Open an Issue", href: GITHUB.newIssue, external: true },
       { label: "Email Us", href: `mailto:${SITE.email}` },
@@ -310,10 +310,10 @@ export const FOOTER_COLUMNS = [
   {
     heading: "Trust",
     links: [
-      { label: "Safety", href: "#/safety" },
-      { label: "Privacy Policy", href: "#/privacy" },
-      { label: "Terms of Service", href: "#/terms" },
-      { label: "Data Licensing", href: "#/datasets" },
+      { label: "Safety", href: "/safety" },
+      { label: "Privacy Policy", href: "/privacy" },
+      { label: "Terms of Service", href: "/terms" },
+      { label: "Data Licensing", href: "/datasets" },
     ],
   },
 ];

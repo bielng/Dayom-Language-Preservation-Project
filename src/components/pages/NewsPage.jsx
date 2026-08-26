@@ -12,8 +12,8 @@ const UPDATES = [
     body:
       "Speech synthesis for both languages now runs through the same provider — Meta's MMS (Massively Multilingual Speech) models — instead of two different custom backends. One call shape, two model ids, no separate fallback story for Dinka.",
     links: [
-      { label: "Try text-to-speech", href: "#/studio/tts" },
-      { label: "Model status", href: "#/models" },
+      { label: "Try text-to-speech", href: "/studio/tts" },
+      { label: "Model status", href: "/models" },
     ],
   },
   {
@@ -22,7 +22,7 @@ const UPDATES = [
     title: "Dinka Digital Library goes live",
     body:
       "A 9,199-entry Dinka (Thuɔŋjäŋ) dictionary spanning 6 dialect regions and 18 dialect subcodes ships as its own library, alongside the existing Nuer library.",
-    links: [{ label: "Open the Dinka Library", href: "#/dinka-library" }],
+    links: [{ label: "Open the Dinka Library", href: "/dinka-library" }],
   },
   {
     date: "August 2026",
@@ -39,8 +39,8 @@ const UPDATES = [
     body:
       "The public Studio (chat, translation, voice input, speech synthesis) and the Naath Dayom Library ship together, putting a browsable interface over the whole corpus. Both are free and need no account.",
     links: [
-      { label: "Open the Studio", href: "#/studio" },
-      { label: "Open the Library", href: "#/library" },
+      { label: "Open the Studio", href: "/studio" },
+      { label: "Open the Library", href: "/library" },
     ],
   },
   {
@@ -50,8 +50,8 @@ const UPDATES = [
     body:
       `Eight datasets released openly: the Nuer dictionary, the Dinka dictionary, sentence structures, vocabulary, conversation, grammar drills, curated examples, and a community phrasebook with ${AUDIO_TOTAL} pronunciation clips. Every record ships with its source attached.`,
     links: [
-      { label: "View the datasets", href: "#/datasets" },
-      { label: "Licensing", href: "#/datasets" },
+      { label: "View the datasets", href: "/datasets" },
+      { label: "Licensing", href: "/datasets" },
     ],
   },
   {
@@ -60,7 +60,7 @@ const UPDATES = [
     title: "Dictionary v1.0 — 3,209 merged entries",
     body:
       "Two separate English ↔ Nuer dictionary sources were reconciled and deduplicated into a single indexed set with part of speech, alternative spellings, and usage examples.",
-    links: [{ label: "Browse the dictionary", href: "#/library/dictionary" }],
+    links: [{ label: "Browse the dictionary", href: "/library/dictionary" }],
   },
 ];
 
@@ -140,7 +140,7 @@ export default function NewsPage() {
           <a href={`mailto:${SITE.email}?subject=Press%20enquiry`} className="btn-ghost">
             <Mail /> Press enquiries
           </a>
-          <a href="#/contribute" className="btn-ghost">
+          <a href="/contribute" className="btn-ghost">
             Get involved <ArrowUpRight />
           </a>
         </div>

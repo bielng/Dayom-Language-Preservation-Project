@@ -2,42 +2,42 @@ import { Sparkle, ArrowRight } from "../Icons.jsx";
 
 const PARTS = [
   {
-    id: "dictionary", href: "#/library/dictionary", title: "Dictionary", count: "3,209 words",
+    id: "dictionary", href: "/library/dictionary", title: "Dictionary", count: "3,209 words",
     body: "The full English–Nuer word list. Search, filter by part of speech, and jump straight to a letter.",
     accent: "bg-amber-300/40",
   },
   {
-    id: "vocabulary", href: "#/library/vocabulary", title: "Vocabulary", count: "966 flashcards",
+    id: "vocabulary", href: "/library/vocabulary", title: "Vocabulary", count: "966 flashcards",
     body: "Everyday vocabulary as flip-cards — tap a card to reveal the English meaning.",
     accent: "bg-emerald-200/50",
   },
   {
-    id: "structures", href: "#/library/structures", title: "Structures", count: "1,250 patterns",
+    id: "structures", href: "/library/structures", title: "Structures", count: "1,250 patterns",
     body: "Sentence patterns and grammatical structures, grouped by topic.",
     accent: "bg-sky-200/50",
   },
   {
-    id: "conversation", href: "#/library/conversation", title: "Conversation", count: "810 lines",
+    id: "conversation", href: "/library/conversation", title: "Conversation", count: "810 lines",
     body: "Everyday dialogue, laid out as back-and-forth conversation.",
     accent: "bg-rose-200/50",
   },
   {
-    id: "grammar", href: "#/library/grammar", title: "Grammar", count: "257 drills",
+    id: "grammar", href: "/library/grammar", title: "Grammar", count: "257 drills",
     body: "Grammar drills as reveal cards — think it through, then check the answer.",
     accent: "bg-violet-200/50",
   },
   {
-    id: "examples", href: "#/library/examples", title: "Examples", count: "221 sentences",
+    id: "examples", href: "/library/examples", title: "Examples", count: "221 sentences",
     body: "Curated example sentences by category — a gallery to browse or get a random one.",
     accent: "bg-orange-200/50",
   },
   {
-    id: "phrasebook", href: "#/library/phrasebook", title: "Phrasebook", count: "401 words · audio",
+    id: "phrasebook", href: "/library/phrasebook", title: "Phrasebook", count: "401 words · audio",
     body: "The community phrasebook — search, filter by category or dialect, and hear real pronunciation audio.",
     accent: "bg-pink-200/50",
   },
   {
-    id: "guide", href: "#/library/guide", title: "Grammar Guide", count: "reference",
+    id: "guide", href: "/library/guide", title: "Grammar Guide", count: "reference",
     body: "The full Thok Naath grammar reference — searchable, sectioned, and readable.",
     accent: "bg-cream-200",
   },

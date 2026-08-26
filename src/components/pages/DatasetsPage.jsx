@@ -211,13 +211,13 @@ export default function DatasetsPage() {
 
       <Section eyebrow="Build On It" title="Use the corpus" className="mb-4">
         <div className="flex items-center gap-3 flex-wrap">
-          <a href="#/api" className="btn-primary">
+          <a href="/api" className="btn-primary">
             API access <ArrowUpRight />
           </a>
-          <a href="#/models" className="btn-ghost">
+          <a href="/models" className="btn-ghost">
             Models trained on this data <ArrowRight />
           </a>
-          <a href="#/contribute" className="btn-ghost">
+          <a href="/contribute" className="btn-ghost">
             Add to the corpus
           </a>
         </div>

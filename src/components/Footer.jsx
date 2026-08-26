@@ -51,7 +51,7 @@ export default function Footer() {
         <div className="max-w-6xl mx-auto px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-ink-500 text-center sm:text-left">
           <p>
             Copyright © {new Date().getFullYear()} {SITE.legalName}. All rights reserved. See our{" "}
-            <a href="#/terms" className="hover:text-ink-900 transition underline underline-offset-2">
+            <a href="/terms" className="hover:text-ink-900 transition underline underline-offset-2">
               terms
             </a>
             .

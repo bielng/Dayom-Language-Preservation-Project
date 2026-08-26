@@ -30,7 +30,7 @@ export default function DinkaLibraryHome() {
             dialect regions.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
-            <a href="#/dinka-library/dictionary" className="btn-primary">
+            <a href="/dinka-library/dictionary" className="btn-primary">
               Open Dictionary <ArrowRight />
             </a>
           </div>

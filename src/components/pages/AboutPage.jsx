@@ -30,21 +30,21 @@ const WORKSTREAMS = [
     icon: Database,
     title: "Open Corpus",
     body: "Parallel English ↔ Nuer and English ↔ Dinka data across dictionaries, vocabulary, sentence structures, conversation, grammar, and a pronunciation phrasebook.",
-    href: "#/datasets",
+    href: "/datasets",
     cta: "View datasets",
   },
   {
     icon: Brain,
     title: "Models",
     body: "Speech synthesis for Nuer and Dinka via Meta's MMS models, a general-purpose translation backend being replaced by a fine-tuned model, and speech recognition built for languages with almost no prior coverage.",
-    href: "#/models",
+    href: "/models",
     cta: "See models",
   },
   {
     icon: Book,
     title: "Library & Studio",
     body: "A public reference library over the raw data — including a Dinka Digital Library and a 3D Naath Living Library — plus a studio where anyone can translate, chat, transcribe, and synthesise speech for free.",
-    href: "#/library",
+    href: "/library",
     cta: "Open the library",
   },
 ];
@@ -142,7 +142,7 @@ export default function AboutPage() {
             We add a language when we have both a data pathway and native speakers willing to
             review — not when we can merely scrape enough text to look plausible. If you speak one
             of the queued languages and want to move it forward,{" "}
-            <a href="#/contribute" className="text-ink-900 underline underline-offset-4 decoration-ink-300 hover:decoration-ink-900">
+            <a href="/contribute" className="text-ink-900 underline underline-offset-4 decoration-ink-300 hover:decoration-ink-900">
               start here
             </a>
             .
@@ -155,7 +155,7 @@ export default function AboutPage() {
           <InfoCard icon={Heart} title="Contribute data or review">
             Speakers, linguists, and teachers can add entries, correct existing ones, or record
             pronunciation.{" "}
-            <a href="#/contribute" className="text-ink-900 underline underline-offset-4 decoration-ink-300 hover:decoration-ink-900">
+            <a href="/contribute" className="text-ink-900 underline underline-offset-4 decoration-ink-300 hover:decoration-ink-900">
               See how to get involved
             </a>
             .
@@ -171,7 +171,7 @@ export default function AboutPage() {
         </div>
 
         <div className="mt-8 flex items-center gap-3 flex-wrap">
-          <a href="#/contribute" className="btn-primary">
+          <a href="/contribute" className="btn-primary">
             Get Involved <ArrowUpRight />
           </a>
           <a href={GITHUB.repoUrl} target="_blank" rel="noreferrer" className="btn-ghost">

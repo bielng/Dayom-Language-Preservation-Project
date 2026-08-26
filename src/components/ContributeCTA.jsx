@@ -22,7 +22,7 @@ export default function ContributeCTA() {
             <Github /> Contribute on GitHub
           </a>
           <a
-            href="#/contribute"
+            href="/contribute"
             className="inline-flex items-center gap-1.5 text-sm font-medium text-white/80 hover:text-white transition"
           >
             See the ways to help <ArrowUpRight />

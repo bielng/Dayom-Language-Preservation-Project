@@ -9,7 +9,7 @@ import { NAV_LINKS } from "../config/site.js";
 const LINKS = [
   ...NAV_LINKS,
   { href: "#initiatives", label: "Initiatives" },
-  { href: "#/contribute", label: "Contribute" },
+  { href: "/contribute", label: "Contribute" },
 ];
 
 export default function Navbar() {
@@ -31,7 +31,7 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 backdrop-blur-md bg-[#FCFAF5]/85 border-b border-[#E5E7EB]/60">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-3">
-        <a href="#/" className="flex items-center gap-2 group shrink-0">
+        <a href="/" className="flex items-center gap-2 group shrink-0">
           <Logo />
           <span className="font-semibold text-[15px] tracking-tight text-ink-900">Dayom Lab</span>
         </a>
@@ -45,7 +45,7 @@ export default function Navbar() {
         </nav>
 
         <div className="flex items-center gap-2 sm:gap-3">
-          <a href="#/contribute" className="btn-primary whitespace-nowrap">
+          <a href="/contribute" className="btn-primary whitespace-nowrap">
             <span className="hidden sm:inline">Get Involved</span> <ArrowUpRight />
           </a>
 

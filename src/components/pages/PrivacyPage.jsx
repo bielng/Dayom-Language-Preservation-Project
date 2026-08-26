@@ -181,11 +181,11 @@ export default function PrivacyPage() {
             {SITE.email}
           </a>
           . See also our{" "}
-          <a href="#/terms" className="text-ink-900 underline underline-offset-4 decoration-ink-300 hover:decoration-ink-900">
+          <a href="/terms" className="text-ink-900 underline underline-offset-4 decoration-ink-300 hover:decoration-ink-900">
             Terms of Service
           </a>{" "}
           and{" "}
-          <a href="#/safety" className="text-ink-900 underline underline-offset-4 decoration-ink-300 hover:decoration-ink-900">
+          <a href="/safety" className="text-ink-900 underline underline-offset-4 decoration-ink-300 hover:decoration-ink-900">
             Safety
           </a>{" "}
           pages.

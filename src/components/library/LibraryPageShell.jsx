@@ -3,7 +3,7 @@ export default function LibraryPageShell({ eyebrow, title, description, children
     <div className="relative hero-glow">
       <div className={`${wide ? "max-w-5xl" : "max-w-3xl"} mx-auto px-6 pt-12 pb-20`}>
         {showHomeLink && (
-          <a href="#/" className="inline-flex items-center gap-1.5 text-sm font-medium text-ink-500 hover:text-ink-900 transition mb-6">
+          <a href="/" className="inline-flex items-center gap-1.5 text-sm font-medium text-ink-500 hover:text-ink-900 transition mb-6">
             ← Return to home page
           </a>
         )}

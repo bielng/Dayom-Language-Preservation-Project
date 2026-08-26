@@ -32,7 +32,7 @@ export default function NaathLibraryTeaser() {
               <a href="/naath-library/index.html" className="btn-primary" style={{ backgroundColor: '#b8923f' }}>
                 <BookStack /> Naath Living Library
               </a>
-              <a href="#/library" className="btn-ghost">
+              <a href="/library" className="btn-ghost">
                 Browse the data <ArrowUpRight />
               </a>
             </div>

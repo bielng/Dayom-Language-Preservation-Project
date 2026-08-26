@@ -1,0 +1,934 @@
+diff --git a/src/App.jsx b/src/App.jsx
+index 981d12a..2ce8506 100644
+--- a/src/App.jsx
++++ b/src/App.jsx
+@@ -29,13 +29,22 @@ import PrivacyPage from "./components/pages/PrivacyPage.jsx";
+ import TermsPage from "./components/pages/TermsPage.jsx";
+ import SafetyPage from "./components/pages/SafetyPage.jsx";
+ 
+-function useHashPath() {
+-  const [path, setPath] = useState(() => window.location.hash.replace(/^#/, "") || "/");
++// Strip a trailing slash (except on the root itself) so "/library/" and
++// "/library" are treated as the same route.
++function normalizePath(pathname) {
++  if (pathname.length > 1 && pathname.endsWith("/")) {
++    return pathname.slice(0, -1);
++  }
++  return pathname || "/";
++}
++
++function usePath() {
++  const [path, setPath] = useState(() => normalizePath(window.location.pathname));
+ 
+   useEffect(() => {
+-    const onHashChange = () => setPath(window.location.hash.replace(/^#/, "") || "/");
+-    window.addEventListener("hashchange", onHashChange);
+-    return () => window.removeEventListener("hashchange", onHashChange);
++    const onPopState = () => setPath(normalizePath(window.location.pathname));
++    window.addEventListener("popstate", onPopState);
++    return () => window.removeEventListener("popstate", onPopState);
+   }, []);
+ 
+   return path;
+@@ -93,7 +102,7 @@ function isRoutePath(path) {
+ }
+ 
+ export default function App() {
+-  const path = useHashPath();
++  const path = usePath();
+ 
+   useEffect(() => {
+     if (isRoutePath(path)) {
+@@ -101,6 +110,50 @@ export default function App() {
+     }
+   }, [path]);
+ 
++  // Intercept clicks on same-origin links that point at a real client-side
++  // route (e.g. "/library/dictionary") and turn them into pushState
++  // navigations instead of full page reloads. Links that aren't one of our
++  // routes — the static "/naath-library/index.html" mini-site, external
++  // URLs, mailto:, in-page "#about" anchors, etc. — are left completely
++  // alone and behave like normal browser navigation.
++  useEffect(() => {
++    function onClick(event) {
++      if (event.defaultPrevented || event.button !== 0) return;
++      if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
++
++      const anchor = event.target.closest("a");
++      if (!anchor) return;
++      if (anchor.target && anchor.target !== "_self") return;
++      if (anchor.hasAttribute("download")) return;
++
++      const href = anchor.getAttribute("href");
++      if (!href || href.startsWith("#") || href.startsWith("mailto:") || href.startsWith("tel:")) {
++        return;
++      }
++
++      let url;
++      try {
++        url = new URL(href, window.location.href);
++      } catch {
++        return;
++      }
++      if (url.origin !== window.location.origin) return;
++
++      const targetPath = normalizePath(url.pathname);
++      if (!isRoutePath(targetPath)) return;
++
++      event.preventDefault();
++      const newUrl = url.pathname + url.search + url.hash;
++      if (newUrl !== window.location.pathname + window.location.search + window.location.hash) {
++        window.history.pushState({}, "", newUrl);
++        window.dispatchEvent(new PopStateEvent("popstate"));
++      }
++    }
++
++    document.addEventListener("click", onClick);
++    return () => document.removeEventListener("click", onClick);
++  }, []);
++
+   if (path.startsWith("/studio")) {
+     const segment = path.split("/")[2] || "home";
+     const Page = STUDIO_PAGES[segment] || StudioHome;
+diff --git a/src/components/ContributeCTA.jsx b/src/components/ContributeCTA.jsx
+index 7b4a67e..926cd97 100644
+--- a/src/components/ContributeCTA.jsx
++++ b/src/components/ContributeCTA.jsx
+@@ -22,7 +22,7 @@ export default function ContributeCTA() {
+             <Github /> Contribute on GitHub
+           </a>
+           <a
+-            href="#/contribute"
++            href="/contribute"
+             className="inline-flex items-center gap-1.5 text-sm font-medium text-white/80 hover:text-white transition"
+           >
+             See the ways to help <ArrowUpRight />
+diff --git a/src/components/DinkaLibraryTeaser.jsx b/src/components/DinkaLibraryTeaser.jsx
+index 922fd66..f419497 100644
+--- a/src/components/DinkaLibraryTeaser.jsx
++++ b/src/components/DinkaLibraryTeaser.jsx
+@@ -27,10 +27,10 @@ export default function DinkaLibraryTeaser() {
+               A dedicated open-data reference for <strong>Thuɔŋjäŋ</strong> (Dinka). Browse 9,199 lexical entries across six dialect regions — Northeast, Northwest, Southwest, South Central, South Aliap, and Southeast.
+             </p>
+             <div className="flex flex-wrap gap-3">
+-              <a href="#/dinka-library/dictionary" className="btn-primary" style={{ backgroundColor: '#C65D3B' }}>
++              <a href="/dinka-library/dictionary" className="btn-primary" style={{ backgroundColor: '#C65D3B' }}>
+                 <BookOpen /> Browse Dictionary
+               </a>
+-              <a href="#/dinka-library" className="btn-ghost">
++              <a href="/dinka-library" className="btn-ghost">
+                 Learn more <ArrowRight />
+               </a>
+             </div>
+diff --git a/src/components/Footer.jsx b/src/components/Footer.jsx
+index 0b3f062..f697db6 100644
+--- a/src/components/Footer.jsx
++++ b/src/components/Footer.jsx
+@@ -51,7 +51,7 @@ export default function Footer() {
+         <div className="max-w-6xl mx-auto px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-ink-500 text-center sm:text-left">
+           <p>
+             Copyright © {new Date().getFullYear()} {SITE.legalName}. All rights reserved. See our{" "}
+-            <a href="#/terms" className="hover:text-ink-900 transition underline underline-offset-2">
++            <a href="/terms" className="hover:text-ink-900 transition underline underline-offset-2">
+               terms
+             </a>
+             .
+diff --git a/src/components/Hero.jsx b/src/components/Hero.jsx
+index 2b709c4..330e04f 100644
+--- a/src/components/Hero.jsx
++++ b/src/components/Hero.jsx
+@@ -13,7 +13,7 @@ export default function Hero() {
+           models for under-represented languages.
+         </p>
+         <div className="mt-9 flex items-center justify-center gap-3 flex-wrap">
+-          <a href="#/studio" className="btn-primary">
++          <a href="/studio" className="btn-primary">
+             Translate for free <ArrowUpRight />
+           </a>
+           <a href="#about" className="btn-ghost">
+diff --git a/src/components/LibraryTeaser.jsx b/src/components/LibraryTeaser.jsx
+index f27b566..2a63c62 100644
+--- a/src/components/LibraryTeaser.jsx
++++ b/src/components/LibraryTeaser.jsx
+@@ -24,7 +24,7 @@ export default function LibraryTeaser() {
+         </div>
+ 
+         <div className="mt-8">
+-          <a href="#/library" className="btn-primary">
++          <a href="/library" className="btn-primary">
+             <Sparkle /> Explore the Library <ArrowUpRight />
+           </a>
+         </div>
+diff --git a/src/components/NaathLibraryTeaser.jsx b/src/components/NaathLibraryTeaser.jsx
+index 2de1588..9a2ba08 100644
+--- a/src/components/NaathLibraryTeaser.jsx
++++ b/src/components/NaathLibraryTeaser.jsx
+@@ -32,7 +32,7 @@ export default function NaathLibraryTeaser() {
+               <a href="/naath-library/index.html" className="btn-primary" style={{ backgroundColor: '#b8923f' }}>
+                 <BookStack /> Naath Living Library
+               </a>
+-              <a href="#/library" className="btn-ghost">
++              <a href="/library" className="btn-ghost">
+                 Browse the data <ArrowUpRight />
+               </a>
+             </div>
+diff --git a/src/components/Navbar.jsx b/src/components/Navbar.jsx
+index 3089cbb..f80d837 100644
+--- a/src/components/Navbar.jsx
++++ b/src/components/Navbar.jsx
+@@ -9,7 +9,7 @@ import { NAV_LINKS } from "../config/site.js";
+ const LINKS = [
+   ...NAV_LINKS,
+   { href: "#initiatives", label: "Initiatives" },
+-  { href: "#/contribute", label: "Contribute" },
++  { href: "/contribute", label: "Contribute" },
+ ];
+ 
+ export default function Navbar() {
+@@ -31,7 +31,7 @@ export default function Navbar() {
+   return (
+     <header className="sticky top-0 z-50 backdrop-blur-md bg-[#FCFAF5]/85 border-b border-[#E5E7EB]/60">
+       <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-3">
+-        <a href="#/" className="flex items-center gap-2 group shrink-0">
++        <a href="/" className="flex items-center gap-2 group shrink-0">
+           <Logo />
+           <span className="font-semibold text-[15px] tracking-tight text-ink-900">Dayom Lab</span>
+         </a>
+@@ -45,7 +45,7 @@ export default function Navbar() {
+         </nav>
+ 
+         <div className="flex items-center gap-2 sm:gap-3">
+-          <a href="#/contribute" className="btn-primary whitespace-nowrap">
++          <a href="/contribute" className="btn-primary whitespace-nowrap">
+             <span className="hidden sm:inline">Get Involved</span> <ArrowUpRight />
+           </a>
+ 
+diff --git a/src/components/WorkSection.jsx b/src/components/WorkSection.jsx
+index b03888f..789a643 100644
+--- a/src/components/WorkSection.jsx
++++ b/src/components/WorkSection.jsx
+@@ -48,7 +48,7 @@ export default function WorkSection() {
+               specifically optimized for English ↔ Nuer translation, with cultural
+               nuance and grammatical accuracy.
+             </p>
+-            <a href="#/models" className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-ink-900 underline underline-offset-4 decoration-ink-300 hover:decoration-ink-900">
++            <a href="/models" className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-ink-900 underline underline-offset-4 decoration-ink-300 hover:decoration-ink-900">
+               Explore Translation <ArrowRight />
+             </a>
+           </div>
+@@ -84,7 +84,7 @@ export default function WorkSection() {
+               Building the foundation of Nuer AI from locally curated English ↔ Nuer
+               dictionaries, lesson data, conversation pairs, and parallel corpora.
+             </p>
+-            <a href="#/datasets" className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-ink-900 underline underline-offset-4 decoration-ink-300 hover:decoration-ink-900">
++            <a href="/datasets" className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-ink-900 underline underline-offset-4 decoration-ink-300 hover:decoration-ink-900">
+               View Datasets <ArrowRight />
+             </a>
+           </div>
+diff --git a/src/components/dinka-library/DinkaLibraryHome.jsx b/src/components/dinka-library/DinkaLibraryHome.jsx
+index 65fbb0d..856d367 100644
+--- a/src/components/dinka-library/DinkaLibraryHome.jsx
++++ b/src/components/dinka-library/DinkaLibraryHome.jsx
+@@ -30,7 +30,7 @@ export default function DinkaLibraryHome() {
+             dialect regions.
+           </p>
+           <div className="mt-8 flex flex-wrap justify-center gap-3">
+-            <a href="#/dinka-library/dictionary" className="btn-primary">
++            <a href="/dinka-library/dictionary" className="btn-primary">
+               Open Dictionary <ArrowRight />
+             </a>
+           </div>
+diff --git a/src/components/dinka-library/DinkaLibraryLayout.jsx b/src/components/dinka-library/DinkaLibraryLayout.jsx
+index 73cea10..8bc51be 100644
+--- a/src/components/dinka-library/DinkaLibraryLayout.jsx
++++ b/src/components/dinka-library/DinkaLibraryLayout.jsx
+@@ -1,8 +1,8 @@
+ import { Logo, ArrowLeft, Home } from "../Icons.jsx";
+ 
+ const NAV_ITEMS = [
+-  { id: "home", label: "Home", href: "#/dinka-library" },
+-  { id: "dictionary", label: "Dictionary", href: "#/dinka-library/dictionary" },
++  { id: "home", label: "Home", href: "/dinka-library" },
++  { id: "dictionary", label: "Dictionary", href: "/dinka-library/dictionary" },
+ ];
+ 
+ export default function DinkaLibraryLayout({ active, children }) {
+@@ -10,7 +10,7 @@ export default function DinkaLibraryLayout({ active, children }) {
+     <div className="min-h-screen flex flex-col bg-[#f9f6ee]">
+       <header className="sticky top-0 z-50 backdrop-blur-md bg-[#FCFAF5]/90 border-b border-ink-200/60">
+         <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
+-          <a href="#/dinka-library" className="flex items-center gap-2 shrink-0">
++          <a href="/dinka-library" className="flex items-center gap-2 shrink-0">
+             <Logo />
+             <span className="font-semibold text-[15px] tracking-tight text-ink-900 hidden sm:inline">
+               Dinka Digital Library
+@@ -38,7 +38,7 @@ export default function DinkaLibraryLayout({ active, children }) {
+           </nav>
+ 
+           <a
+-            href="#/"
++            href="/"
+             className="shrink-0 inline-flex items-center gap-1.5 text-xs sm:text-sm text-ink-500 hover:text-ink-900 transition"
+           >
+             <ArrowLeft />
+diff --git a/src/components/library/LibraryHome.jsx b/src/components/library/LibraryHome.jsx
+index aba7283..04c4cbf 100644
+--- a/src/components/library/LibraryHome.jsx
++++ b/src/components/library/LibraryHome.jsx
+@@ -2,42 +2,42 @@ import { Sparkle, ArrowRight } from "../Icons.jsx";
+ 
+ const PARTS = [
+   {
+-    id: "dictionary", href: "#/library/dictionary", title: "Dictionary", count: "3,209 words",
++    id: "dictionary", href: "/library/dictionary", title: "Dictionary", count: "3,209 words",
+     body: "The full English–Nuer word list. Search, filter by part of speech, and jump straight to a letter.",
+     accent: "bg-amber-300/40",
+   },
+   {
+-    id: "vocabulary", href: "#/library/vocabulary", title: "Vocabulary", count: "966 flashcards",
++    id: "vocabulary", href: "/library/vocabulary", title: "Vocabulary", count: "966 flashcards",
+     body: "Everyday vocabulary as flip-cards — tap a card to reveal the English meaning.",
+     accent: "bg-emerald-200/50",
+   },
+   {
+-    id: "structures", href: "#/library/structures", title: "Structures", count: "1,250 patterns",
++    id: "structures", href: "/library/structures", title: "Structures", count: "1,250 patterns",
+     body: "Sentence patterns and grammatical structures, grouped by topic.",
+     accent: "bg-sky-200/50",
+   },
+   {
+-    id: "conversation", href: "#/library/conversation", title: "Conversation", count: "810 lines",
++    id: "conversation", href: "/library/conversation", title: "Conversation", count: "810 lines",
+     body: "Everyday dialogue, laid out as back-and-forth conversation.",
+     accent: "bg-rose-200/50",
+   },
+   {
+-    id: "grammar", href: "#/library/grammar", title: "Grammar", count: "257 drills",
++    id: "grammar", href: "/library/grammar", title: "Grammar", count: "257 drills",
+     body: "Grammar drills as reveal cards — think it through, then check the answer.",
+     accent: "bg-violet-200/50",
+   },
+   {
+-    id: "examples", href: "#/library/examples", title: "Examples", count: "221 sentences",
++    id: "examples", href: "/library/examples", title: "Examples", count: "221 sentences",
+     body: "Curated example sentences by category — a gallery to browse or get a random one.",
+     accent: "bg-orange-200/50",
+   },
+   {
+-    id: "phrasebook", href: "#/library/phrasebook", title: "Phrasebook", count: "401 words · audio",
++    id: "phrasebook", href: "/library/phrasebook", title: "Phrasebook", count: "401 words · audio",
+     body: "The community phrasebook — search, filter by category or dialect, and hear real pronunciation audio.",
+     accent: "bg-pink-200/50",
+   },
+   {
+-    id: "guide", href: "#/library/guide", title: "Grammar Guide", count: "reference",
++    id: "guide", href: "/library/guide", title: "Grammar Guide", count: "reference",
+     body: "The full Thok Naath grammar reference — searchable, sectioned, and readable.",
+     accent: "bg-cream-200",
+   },
+diff --git a/src/components/library/LibraryLayout.jsx b/src/components/library/LibraryLayout.jsx
+index c7c2dea..d98a674 100644
+--- a/src/components/library/LibraryLayout.jsx
++++ b/src/components/library/LibraryLayout.jsx
+@@ -1,15 +1,15 @@
+ import { Logo, ArrowLeft, Home } from "../Icons.jsx";
+ 
+ const NAV_ITEMS = [
+-  { id: "home", label: "Home", href: "#/library" },
+-  { id: "dictionary", label: "Dictionary", href: "#/library/dictionary" },
+-  { id: "vocabulary", label: "Vocabulary", href: "#/library/vocabulary" },
+-  { id: "structures", label: "Structures", href: "#/library/structures" },
+-  { id: "conversation", label: "Conversation", href: "#/library/conversation" },
+-  { id: "grammar", label: "Grammar", href: "#/library/grammar" },
+-  { id: "examples", label: "Examples", href: "#/library/examples" },
+-  { id: "phrasebook", label: "Phrasebook", href: "#/library/phrasebook" },
+-  { id: "guide", label: "Grammar Guide", href: "#/library/guide" },
++  { id: "home", label: "Home", href: "/library" },
++  { id: "dictionary", label: "Dictionary", href: "/library/dictionary" },
++  { id: "vocabulary", label: "Vocabulary", href: "/library/vocabulary" },
++  { id: "structures", label: "Structures", href: "/library/structures" },
++  { id: "conversation", label: "Conversation", href: "/library/conversation" },
++  { id: "grammar", label: "Grammar", href: "/library/grammar" },
++  { id: "examples", label: "Examples", href: "/library/examples" },
++  { id: "phrasebook", label: "Phrasebook", href: "/library/phrasebook" },
++  { id: "guide", label: "Grammar Guide", href: "/library/guide" },
+ ];
+ 
+ export default function LibraryLayout({ active, children }) {
+@@ -17,7 +17,7 @@ export default function LibraryLayout({ active, children }) {
+     <div className="min-h-screen flex flex-col bg-[#f9f6ee]">
+       <header className="sticky top-0 z-50 backdrop-blur-md bg-[#FCFAF5]/90 border-b border-ink-200/60">
+         <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
+-          <a href="#/library" className="flex items-center gap-2 shrink-0">
++          <a href="/library" className="flex items-center gap-2 shrink-0">
+             <Logo />
+             <span className="font-semibold text-[15px] tracking-tight text-ink-900 hidden sm:inline">
+               Naath Dayom Library
+@@ -45,7 +45,7 @@ export default function LibraryLayout({ active, children }) {
+           </nav>
+ 
+           <a
+-            href="#/"
++            href="/"
+             className="shrink-0 inline-flex items-center gap-1.5 text-xs sm:text-sm text-ink-500 hover:text-ink-900 transition"
+           >
+             <ArrowLeft />
+diff --git a/src/components/library/LibraryPageShell.jsx b/src/components/library/LibraryPageShell.jsx
+index 5a638cb..21ff24c 100644
+--- a/src/components/library/LibraryPageShell.jsx
++++ b/src/components/library/LibraryPageShell.jsx
+@@ -3,7 +3,7 @@ export default function LibraryPageShell({ eyebrow, title, description, children
+     <div className="relative hero-glow">
+       <div className={`${wide ? "max-w-5xl" : "max-w-3xl"} mx-auto px-6 pt-12 pb-20`}>
+         {showHomeLink && (
+-          <a href="#/" className="inline-flex items-center gap-1.5 text-sm font-medium text-ink-500 hover:text-ink-900 transition mb-6">
++          <a href="/" className="inline-flex items-center gap-1.5 text-sm font-medium text-ink-500 hover:text-ink-900 transition mb-6">
+             ← Return to home page
+           </a>
+         )}
+diff --git a/src/components/pages/AboutPage.jsx b/src/components/pages/AboutPage.jsx
+index 4309357..f539238 100644
+--- a/src/components/pages/AboutPage.jsx
++++ b/src/components/pages/AboutPage.jsx
+@@ -30,21 +30,21 @@ const WORKSTREAMS = [
+     icon: Database,
+     title: "Open Corpus",
+     body: "Parallel English ↔ Nuer and English ↔ Dinka data across dictionaries, vocabulary, sentence structures, conversation, grammar, and a pronunciation phrasebook.",
+-    href: "#/datasets",
++    href: "/datasets",
+     cta: "View datasets",
+   },
+   {
+     icon: Brain,
+     title: "Models",
+     body: "Speech synthesis for Nuer and Dinka via Meta's MMS models, a general-purpose translation backend being replaced by a fine-tuned model, and speech recognition built for languages with almost no prior coverage.",
+-    href: "#/models",
++    href: "/models",
+     cta: "See models",
+   },
+   {
+     icon: Book,
+     title: "Library & Studio",
+     body: "A public reference library over the raw data — including a Dinka Digital Library and a 3D Naath Living Library — plus a studio where anyone can translate, chat, transcribe, and synthesise speech for free.",
+-    href: "#/library",
++    href: "/library",
+     cta: "Open the library",
+   },
+ ];
+@@ -142,7 +142,7 @@ export default function AboutPage() {
+             We add a language when we have both a data pathway and native speakers willing to
+             review — not when we can merely scrape enough text to look plausible. If you speak one
+             of the queued languages and want to move it forward,{" "}
+-            <a href="#/contribute" className="text-ink-900 underline underline-offset-4 decoration-ink-300 hover:decoration-ink-900">
++            <a href="/contribute" className="text-ink-900 underline underline-offset-4 decoration-ink-300 hover:decoration-ink-900">
+               start here
+             </a>
+             .
+@@ -155,7 +155,7 @@ export default function AboutPage() {
+           <InfoCard icon={Heart} title="Contribute data or review">
+             Speakers, linguists, and teachers can add entries, correct existing ones, or record
+             pronunciation.{" "}
+-            <a href="#/contribute" className="text-ink-900 underline underline-offset-4 decoration-ink-300 hover:decoration-ink-900">
++            <a href="/contribute" className="text-ink-900 underline underline-offset-4 decoration-ink-300 hover:decoration-ink-900">
+               See how to get involved
+             </a>
+             .
+@@ -171,7 +171,7 @@ export default function AboutPage() {
+         </div>
+ 
+         <div className="mt-8 flex items-center gap-3 flex-wrap">
+-          <a href="#/contribute" className="btn-primary">
++          <a href="/contribute" className="btn-primary">
+             Get Involved <ArrowUpRight />
+           </a>
+           <a href={GITHUB.repoUrl} target="_blank" rel="noreferrer" className="btn-ghost">
+diff --git a/src/components/pages/ApiPage.jsx b/src/components/pages/ApiPage.jsx
+index 36de0dd..4c5d9cd 100644
+--- a/src/components/pages/ApiPage.jsx
++++ b/src/components/pages/ApiPage.jsx
+@@ -229,15 +229,15 @@ export default function ApiPage() {
+             <span className="font-mono text-[13px]">source</span> and{" "}
+             <span className="font-mono text-[13px]">license</span> field on each record before
+             redistributing. Full detail on the{" "}
+-            <a href="#/datasets">licensing section</a> of the datasets page, and in the{" "}
+-            <a href="#/terms">terms of service</a>.
++            <a href="/datasets">licensing section</a> of the datasets page, and in the{" "}
++            <a href="/terms">terms of service</a>.
+           </p>
+         </Prose>
+         <div className="mt-7 flex items-center gap-3 flex-wrap">
+-          <a href="#/datasets" className="btn-ghost">
++          <a href="/datasets" className="btn-ghost">
+             <Database /> Browse the corpus
+           </a>
+-          <a href="#/models" className="btn-ghost">
++          <a href="/models" className="btn-ghost">
+             Model status <ArrowUpRight />
+           </a>
+         </div>
+diff --git a/src/components/pages/ContributePage.jsx b/src/components/pages/ContributePage.jsx
+index 8132b76..260ddbc 100644
+--- a/src/components/pages/ContributePage.jsx
++++ b/src/components/pages/ContributePage.jsx
+@@ -168,7 +168,7 @@ export default function ContributePage() {
+               The corpus files <ArrowRight />
+             </a>
+             <a
+-              href="#/datasets"
++              href="/datasets"
+               className="inline-flex items-center gap-1.5 text-sm text-ink-500 hover:text-ink-900 transition"
+             >
+               What already exists <ArrowRight />
+diff --git a/src/components/pages/DatasetsPage.jsx b/src/components/pages/DatasetsPage.jsx
+index 68c0214..cf5fd38 100644
+--- a/src/components/pages/DatasetsPage.jsx
++++ b/src/components/pages/DatasetsPage.jsx
+@@ -211,13 +211,13 @@ export default function DatasetsPage() {
+ 
+       <Section eyebrow="Build On It" title="Use the corpus" className="mb-4">
+         <div className="flex items-center gap-3 flex-wrap">
+-          <a href="#/api" className="btn-primary">
++          <a href="/api" className="btn-primary">
+             API access <ArrowUpRight />
+           </a>
+-          <a href="#/models" className="btn-ghost">
++          <a href="/models" className="btn-ghost">
+             Models trained on this data <ArrowRight />
+           </a>
+-          <a href="#/contribute" className="btn-ghost">
++          <a href="/contribute" className="btn-ghost">
+             Add to the corpus
+           </a>
+         </div>
+diff --git a/src/components/pages/ModelsPage.jsx b/src/components/pages/ModelsPage.jsx
+index aacec17..f8bf650 100644
+--- a/src/components/pages/ModelsPage.jsx
++++ b/src/components/pages/ModelsPage.jsx
+@@ -24,7 +24,7 @@ const MODELS = [
+       ["Dinka model", TTS.models.din],
+       ["Host", "Hugging Face Inference API"],
+     ],
+-    try: { href: "#/studio/tts", label: "Try text-to-speech" },
++    try: { href: "/studio/tts", label: "Try text-to-speech" },
+   },
+   {
+     id: "translate",
+@@ -40,7 +40,7 @@ const MODELS = [
+       ["Replacement", "Fine-tuned NLLB-200, in training"],
+       ["Training data", `${CORPUS_TOTAL.toLocaleString()} open corpus records`],
+     ],
+-    try: { href: "#/studio/translate", label: "Try translation" },
++    try: { href: "/studio/translate", label: "Try translation" },
+     note:
+       "We are fine-tuning NLLB (No Language Left Behind) on the open corpus to replace this backend. Until that ships, treat translation output as a draft to be checked by a speaker.",
+   },
+@@ -58,7 +58,7 @@ const MODELS = [
+       ["Seed data", "551 community pronunciation clips"],
+       ["Blocker", "Recording volume — contributions needed"],
+     ],
+-    try: { href: "#/studio/voice", label: "Open voice studio" },
++    try: { href: "/studio/voice", label: "Open voice studio" },
+     note:
+       "Being explicit because it matters: this is not yet a Nuer or Dinka speech model. If you want to move it forward, the fastest help is recorded audio.",
+   },
+@@ -76,7 +76,7 @@ const MODELS = [
+       ["Generation", "None — attested phrases only"],
+       ["Fallback", "Explicit 'no match' response"],
+     ],
+-    try: { href: "#/studio/chat", label: "Try the assistant" },
++    try: { href: "/studio/chat", label: "Try the assistant" },
+   },
+   {
+     id: "reasoning",
+@@ -178,10 +178,10 @@ export default function ModelsPage() {
+ 
+       <Section eyebrow="Next" title="Build with the models" className="mb-4">
+         <div className="flex items-center gap-3 flex-wrap">
+-          <a href="#/api" className="btn-primary">
++          <a href="/api" className="btn-primary">
+             API access <ArrowUpRight />
+           </a>
+-          <a href="#/datasets" className="btn-ghost">
++          <a href="/datasets" className="btn-ghost">
+             <Database /> The training data
+           </a>
+           <a href={HUGGINGFACE.models} target="_blank" rel="noreferrer" className="btn-ghost">
+diff --git a/src/components/pages/NewsPage.jsx b/src/components/pages/NewsPage.jsx
+index ebddfdd..383e227 100644
+--- a/src/components/pages/NewsPage.jsx
++++ b/src/components/pages/NewsPage.jsx
+@@ -12,8 +12,8 @@ const UPDATES = [
+     body:
+       "Speech synthesis for both languages now runs through the same provider — Meta's MMS (Massively Multilingual Speech) models — instead of two different custom backends. One call shape, two model ids, no separate fallback story for Dinka.",
+     links: [
+-      { label: "Try text-to-speech", href: "#/studio/tts" },
+-      { label: "Model status", href: "#/models" },
++      { label: "Try text-to-speech", href: "/studio/tts" },
++      { label: "Model status", href: "/models" },
+     ],
+   },
+   {
+@@ -22,7 +22,7 @@ const UPDATES = [
+     title: "Dinka Digital Library goes live",
+     body:
+       "A 9,199-entry Dinka (Thuɔŋjäŋ) dictionary spanning 6 dialect regions and 18 dialect subcodes ships as its own library, alongside the existing Nuer library.",
+-    links: [{ label: "Open the Dinka Library", href: "#/dinka-library" }],
++    links: [{ label: "Open the Dinka Library", href: "/dinka-library" }],
+   },
+   {
+     date: "August 2026",
+@@ -39,8 +39,8 @@ const UPDATES = [
+     body:
+       "The public Studio (chat, translation, voice input, speech synthesis) and the Naath Dayom Library ship together, putting a browsable interface over the whole corpus. Both are free and need no account.",
+     links: [
+-      { label: "Open the Studio", href: "#/studio" },
+-      { label: "Open the Library", href: "#/library" },
++      { label: "Open the Studio", href: "/studio" },
++      { label: "Open the Library", href: "/library" },
+     ],
+   },
+   {
+@@ -50,8 +50,8 @@ const UPDATES = [
+     body:
+       `Eight datasets released openly: the Nuer dictionary, the Dinka dictionary, sentence structures, vocabulary, conversation, grammar drills, curated examples, and a community phrasebook with ${AUDIO_TOTAL} pronunciation clips. Every record ships with its source attached.`,
+     links: [
+-      { label: "View the datasets", href: "#/datasets" },
+-      { label: "Licensing", href: "#/datasets" },
++      { label: "View the datasets", href: "/datasets" },
++      { label: "Licensing", href: "/datasets" },
+     ],
+   },
+   {
+@@ -60,7 +60,7 @@ const UPDATES = [
+     title: "Dictionary v1.0 — 3,209 merged entries",
+     body:
+       "Two separate English ↔ Nuer dictionary sources were reconciled and deduplicated into a single indexed set with part of speech, alternative spellings, and usage examples.",
+-    links: [{ label: "Browse the dictionary", href: "#/library/dictionary" }],
++    links: [{ label: "Browse the dictionary", href: "/library/dictionary" }],
+   },
+ ];
+ 
+@@ -140,7 +140,7 @@ export default function NewsPage() {
+           <a href={`mailto:${SITE.email}?subject=Press%20enquiry`} className="btn-ghost">
+             <Mail /> Press enquiries
+           </a>
+-          <a href="#/contribute" className="btn-ghost">
++          <a href="/contribute" className="btn-ghost">
+             Get involved <ArrowUpRight />
+           </a>
+         </div>
+diff --git a/src/components/pages/PrivacyPage.jsx b/src/components/pages/PrivacyPage.jsx
+index 913304e..1c78cc9 100644
+--- a/src/components/pages/PrivacyPage.jsx
++++ b/src/components/pages/PrivacyPage.jsx
+@@ -181,11 +181,11 @@ export default function PrivacyPage() {
+             {SITE.email}
+           </a>
+           . See also our{" "}
+-          <a href="#/terms" className="text-ink-900 underline underline-offset-4 decoration-ink-300 hover:decoration-ink-900">
++          <a href="/terms" className="text-ink-900 underline underline-offset-4 decoration-ink-300 hover:decoration-ink-900">
+             Terms of Service
+           </a>{" "}
+           and{" "}
+-          <a href="#/safety" className="text-ink-900 underline underline-offset-4 decoration-ink-300 hover:decoration-ink-900">
++          <a href="/safety" className="text-ink-900 underline underline-offset-4 decoration-ink-300 hover:decoration-ink-900">
+             Safety
+           </a>{" "}
+           pages.
+diff --git a/src/components/pages/SafetyPage.jsx b/src/components/pages/SafetyPage.jsx
+index 766593c..0a075f0 100644
+--- a/src/components/pages/SafetyPage.jsx
++++ b/src/components/pages/SafetyPage.jsx
+@@ -47,7 +47,7 @@ const SECTIONS = [
+         </li>
+         <li>
+           <b className="text-ink-900">Honest status labels.</b> Our{" "}
+-          <a href="#/models">models page</a> states which features are real models and which are
++          <a href="/models">models page</a> states which features are real models and which are
+           still browser fallbacks. Voice input currently has no Nuer or Dinka acoustic model and we
+           say so on the page rather than letting the interface imply otherwise.
+         </li>
+@@ -200,15 +200,15 @@ export default function SafetyPage() {
+       closing={
+         <p>
+           See also the{" "}
+-          <a href="#/terms" className="text-ink-900 underline underline-offset-4 decoration-ink-300 hover:decoration-ink-900">
++          <a href="/terms" className="text-ink-900 underline underline-offset-4 decoration-ink-300 hover:decoration-ink-900">
+             Terms of Service
+           </a>
+           ,{" "}
+-          <a href="#/privacy" className="text-ink-900 underline underline-offset-4 decoration-ink-300 hover:decoration-ink-900">
++          <a href="/privacy" className="text-ink-900 underline underline-offset-4 decoration-ink-300 hover:decoration-ink-900">
+             Privacy Policy
+           </a>
+           , and the{" "}
+-          <a href="#/models" className="text-ink-900 underline underline-offset-4 decoration-ink-300 hover:decoration-ink-900">
++          <a href="/models" className="text-ink-900 underline underline-offset-4 decoration-ink-300 hover:decoration-ink-900">
+             model status board
+           </a>
+           .
+diff --git a/src/components/pages/TermsPage.jsx b/src/components/pages/TermsPage.jsx
+index ed6d130..f809b21 100644
+--- a/src/components/pages/TermsPage.jsx
++++ b/src/components/pages/TermsPage.jsx
+@@ -155,7 +155,7 @@ const SECTIONS = [
+         speech models on the Hugging Face Inference API, and your browser's own speech recognition.
+         Those services have their own terms and their own availability, and we do not control
+         either. Section 3 of the{" "}
+-        <a href="#/privacy">Privacy Policy</a> lists exactly which features send your input where.
++        <a href="/privacy">Privacy Policy</a> lists exactly which features send your input where.
+       </p>
+     ),
+   },
+@@ -182,16 +182,16 @@ export default function TermsPage() {
+       closing={
+         <p>
+           See also the{" "}
+-          <a href="#/privacy" className="text-ink-900 underline underline-offset-4 decoration-ink-300 hover:decoration-ink-900">
++          <a href="/privacy" className="text-ink-900 underline underline-offset-4 decoration-ink-300 hover:decoration-ink-900">
+             Privacy Policy
+           </a>
+           ,{" "}
+-          <a href="#/safety" className="text-ink-900 underline underline-offset-4 decoration-ink-300 hover:decoration-ink-900">
++          <a href="/safety" className="text-ink-900 underline underline-offset-4 decoration-ink-300 hover:decoration-ink-900">
+             Safety
+           </a>
+           , and the{" "}
+           <a
+-            href="#/datasets"
++            href="/datasets"
+             className="text-ink-900 underline underline-offset-4 decoration-ink-300 hover:decoration-ink-900"
+           >
+             per-dataset licensing detail
+diff --git a/src/components/studio/StudioHome.jsx b/src/components/studio/StudioHome.jsx
+index f9972e0..b225f14 100644
+--- a/src/components/studio/StudioHome.jsx
++++ b/src/components/studio/StudioHome.jsx
+@@ -3,28 +3,28 @@ import { Sparkle, Translate, Mic, Volume, ArrowRight } from "../Icons.jsx";
+ const FEATURES = [
+   {
+     id: "chat",
+-    href: "#/studio/chat",
++    href: "/studio/chat",
+     icon: Sparkle,
+     title: "Chat Assistant",
+     body: "Ask about Nuer or Dinka words, phrases, and everyday conversation. Answers are grounded in a curated local knowledge base.",
+   },
+   {
+     id: "translate",
+-    href: "#/studio/translate",
++    href: "/studio/translate",
+     icon: Translate,
+     title: "Text Translation",
+     body: "Translate freely between English, Nuer (Thok Naath), and Dinka (Thuɔŋjäŋ) in either direction.",
+   },
+   {
+     id: "voice",
+-    href: "#/studio/voice",
++    href: "/studio/voice",
+     icon: Mic,
+     title: "Speech Recognition",
+     body: "Speak in English and get a live transcript, then translate it instantly into Nuer or Dinka.",
+   },
+   {
+     id: "tts",
+-    href: "#/studio/tts",
++    href: "/studio/tts",
+     icon: Volume,
+     title: "Text to Speech",
+     body: "Turn Nuer or Dinka text into natural spoken audio you can play back or download.",
+diff --git a/src/components/studio/StudioLayout.jsx b/src/components/studio/StudioLayout.jsx
+index 879683c..f8c4424 100644
+--- a/src/components/studio/StudioLayout.jsx
++++ b/src/components/studio/StudioLayout.jsx
+@@ -1,11 +1,11 @@
+ import { Logo, ArrowLeft, Home, Sparkle, Translate, Mic, Volume } from "../Icons.jsx";
+ 
+ const NAV_ITEMS = [
+-  { id: "home", label: "Home", href: "#/studio", icon: Home },
+-  { id: "chat", label: "Chat Assistant", href: "#/studio/chat", icon: Sparkle },
+-  { id: "translate", label: "Text Translation", href: "#/studio/translate", icon: Translate },
+-  { id: "voice", label: "Speech Recognition", href: "#/studio/voice", icon: Mic },
+-  { id: "tts", label: "Text to Speech", href: "#/studio/tts", icon: Volume },
++  { id: "home", label: "Home", href: "/studio", icon: Home },
++  { id: "chat", label: "Chat Assistant", href: "/studio/chat", icon: Sparkle },
++  { id: "translate", label: "Text Translation", href: "/studio/translate", icon: Translate },
++  { id: "voice", label: "Speech Recognition", href: "/studio/voice", icon: Mic },
++  { id: "tts", label: "Text to Speech", href: "/studio/tts", icon: Volume },
+ ];
+ 
+ export default function StudioLayout({ active, children }) {
+@@ -13,7 +13,7 @@ export default function StudioLayout({ active, children }) {
+     <div className="min-h-screen flex flex-col bg-[#f9f6ee]">
+       <header className="sticky top-0 z-50 backdrop-blur-md bg-[#FCFAF5]/90 border-b border-ink-200/60">
+         <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
+-          <a href="#/studio" className="flex items-center gap-2 shrink-0">
++          <a href="/studio" className="flex items-center gap-2 shrink-0">
+             <Logo />
+             <span className="font-semibold text-[15px] tracking-tight text-ink-900 hidden sm:inline">
+               Dayom AI Studio
+@@ -42,7 +42,7 @@ export default function StudioLayout({ active, children }) {
+           </nav>
+ 
+           <a
+-            href="#/"
++            href="/"
+             className="shrink-0 inline-flex items-center gap-1.5 text-xs sm:text-sm text-ink-500 hover:text-ink-900 transition"
+           >
+             <ArrowLeft />
+diff --git a/src/config/site.js b/src/config/site.js
+index 58f37a3..0ee4d75 100644
+--- a/src/config/site.js
++++ b/src/config/site.js
+@@ -69,7 +69,7 @@ export const CORPUS = {
+       name: "Nuer Dictionary",
+       entries: 3209,
+       file: "/data/library/dictionary.json",
+-      href: "#/library/dictionary",
++      href: "/library/dictionary",
+       blurb:
+         "English ↔ Nuer headwords with part of speech, alternative spellings, and usage examples.",
+       fields: [
+@@ -88,7 +88,7 @@ export const CORPUS = {
+       name: "Dinka Dictionary",
+       entries: 9199,
+       file: "/data/dinka/dictionary.json",
+-      href: "#/dinka-library/dictionary",
++      href: "/dinka-library/dictionary",
+       blurb:
+         "Dinka (Thuɔŋjäŋ) ↔ English headwords covering 6 dialect regions and 18 dialect subcodes.",
+       fields: ["dinka", "english", "partOfSpeech", "dialectTags", "example"],
+@@ -100,7 +100,7 @@ export const CORPUS = {
+       name: "Sentence Structures",
+       entries: 1250,
+       file: "/data/library/structures.json",
+-      href: "#/library/structures",
++      href: "/library/structures",
+       blurb:
+         "Sentence-level parallel pairs grouped by grammatical topic, for pattern drilling and few-shot prompting.",
+       fields: [
+@@ -119,7 +119,7 @@ export const CORPUS = {
+       name: "Vocabulary",
+       entries: 966,
+       file: "/data/library/vocabulary.json",
+-      href: "#/library/vocabulary",
++      href: "/library/vocabulary",
+       blurb:
+         "Topic-organised word lists spanning everyday domains — family, numbers, body, food, place.",
+       fields: [
+@@ -138,7 +138,7 @@ export const CORPUS = {
+       name: "Conversation",
+       entries: 810,
+       file: "/data/library/conversation.json",
+-      href: "#/library/conversation",
++      href: "/library/conversation",
+       blurb:
+         "Dialogue turns and conversational exchanges covering greetings, requests, and daily interaction.",
+       fields: [
+@@ -158,7 +158,7 @@ export const CORPUS = {
+       entries: 401,
+       audioClips: 551,
+       file: "/data/phrasebook.json",
+-      href: "#/library/phrasebook",
++      href: "/library/phrasebook",
+       blurb:
+         "Community phrasebook with IPA transcription, plural forms, sense glosses, dialect notes, and recorded pronunciation.",
+       fields: [
+@@ -179,7 +179,7 @@ export const CORPUS = {
+       name: "Grammar Drills",
+       entries: 257,
+       file: "/data/library/grammar.json",
+-      href: "#/library/grammar",
++      href: "/library/grammar",
+       blurb:
+         "Grammar exercises keyed to specific rules — negation, tense marking, copula, and possession.",
+       fields: [
+@@ -198,7 +198,7 @@ export const CORPUS = {
+       name: "Curated Examples",
+       entries: 221,
+       file: "/data/library/examples.json",
+-      href: "#/library/examples",
++      href: "/library/examples",
+       blurb:
+         "Hand-checked Thok Nath ↔ English pairs across 18 categories, built specifically for few-shot prompting.",
+       fields: ["nuer", "english", "category", "pattern"],
+@@ -211,7 +211,7 @@ export const CORPUS = {
+   reference: {
+     name: "Grammar Guide",
+     file: "/data/library/grammar-guide.md",
+-    href: "#/library/guide",
++    href: "/library/guide",
+     blurb:
+       "A long-form Thok Nath grammar reference in Markdown, covering the rule set the datasets encode.",
+   },
+@@ -271,37 +271,37 @@ export const TTS = {
+   },
+ };
+ 
+-// Primary navigation — hash routes, matching the existing #/studio and
+-// #/library pattern already used across the site.
++// Primary navigation — hash routes, matching the existing /studio and
++// /library pattern already used across the site.
+ export const NAV_LINKS = [
+-  { label: "About Us", href: "#/about" },
+-  { label: "Datasets", href: "#/datasets" },
+-  { label: "Models", href: "#/models" },
+-  { label: "Library", href: "#/library" },
++  { label: "About Us", href: "/about" },
++  { label: "Datasets", href: "/datasets" },
++  { label: "Models", href: "/models" },
++  { label: "Library", href: "/library" },
+   { label: "Living Library", href: "/naath-library/index.html" },
+-  { label: "Studio", href: "#/studio" },
+-  { label: "API", href: "#/api" },
++  { label: "Studio", href: "/studio" },
++  { label: "API", href: "/api" },
+ ];
+ 
+ export const FOOTER_COLUMNS = [
+   {
+     heading: "Product",
+     links: [
+-      { label: "Open Corpus", href: "#/datasets" },
+-      { label: "Models", href: "#/models" },
+-      { label: "API Access", href: "#/api" },
+-      { label: "Library", href: "#/library" },
+-      { label: "Dinka Library", href: "#/dinka-library" },
+-      { label: "Studio", href: "#/studio" },
++      { label: "Open Corpus", href: "/datasets" },
++      { label: "Models", href: "/models" },
++      { label: "API Access", href: "/api" },
++      { label: "Library", href: "/library" },
++      { label: "Dinka Library", href: "/dinka-library" },
++      { label: "Studio", href: "/studio" },
+     ],
+   },
+   {
+     heading: "Organisation",
+     links: [
+-      { label: "About Us", href: "#/about" },
+-      { label: "Our Mission", href: "#/about" },
+-      { label: "Get Involved", href: "#/contribute" },
+-      { label: "News", href: "#/news" },
++      { label: "About Us", href: "/about" },
++      { label: "Our Mission", href: "/about" },
++      { label: "Get Involved", href: "/contribute" },
++      { label: "News", href: "/news" },
+       { label: "Contribute on GitHub", href: GITHUB.repoUrl, external: true },
+       { label: "Open an Issue", href: GITHUB.newIssue, external: true },
+       { label: "Email Us", href: `mailto:${SITE.email}` },
+@@ -310,10 +310,10 @@ export const FOOTER_COLUMNS = [
+   {
+     heading: "Trust",
+     links: [
+-      { label: "Safety", href: "#/safety" },
+-      { label: "Privacy Policy", href: "#/privacy" },
+-      { label: "Terms of Service", href: "#/terms" },
+-      { label: "Data Licensing", href: "#/datasets" },
++      { label: "Safety", href: "/safety" },
++      { label: "Privacy Policy", href: "/privacy" },
++      { label: "Terms of Service", href: "/terms" },
++      { label: "Data Licensing", href: "/datasets" },
+     ],
+   },
+ ];
