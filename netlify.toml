@@ -3,11 +3,12 @@
   publish = "dist"
 
 [[redirects]]
-  from = "/naath-library/*"
-  to = "/naath-library/:splat"
-  status = 200
-
-[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+
+[[redirects]]
+  from = "https://naath-preservation.netlify.app/*"
+  to = "https://dayom.org/:splat"
+  status = 301
+  force = true
