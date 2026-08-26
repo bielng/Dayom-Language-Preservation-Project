@@ -16,7 +16,7 @@ export default function Hero() {
           <a href="/studio" className="btn-primary">
             Translate for free <ArrowUpRight />
           </a>
-          <a href="#about" className="btn-ghost">
+          <a href="/about" className="btn-ghost">
             Learn More <ArrowRight />
           </a>
         </div>

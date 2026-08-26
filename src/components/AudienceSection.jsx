@@ -34,7 +34,7 @@ export default function AudienceSection() {
             Dayom Lab provides data and infrastructure that empowers a wide ecosystem of
             language and AI stakeholders.
           </p>
-          <a href="#about" className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-ink-900 underline underline-offset-4 decoration-ink-300 hover:decoration-ink-900">
+          <a href="/about" className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-ink-900 underline underline-offset-4 decoration-ink-300 hover:decoration-ink-900">
             More on our mission <ArrowRight />
           </a>
         </div>

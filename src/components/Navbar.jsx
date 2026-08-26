@@ -8,7 +8,7 @@ import { NAV_LINKS } from "../config/site.js";
 // Initiatives stays a homepage-only anchor since it has no standalone page.
 const LINKS = [
   ...NAV_LINKS,
-  { href: "#initiatives", label: "Initiatives" },
+  { href: "/initiatives", label: "Initiatives" },
   { href: "/contribute", label: "Contribute" },
 ];
 
@@ -18,12 +18,12 @@ export default function Navbar() {
   // Close the mobile menu on route change and lock body scroll while open.
   useEffect(() => {
     if (!open) return;
-    const onHashChange = () => setOpen(false);
-    window.addEventListener("hashchange", onHashChange);
+    const onPopState = () => setOpen(false);
+    window.addEventListener("popstate", onPopState);
     const prevOverflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
     return () => {
-      window.removeEventListener("hashchange", onHashChange);
+      window.removeEventListener("popstate", onPopState);
       document.body.style.overflow = prevOverflow;
     };
   }, [open]);

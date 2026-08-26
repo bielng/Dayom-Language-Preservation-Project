@@ -97,8 +97,19 @@ const SITE_PAGES = {
 // section" behavior instead of being reset to the top.
 const ROUTE_PREFIXES = ["/studio", "/library", "/dinka-library", ...Object.keys(SITE_PAGES)];
 
+// Paths that aren't real pages — they scroll to a section on the homepage
+// instead of swapping content. Add more here if other sections ever get
+// their own path without becoming a full standalone page.
+const SECTION_ANCHORS = {
+  "/initiatives": "initiatives",
+};
+
 function isRoutePath(path) {
   return path === "/" || ROUTE_PREFIXES.some((prefix) => path.startsWith(prefix));
+}
+
+function isKnownPath(path) {
+  return isRoutePath(path) || path in SECTION_ANCHORS;
 }
 
 export default function App() {
@@ -107,6 +118,10 @@ export default function App() {
   useEffect(() => {
     if (isRoutePath(path)) {
       window.scrollTo({ top: 0 });
+    } else if (path in SECTION_ANCHORS) {
+      requestAnimationFrame(() => {
+        document.getElementById(SECTION_ANCHORS[path])?.scrollIntoView({ behavior: "smooth" });
+      });
     }
   }, [path]);
 
@@ -140,7 +155,7 @@ export default function App() {
       if (url.origin !== window.location.origin) return;
 
       const targetPath = normalizePath(url.pathname);
-      if (!isRoutePath(targetPath)) return;
+      if (!isKnownPath(targetPath)) return;
 
       event.preventDefault();
       const newUrl = url.pathname + url.search + url.hash;
