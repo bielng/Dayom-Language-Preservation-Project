@@ -16,7 +16,7 @@ import {
 
 const welcomeMessage = {
   role: "assistant",
-  text: "**Welcome to Dayom AI!** 🌟\n\nI can help you with:\n· **Translations** — Nuer ⇄ D ⇄ English\n· **Definitions** — What does a word mean?\n· **Grammar** — Plurals, conjugations, structures\n· **Pronunciation** — Audio playback for phrasebook entries\n· **Comparisons** — See Nuer vs Dinka side-by-side\n\nAsk me anything, or pick a starter below!",
+  text: "**Welcome to Dayom AI!** \n\nI can help you with:\n· **Translations** — Nuer ⇄ D ⇄ English\n· **Definitions** — What does a word mean?\n· **Grammar** — Plurals, conjugations, structures\n· **Pronunciation** — Audio playback for phrasebook entries\n· **Comparisons** — See Nuer vs Dinka side-by-side\n\nAsk me anything, or pick a starter below!",
   sources: [],
   suggestions: [
     "How do I say hello in Nuer?",
@@ -127,7 +127,7 @@ function Message({ message, debug, onSuggestionClick }) {
         {/* Sources */}
         {message.sources?.length > 0 && (
           <p className='mt-3 pt-2 border-t border-ink-200/60 text-[11px] text-ink-400'>
-            📚 {message.sources.join(" · ")}
+            {message.sources.join(" · ")}
           </p>
         )}
 
