@@ -17,10 +17,10 @@ export default function LibraryLayout({ active, children }) {
     <div className="min-h-screen flex flex-col bg-[#f9f6ee]">
       <header className="sticky top-0 z-50 backdrop-blur-md bg-[#FCFAF5]/90 border-b border-ink-200/60">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
-          <a href="/library" className="flex items-center gap-2 shrink-0">
+          <a href="/studio" className="flex items-center gap-2 shrink-0">
             <Logo />
             <span className="font-semibold text-[15px] tracking-tight text-ink-900 hidden sm:inline">
-              Naath Dayom Library
+              Dayom Naath Library
             </span>
           </a>
 

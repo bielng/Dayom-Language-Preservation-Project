@@ -8,11 +8,8 @@ import {
   BookOpen,
   ChevronRight,
 } from "../Icons.jsx";
-import {
-  askDayomAi,
-  getKnowledgeBaseStats,
-  CHAT_STARTERS,
-} from "../../data/chatKnowledge.js";
+import { askDayomAi, CHAT_STARTERS } from "../../data/chatKnowledge.js";
+import { askNuerModel, warmChat } from "../../services/nuerChat.js";
 
 const welcomeMessage = {
   role: "assistant",
@@ -124,6 +121,21 @@ function Message({ message, debug, onSuggestionClick }) {
           </div>
         )}
 
+        {/* English rendering of a Nuer answer, from the pivot pipeline */}
+        {message.english && (
+          <p className='mt-2.5 pt-2 border-t border-ink-200/60 text-[13px] text-ink-500 italic'>
+            {message.english}
+          </p>
+        )}
+
+        {/* Fallback notice */}
+        {message.modelError && (
+          <p className='mt-2.5 text-[11px] text-amber-700'>
+            The assistant didn't answer ({message.modelError}) — this came from
+            the local datasets instead.
+          </p>
+        )}
+
         {/* Sources */}
         {message.sources?.length > 0 && (
           <p className='mt-3 pt-2 border-t border-ink-200/60 text-[11px] text-ink-400'>
@@ -160,21 +172,15 @@ export default function StudioChat() {
   const [messages, setMessages] = useState([welcomeMessage]);
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-  const [kbStats, setKbStats] = useState(null);
   const [debug, setDebug] = useState(false);
   const [proficiency, setProficiency] = useState("beginner");
   const scrollRef = useRef(null);
   const inputRef = useRef(null);
 
-  useEffect(() => {
-    let cancelled = false;
-    getKnowledgeBaseStats().then((stats) => {
-      if (!cancelled) setKbStats(stats);
-    });
-    return () => {
-      cancelled = true;
-    };
-  }, []);
+  // Wake the Space while the user reads the welcome message. The local corpus
+  // is deliberately NOT loaded here — it is only a fallback, and eagerly
+  // fetching all eight datasets delayed the page for seconds.
+  useEffect(warmChat, []);
 
   useEffect(() => {
     scrollRef.current?.scrollTo({
@@ -191,7 +197,26 @@ export default function StudioChat() {
     if (!text) setInput("");
     setIsLoading(true);
 
-    const answer = await askDayomAi(question, { debug });
+    let answer;
+    try {
+      // The fine-tuned assistant answers in Nuer and returns the English
+      // rendering alongside it.
+      const reply = await askNuerModel(question);
+      answer = {
+        text: reply.nuer || reply.english,
+        english: reply.nuer ? reply.english : null,
+        engine: "model",
+        sources: ["Fine-tuned Nuer assistant"],
+        meta: debug ? reply : null,
+      };
+    } catch (err) {
+      // Space asleep, queued, or offline — answer from the local corpus so the
+      // chat still works rather than failing outright.
+      console.warn("[chat] model unavailable:", err.message);
+      const local = await askDayomAi(question, { debug });
+      answer = { ...local, engine: "corpus", modelError: err.message };
+    }
+
     setMessages((current) => [...current, { role: "assistant", ...answer }]);
     setIsLoading(false);
     inputRef.current?.focus();
@@ -244,9 +269,7 @@ export default function StudioChat() {
               <div>
                 <p className='text-sm font-semibold text-ink-900'>Dayom AI</p>
                 <p className='text-[11px] text-ink-400'>
-                  {kbStats
-                    ? `${kbStats.totalEntries.toLocaleString()} entries · ${kbStats.totalSources} sources · ${proficiency}`
-                    : "Loading knowledge base…"}
+                  Fine-tuned Nuer assistant · {proficiency}
                 </p>
               </div>
             </div>
@@ -295,7 +318,7 @@ export default function StudioChat() {
               <div className='flex items-center gap-2 text-sm text-ink-500'>
                 <span className='h-2 w-2 rounded-full bg-amber-400 animate-pulse' />
                 <span className='animate-pulse'>
-                  Searching across 8 local sources…
+                  Thinking… the model may be waking up.
                 </span>
               </div>
             )}
@@ -355,7 +378,7 @@ export default function StudioChat() {
               </p>
               <div className='flex items-center gap-1 text-[10px] text-ink-400'>
                 <BookOpen className='w-3 h-3' />
-                <span>Local sources only</span>
+                <span>Fine-tuned model · datasets as fallback</span>
               </div>
             </div>
           </div>

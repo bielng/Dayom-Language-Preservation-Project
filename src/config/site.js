@@ -271,6 +271,27 @@ export const TTS = {
   },
 };
 
+// Fine-tuned translation and chat models, served as public Gradio Spaces so
+// the browser can call them directly with no API key (same pattern as TTS).
+// Nuer only for now — there is no Dinka Space yet, so Dinka falls back to the
+// dataset pipeline in services/translate.js.
+export const MT = {
+  spaces: {
+    // /translate → { text, direction: "English to Nuer" | "Nuer to English" }
+    nus: "dayomtechnologies/English_to_Nuer_Translator",
+  },
+  // Underlying checkpoints, for the Models page and docs.
+  models: {
+    nus: "dayomtechnologies/nllb-600m-english-nuer",
+    nusBidirectional: "dayomtechnologies/MT_Nuer_to_English_Bidirectional",
+  },
+  chat: {
+    // /chat → { message } ; runs on ZeroGPU and needs an HF token for API use.
+    space: "dayomtechnologies/Thok_Naath_Chatbot_Via_Pivot_Pipeline",
+    model: "dayomtechnologies/llama32-3b-nuer-lora",
+  },
+};
+
 // Primary navigation — hash routes, matching the existing /studio and
 // /library pattern already used across the site.
 export const NAV_LINKS = [

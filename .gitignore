@@ -13,6 +13,52 @@ bower_components
 
 *.sublime*
 
+# Environment files and local secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+secrets/
+
+# Local tooling and deployment state
+.vscode/
+.idea/
+.vercel/
+.netlify/
+.cache/
+.vite/
+coverage/
+reports/
+tmp/
+temp/
+
+# Generated and operating-system files
+.eslintcache
+*.tsbuildinfo
+*.pid
+*.pid.lock
+*.orig
+*.swp
+*.swo
+Thumbs.db
+desktop.ini
+
+# Runtime data and private exports
+*.sqlite
+*.sqlite3
+*.db
+*.dump
+*.bak
+*.backup
+*.csv
+*.xlsx
+uploads/
+private-data/
+
 psd
 thumb
 sketch

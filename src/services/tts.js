@@ -106,9 +106,11 @@ async function spaceTTS(text, lang) {
 /* ────────────────  PUBLIC API  ──────────────── */
 
 /**
- * Browser-native speech synthesis — English ONLY.
+ * Browser-native speech synthesis fallback.
+ * Browser voices may not include Nuer or Dinka, but the requested language
+ * hint lets browsers choose the closest available voice.
  */
-export function speakEnglish(text) {
+export function speakWithBrowser(text, lang = "en") {
   return new Promise((resolve, reject) => {
     if (!("speechSynthesis" in window)) {
       reject(new Error("Browser does not support speech synthesis."));
@@ -116,12 +118,16 @@ export function speakEnglish(text) {
     }
     window.speechSynthesis.cancel();
     const u = new SpeechSynthesisUtterance(text);
-    u.lang = "en-US";
+    u.lang = { en: "en-US", nus: "nus", din: "din" }[lang] || lang;
     u.rate = 0.9;
     u.onend = resolve;
     u.onerror = (e) => reject(new Error(`Speech error: ${e.error}`));
     window.speechSynthesis.speak(u);
   });
+}
+
+export function speakEnglish(text) {
+  return speakWithBrowser(text, "en");
 }
 
 /**

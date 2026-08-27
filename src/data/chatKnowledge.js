@@ -1629,7 +1629,9 @@ function buildTranslateResponse(
 ) {
   const lines = [];
   const sources = new Set();
-  const headword = candidates.find((e) => e.english)?.english || term;
+  const headword = normEn(term) === "dinka"
+    ? "Dinka"
+    : candidates.find((e) => e.english)?.english || term;
   lines.push(`**"${headword}"**`);
 
   const nuerHits = showNuer ? candidates.filter((e) => e.nus).slice(0, 5) : [];
@@ -1696,10 +1698,10 @@ function buildTranslateResponse(
 
   // Related
   const extraNuer = candidates
-    .filter((e) => e.nus && !nuerHits.includes(e))
+    .filter((e) => showNuer && e.nus && !nuerHits.includes(e))
     .slice(0, 2);
   const extraDinka = candidates
-    .filter((e) => e.din && !dinkaHits.includes(e))
+    .filter((e) => showDinka && e.din && !dinkaHits.includes(e))
     .slice(0, 2);
   if (extraNuer.length || extraDinka.length) {
     const rel = [];

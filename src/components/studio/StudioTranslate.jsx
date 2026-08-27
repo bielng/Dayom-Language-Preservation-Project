@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   Swap,
   Sparkle,
@@ -10,6 +10,7 @@ import {
   ChevronDown,
 } from "../Icons.jsx";
 import { translateText, getLangName } from "../../services/translate.js";
+import { warmModel } from "../../services/nuerModel.js";
 import { synthesizeSpeech, speakEnglish } from "../../services/tts.js";
 
 const LANGUAGES = [
@@ -49,12 +50,16 @@ export default function StudioTranslate() {
   const [sourceLang, setSourceLang] = useState("en");
   const [targetLang, setTargetLang] = useState("nus");
   const [inputText, setInputText] = useState("");
-  const [result, setResult] = useState("");
+  const [result, setResult] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
   const [copied, setCopied] = useState(false);
   const [isSpeaking, setIsSpeaking] = useState(false);
   const [speakError, setSpeakError] = useState(null);
+
+  // Wake the Space while the user is still typing, so the first translation
+  // does not pay the cold start.
+  useEffect(warmModel, []);
 
   const direction = `${sourceLang}-to-${targetLang}`;
   const sourceLabel = getLangName(sourceLang);
@@ -66,7 +71,7 @@ export default function StudioTranslate() {
     if (val === targetLang) setTargetLang(sourceLang);
     setSourceLang(val);
     setInputText("");
-    setResult("");
+    setResult(null);
     setError(null);
     setSpeakError(null);
   };
@@ -76,7 +81,7 @@ export default function StudioTranslate() {
     if (val === sourceLang) setSourceLang(targetLang);
     setTargetLang(val);
     setInputText("");
-    setResult("");
+    setResult(null);
     setError(null);
     setSpeakError(null);
   };
@@ -84,13 +89,8 @@ export default function StudioTranslate() {
   const handleSwap = () => {
     setSourceLang(targetLang);
     setTargetLang(sourceLang);
-    if (result) {
-      setInputText(result);
-      setResult(inputText);
-    } else {
-      setInputText("");
-      setResult("");
-    }
+    setInputText(result?.text || "");
+    setResult(null);
     setError(null);
     setSpeakError(null);
   };
@@ -99,15 +99,14 @@ export default function StudioTranslate() {
     if (!inputText.trim() || isLoading) return;
     setIsLoading(true);
     setError(null);
-    setResult("");
+    setResult(null);
     setSpeakError(null);
     try {
-      const translated = await translateText(inputText.trim(), direction);
-      setResult(translated);
+      setResult(await translateText(inputText.trim(), direction));
     } catch (err) {
       console.error("Translation error:", err);
       setError(
-        "Couldn't reach the translator. Check your connection and try again.",
+        "Couldn't load the translation datasets. Reload the page and try again.",
       );
     } finally {
       setIsLoading(false);
@@ -115,25 +114,25 @@ export default function StudioTranslate() {
   };
 
   const handleCopy = () => {
-    if (!result) return;
-    navigator.clipboard.writeText(result);
+    if (!result?.text) return;
+    navigator.clipboard.writeText(result.text);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
 
   const handleSpeak = async () => {
-    if (!result || isSpeaking) return;
+    if (!result?.text || isSpeaking) return;
     setSpeakError(null);
     setIsSpeaking(true);
 
     try {
       if (targetLang === "en") {
         // English → browser TTS (never MMS)
-        await speakEnglish(result);
+        await speakEnglish(result.text);
         setIsSpeaking(false);
       } else {
         // Nuer or Dinka → MMS (Space first, then Inference fallback)
-        const url = await synthesizeSpeech(result, targetLang);
+        const url = await synthesizeSpeech(result.text, targetLang);
         const audio = new Audio(url);
         audio.onended = () => setIsSpeaking(false);
         audio.onerror = (e) => {
@@ -256,7 +255,7 @@ export default function StudioTranslate() {
 
           <div className='flex items-center justify-between px-1 mb-2'>
             <span className='eyebrow'>{targetLabel}</span>
-            {result && (
+            {result?.text && (
               <div className='flex items-center gap-2'>
                 <button
                   onClick={handleSpeak}
@@ -282,14 +281,85 @@ export default function StudioTranslate() {
           </div>
 
           <div className='min-h-[6rem] bg-cream-50 rounded-2xl p-4 border border-ink-200 text-ink-900 text-[15px] sm:text-lg flex items-center'>
-            {result ? (
-              <div className='w-full font-medium animate-fade-in'>{result}</div>
+            {result?.text ? (
+              <div className='w-full font-medium animate-fade-in whitespace-pre-wrap'>
+                {result.text}
+              </div>
             ) : (
               <span className='text-ink-400 font-normal text-sm'>
                 Translation result will appear here…
               </span>
             )}
           </div>
+
+          {result?.text && (
+            <div className='mt-4 space-y-2 text-xs text-ink-500 animate-fade-in'>
+              <div className='flex flex-wrap items-center gap-2'>
+                <span
+                  className='chip'
+                  style={{ padding: "0.3rem 0.7rem" }}
+                  title='Which engine produced this result'
+                >
+                  {result.engine === "model"
+                    ? "Fine-tuned Nuer model"
+                    : result.method === "verified"
+                      ? "Exact dataset match"
+                      : `Dataset assembly — ${Math.round(result.coverage * 100)}% of words matched`}
+                </span>
+                {result.pivot && (
+                  <span className='chip' style={{ padding: "0.3rem 0.7rem" }}>
+                    via English
+                  </span>
+                )}
+                {result.sources.length > 0 && (
+                  <span>From: {result.sources.join(" · ")}</span>
+                )}
+              </div>
+
+              {result.modelError && (
+                <p className='text-amber-700'>
+                  The fine-tuned model didn't answer ({result.modelError}) — this
+                  came from the datasets instead. It may be waking up; try again
+                  in a moment for a better translation.
+                </p>
+              )}
+
+              {result.engine === "corpus" &&
+                !result.modelError &&
+                result.method !== "verified" &&
+                (sourceLang === "din" || targetLang === "din") && (
+                  <p>
+                    Dinka has no fine-tuned model yet, so this is assembled from
+                    the Dinka dictionary.
+                  </p>
+                )}
+
+              {result.unresolved.length > 0 && (
+                <p>
+                  Not recorded in your datasets yet, so left as written:{" "}
+                  <span className='text-ink-700 font-medium'>
+                    {result.unresolved.join(", ")}
+                  </span>
+                </p>
+              )}
+
+              {result.approximate.length > 0 && (
+                <p>
+                  Matched through a related word form:{" "}
+                  <span className='text-ink-700 font-medium'>
+                    {result.approximate.join(", ")}
+                  </span>
+                </p>
+              )}
+
+              {result.engine === "corpus" && result.method === "assembled" && (
+                <p>
+                  Dataset assembly is phrase-by-phrase and is not guaranteed to
+                  be grammatical.
+                </p>
+              )}
+            </div>
+          )}
 
           {error && (
             <div className='mt-4 flex items-start gap-2 bg-cream-100 border border-ink-200 rounded-2xl px-4 py-3 text-sm text-ink-700'>
@@ -306,7 +376,8 @@ export default function StudioTranslate() {
         </div>
 
         <p className='mt-5 text-center text-xs text-ink-400'>
-          Translations are generated live and require an internet connection.
+          English ↔ Nuer runs on our fine-tuned Nuer model, backed by the
+          verified corpus. No third-party translation service is used.
         </p>
       </div>
     </div>
