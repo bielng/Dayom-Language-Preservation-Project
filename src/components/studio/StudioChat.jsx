@@ -214,14 +214,15 @@ export default function StudioChat() {
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const scrollRef = useRef(null);
+  const chatSessionRef = useRef(0);
 
   const changeTargetLanguage = (language) => {
+    if (language === targetLanguage) return;
+    chatSessionRef.current += 1;
     setTargetLanguage(language);
-    setMessages((current) =>
-      current.length === 1 && current[0].role === "assistant"
-        ? [WELCOME(language)]
-        : current,
-    );
+    setMessages([WELCOME(language)]);
+    setInput("");
+    setIsLoading(false);
   };
 
   useEffect(() => {
@@ -239,6 +240,7 @@ export default function StudioChat() {
     const routedQuestion = hasExplicitLanguage
       ? question
       : `What is ${question} in ${targetLanguage}?`;
+    const sessionId = chatSessionRef.current;
     setMessages((current) => [...current, { role: "user", text: question }]);
     setInput("");
     setIsLoading(true);
@@ -246,22 +248,26 @@ export default function StudioChat() {
       const answer = await askDayomAi(routedQuestion, {
         targetLanguage: targetLanguage === "Dinka" ? "din" : "nus",
       });
-      setMessages((current) => [...current, { role: "assistant", answer }]);
+      if (sessionId === chatSessionRef.current) {
+        setMessages((current) => [...current, { role: "assistant", answer }]);
+      }
     } catch {
-      setMessages((current) => [
-        ...current,
-        {
-          role: "assistant",
-          answer: {
-            kind: "error",
-            verified: true,
-            text: "Something went wrong looking that up. Try again.",
-            sources: [],
+      if (sessionId === chatSessionRef.current) {
+        setMessages((current) => [
+          ...current,
+          {
+            role: "assistant",
+            answer: {
+              kind: "error",
+              verified: true,
+              text: "Something went wrong looking that up. Try again.",
+              sources: [],
+            },
           },
-        },
-      ]);
+        ]);
+      }
     } finally {
-      setIsLoading(false);
+      if (sessionId === chatSessionRef.current) setIsLoading(false);
     }
   };
 
