@@ -1143,6 +1143,10 @@ function classifyIntent(q) {
   )
     return INTENTS.LANGUAGES;
   if (
+    /\b(?:in|to|into)\s+(?:nuer|dinka|naath|thu[oö]ŋjäŋ)\b/i.test(q)
+  )
+    return INTENTS.TRANSLATE;
+  if (
     /^(hi|hello|hey|good morning|good evening|good afternoon|howdy|greetings)\b/i.test(
       q,
     )
@@ -1566,8 +1570,8 @@ function findCategoryMatch(kb, phrase) {
   return out;
 }
 
-function findTfidfSemantic(kb, phrase) {
-  return tfidf.query(phrase, 15).map((x) => x.entry);
+function findTfidfSemantic(kb, phrase, engine = tfidf) {
+  return engine.query(phrase, 15).map((x) => x.entry);
 }
 
 // ── TERM EXTRACTION ───────────────────────────────────────────────────
@@ -1587,10 +1591,16 @@ function stripLangWords(term) {
 
 function extractTerm(question) {
   const stripQuotes = (s) => s.replace(/^['"]+|['"]+$/g, "").trim();
-  const finalize = (term, reverse) => ({
-    term: stripLangWords(stripQuotes(term)) || stripQuotes(term),
-    reverse,
-  });
+  const finalize = (term, reverse) => {
+    const cleaned = stripQuotes(term).replace(
+      /\s+(?:in|to|into)\s+(?:nuer|dinka|naath|thu[oö]ŋjäŋ)\s*$/iu,
+      "",
+    );
+    return {
+      term: stripLangWords(cleaned) || cleaned,
+      reverse,
+    };
+  };
 
   let m = question.match(/(?:what does|meaning of)\s+(.+?)\s*mean\??$/i);
   if (m) return finalize(m[1], true);
@@ -1864,7 +1874,10 @@ export const CHAT_STARTERS = [
 ];
 
 // ── MAIN ANSWER FUNCTION ──────────────────────────────────────────────
-export async function askDayomAi(question, { debug = false } = {}) {
+export async function askDayomAi(
+  question,
+  { debug = false, targetLanguage = "nus" } = {},
+) {
   await new Promise((r) => setTimeout(r, 300));
 
   const trimmed = question.trim();
@@ -1916,7 +1929,13 @@ export async function askDayomAi(question, { debug = false } = {}) {
     };
   }
 
-  const kb = await loadKnowledgeBase();
+  const fullKb = await loadKnowledgeBase();
+  const targetEntries = fullKb.entries.filter((entry) =>
+    targetLanguage === "din" ? entry.din : entry.nus,
+  );
+  const kb = buildIndex(targetEntries);
+  const targetTfidf = new TfIdfEngine();
+  targetTfidf.build(targetEntries);
 
   // Follow-up resolution
   const followUp = context.resolveFollowUp(trimmed);
@@ -1998,7 +2017,7 @@ export async function askDayomAi(question, { debug = false } = {}) {
 
   // 9. TF-IDF semantic
   if (!candidates.length && !reverse) {
-    const tfidfResults = findTfidfSemantic(kb, term);
+    const tfidfResults = findTfidfSemantic(kb, term, targetTfidf);
     if (tfidfResults.length) {
       candidates = tfidfResults;
       strategies.push("tfidf-semantic");
@@ -2014,7 +2033,7 @@ export async function askDayomAi(question, { debug = false } = {}) {
   // ── No results handling ──────────────────────────────────────────────
   if (!candidates.length) {
     // Try to find semantically related concepts as a helpful fallback
-    const related = tfidf.query(term, 5);
+    const related = targetTfidf.query(term, 5);
     let fallbackText = `I don't have a verified match for **"${term}"** in the local dataset yet.`;
     if (related.length > 0) {
       const suggestions = related
