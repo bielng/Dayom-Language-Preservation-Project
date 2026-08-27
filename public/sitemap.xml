@@ -12,4 +12,14 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url><loc>https://dayom.org/about</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dayom.org/datasets</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://dayom.org/models</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dayom.org/api</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://dayom.org/library</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://dayom.org/library/dictionary</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dayom.org/library/phrasebook</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dayom.org/dinka-library</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dayom.org/studio</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dayom.org/news</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
 </urlset>

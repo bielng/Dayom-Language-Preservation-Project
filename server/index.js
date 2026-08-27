@@ -11,7 +11,42 @@ const DIST_DIR = path.join(ROOT, "dist");
 const PORT = globalThis.process?.env?.PORT || 8787;
 
 const app = express();
+app.set("trust proxy", 1);
 app.use(express.json());
+
+const blockedBotPattern = /GPTBot|ClaudeBot|Bytespider|CCBot|Google-Extended|PerplexityBot|Amazonbot|Applebot-Extended/i;
+const requestWindows = new Map();
+const WINDOW_MS = 10_000;
+const MAX_REQUESTS_PER_WINDOW = 5;
+
+app.use((req, res, next) => {
+  const userAgent = req.get("user-agent") || "";
+  if (blockedBotPattern.test(userAgent)) {
+    return res.status(403).json({ error: "Automated access is not permitted." });
+  }
+
+  const clientIp = req.ip || req.socket.remoteAddress || "unknown";
+  const now = Date.now();
+  const window = requestWindows.get(clientIp);
+  if (!window || now - window.startedAt >= WINDOW_MS) {
+    requestWindows.set(clientIp, { startedAt: now, count: 1 });
+  } else {
+    window.count += 1;
+    res.set("X-RateLimit-Limit", String(MAX_REQUESTS_PER_WINDOW));
+    res.set("X-RateLimit-Remaining", String(Math.max(MAX_REQUESTS_PER_WINDOW - window.count, 0)));
+    if (window.count > MAX_REQUESTS_PER_WINDOW) {
+      res.set("Retry-After", "10");
+      return res.status(429).json({ error: "Too many requests. Please try again later." });
+    }
+  }
+
+  if (requestWindows.size > 10_000) {
+    for (const [ip, entry] of requestWindows) {
+      if (now - entry.startedAt >= WINDOW_MS) requestWindows.delete(ip);
+    }
+  }
+  next();
+});
 
 // ---------------------------------------------------------------------------
 // Small helpers
