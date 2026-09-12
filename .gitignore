@@ -58,9 +58,10 @@ desktop.ini
 *.xlsx
 uploads/
 private-data/
+supabase/.temp
 
 psd
 thumb
 sketch
 
-# End of https://www.toptal.com/developers/gitignore/api/react
+# End of https://www.toptal.com/developers/gitignore/api/reactsupabase/.temp/

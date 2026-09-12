@@ -1,5 +1,5 @@
 import PageShell, { Section, Prose, InfoCard } from "./PageShell.jsx";
-import { Mic, Book, Code, Users, Heart, Server, Github, ArrowUpRight, ArrowRight, Mail } from "../Icons.jsx";
+import { Mic, Book, Code, Users, Heart, Server, Github, ArrowUpRight, ArrowRight, Mail, Send, Sparkle } from "../Icons.jsx";
 import { GITHUB, SITE, AUDIO_TOTAL } from "../../config/site.js";
 
 const WAYS = [
@@ -81,6 +81,26 @@ export default function ContributePage() {
       title="This only works if speakers build it"
       lede="Dayom Lab is a volunteer-driven effort. A language technology project run without its speakers produces confident, fluent, wrong output — so the review step is not a formality here, it is the product."
     >
+      <Section eyebrow="Right Now" title="Submit an English → Nuer pair" className="mb-16">
+        <div className="card p-6 sm:p-8 bg-amber-300/10 border-amber-300/60 flex flex-col sm:flex-row sm:items-center gap-6 sm:gap-8">
+          <div className="h-12 w-12 rounded-full bg-amber-300 text-ink-900 flex items-center justify-center shrink-0">
+            <Sparkle />
+          </div>
+          <div className="flex-1">
+            <h3 className="font-semibold text-ink-900">The fastest way to help, no GitHub needed</h3>
+            <p className="mt-1.5 text-sm text-ink-500 leading-relaxed">
+              A short web form for native speakers: add a new English–Thok Naath pair, or fix a
+              sentence Google Translate or our own auto-translator got wrong. Every pair goes into
+              the volunteer dataset used to train and correct machine translation, and waits for
+              native-speaker review before it joins the open corpus.
+            </p>
+          </div>
+          <a href="/contribute/submit" className="btn-primary shrink-0 whitespace-nowrap">
+            <Send /> Submit a pair
+          </a>
+        </div>
+      </Section>
+
       <Section eyebrow="Ways To Help" title="Six things that actually move the work" className="mb-16">
         <div className="grid sm:grid-cols-2 gap-5">
           {WAYS.map((w) => (

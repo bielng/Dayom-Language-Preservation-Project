@@ -24,6 +24,7 @@ import DatasetsPage from "./components/pages/DatasetsPage.jsx";
 import ModelsPage from "./components/pages/ModelsPage.jsx";
 import ApiPage from "./components/pages/ApiPage.jsx";
 import ContributePage from "./components/pages/ContributePage.jsx";
+import ContributeDataPage from "./components/pages/ContributeDataPage.jsx";
 import NewsPage from "./components/pages/NewsPage.jsx";
 import PrivacyPage from "./components/pages/PrivacyPage.jsx";
 import TermsPage from "./components/pages/TermsPage.jsx";
@@ -84,6 +85,7 @@ const SITE_PAGES = {
   "/models": ModelsPage,
   "/api": ApiPage,
   "/contribute": ContributePage,
+  "/contribute/submit": ContributeDataPage,
   "/news": NewsPage,
   "/privacy": PrivacyPage,
   "/terms": TermsPage,

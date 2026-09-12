@@ -1,4 +1,5 @@
 import { useCallback, useRef, useState } from "react";
+import { resolveAudioUrl } from "../../services/mediaSource.js";
 
 export function useAudioPlayer() {
   const audioRef = useRef(null);
@@ -11,7 +12,7 @@ export function useAudioPlayer() {
       audioRef.current.pause();
       audioRef.current = null;
     }
-    const audio = new Audio(`/${path}`);
+    const audio = new Audio(resolveAudioUrl(path));
     audioRef.current = audio;
     setMissingPath(null);
     setPlayingPath(path);

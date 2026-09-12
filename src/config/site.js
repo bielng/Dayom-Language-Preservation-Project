@@ -322,6 +322,7 @@ export const FOOTER_COLUMNS = [
       { label: "About Us", href: "/about" },
       { label: "Our Mission", href: "/about" },
       { label: "Get Involved", href: "/contribute" },
+      { label: "Submit A Translation Pair", href: "/contribute/submit" },
       { label: "News", href: "/news" },
       { label: "Contribute on GitHub", href: GITHUB.repoUrl, external: true },
       { label: "Open an Issue", href: GITHUB.newIssue, external: true },
