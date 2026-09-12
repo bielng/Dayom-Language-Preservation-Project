@@ -345,7 +345,7 @@ export default function ContributeDataPage() {
                 rows={2}
                 value={form.nuerText}
                 onChange={update("nuerText")}
-                placeholder='Kä ɣɔ̱k guɛckɛ gekä yiëër.'
+                placeholder='Kä ɣɔ̱k guɛrkɛ gekä yiëër.'
                 className='mt-2 w-full bg-cream-50 rounded-xl px-4 py-3 text-sm text-ink-900 placeholder:text-ink-400 border border-ink-200 outline-none focus:border-ink-400 resize-none'
               />
               {showKeyboard && (
